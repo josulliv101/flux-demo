@@ -22,6 +22,9 @@ var ChatAppDispatcher = copyProperties(new Dispatcher(), {
    * type and additional data coming from the server.
    */
   handleServerAction: function(action) {
+
+    console.log('action', action);
+    
     var payload = {
       source: 'SERVER_ACTION',
       action: action

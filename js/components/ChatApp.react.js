@@ -1,34 +1,43 @@
 /**
- * This file is provided by Facebook for testing and evaluation purposes
- * only. Facebook reserves all rights not expressly granted.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
- * FACEBOOK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
- * AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- *
  * @jsx React.DOM
  */
 
-var MessageSection = require('./MessageSection.react');
-var React = require('react');
-var ThreadSection = require('./ThreadSection.react');
-var ProjectSection = require('./ProjectSection.react');
+var React = require('react'),
+ 	ProjectSection = require('./ProjectSection.react'),
+	ChatServerActionCreators = require('../actions/ChatServerActionCreators'),
+	ChatApp;
 
-var ChatApp = React.createClass({
+
+App = React.createClass({
+  
+  componentDidMount: function() {
+
+  	ChatServerActionCreators.createProject();
+
+  },
 
   render: function() {
     return (
-      <div className="chatapp">
-        <ThreadSection />
-        <MessageSection />
+      <div className="app">
+      	<button onClick={this._onClickAdd}>Add</button>
+      	<button onClick={this._onClickRemove}>Remove</button>
         <ProjectSection />
       </div>
     );
+  },
+
+  _onClickAdd: function() {
+    
+    ChatServerActionCreators.createProject();
+
+  },
+
+  _onClickRemove: function() {
+    
+    ChatServerActionCreators.removeProject();
+
   }
 
 });
 
-module.exports = ChatApp;
+module.exports = App;

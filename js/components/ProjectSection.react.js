@@ -13,16 +13,14 @@
  */
 
 var React             = require('react'),
-    MessageStore      = require('../stores/MessageStore'),
     ProjectStore      = require('../stores/ProjectStore'),
     ProjectListItem   = require('../components/ProjectListItem.react'),
-    ThreadListItem    = require('../components/ThreadListItem.react'),
-    ThreadStore       = require('../stores/ThreadStore'),
-    UnreadThreadStore = require('../stores/UnreadThreadStore');
+    cx                = require('react/lib/cx');
 
 function getStateFromStores() {
   return {
-    projects: ProjectStore.getAll()
+    projects: ProjectStore.getAll(),
+    isLoading: ProjectStore.isLoading()
   };
 }
 
@@ -42,16 +40,21 @@ var ProjectSection = React.createClass({
 
   render: function() {
 
-    var projectListItems = this.state.projects.map(function(project) {
+    var projectListItems = this.state.projects.map(function(project, i) {
 
-      return ( <ProjectListItem key={project.id} name={project.name} /> );
+      return ( <ProjectListItem key={project.id} index={i} name={project.name} count={ ProjectStore.getCount() } /> );
 
     }),
 
       total = this.state.projects.length;
 
     return (
-      <div className="project-section">
+      <div
+        className={cx({
+          'project-section': true,
+          'is-loading': this.state.isLoading
+        })}>
+          <div className="spinner"></div>
           <h4>Projects ({total})</h4>
           <ul className="project-list">
             {projectListItems}
@@ -64,7 +67,9 @@ var ProjectSection = React.createClass({
    * Event handler for 'change' events coming from the stores
    */
   _onChange: function() {
+
     this.setState(getStateFromStores());
+
   }
 
 });

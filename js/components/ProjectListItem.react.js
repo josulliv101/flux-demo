@@ -13,7 +13,7 @@
  */
 
 var React           = require('react'), 
-    ChatWebAPIUtils = require('../utils/ChatWebAPIUtils'),
+    ChatServerActionCreators = require('../actions/ChatServerActionCreators'),
     ProjectListItem;
 
 ProjectListItem = React.createClass({
@@ -22,14 +22,14 @@ ProjectListItem = React.createClass({
 
     return (
       <li className="list-item" onClick={this._onClick}>
-        <button>{this.props.name}</button>
+        <button>{++this.props.index}: {this.props.name}</button>
       </li>
     );
   },
 
   _onClick: function() {
 
-    ChatWebAPIUtils.getAllProjects();
+    ChatServerActionCreators.getAllProjects(this.props.count);
 
   }
 
