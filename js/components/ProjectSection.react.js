@@ -18,42 +18,54 @@ var React             = require('react'),
     cx                = require('react/lib/cx');
 
 function getStateFromStores() {
+
   return {
+
     projects: ProjectStore.getAll(),
+
     isLoading: ProjectStore.isLoading()
+    
   };
 }
 
 var ProjectSection = React.createClass({
 
   getInitialState: function() {
+
     return getStateFromStores();
+
   },
 
   componentDidMount: function() {
+
     ProjectStore.addChangeListener(this._onChange);
+
   },
 
   componentWillUnmount: function() {
+
     ProjectStore.removeChangeListener(this._onChange);
+
   },
 
   render: function() {
 
-    var projectListItems = this.state.projects.map(function(project, i) {
+    var total,
 
-      return ( <ProjectListItem key={project.id} index={i} name={project.name} count={ ProjectStore.getCount() } /> );
+        projectListItems = this.state.projects.map(function(project, i) {
 
-    }),
+          return ( <ProjectListItem key={project.id} index={i} name={project.name} count={ ProjectStore.getCount() } /> );
 
-      total = this.state.projects.length;
+        });
+
+    total = this.state.projects.length;
 
     return (
       <div
         className={cx({
           'project-section': true,
           'is-loading': this.state.isLoading
-        })}>
+      })}>
           <div className="spinner"></div>
           <h4>Projects ({total})</h4>
           <ul className="project-list">

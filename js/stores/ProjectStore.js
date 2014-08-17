@@ -1,18 +1,17 @@
 
-var ChatAppDispatcher   = require('../dispatcher/ChatAppDispatcher'),
-    ChatConstants       = require('../constants/ChatConstants'),
-    ChatMessageUtils    = require('../utils/ChatMessageUtils'),
-    ChatServerActionCreators = require('../actions/ChatServerActionCreators'),
-    EventEmitter        = require('events').EventEmitter,
-    merge               = require('react/lib/merge'),
-    $                   = require('jquery'),
+var AppDispatcher         = require('../dispatcher/AppDispatcher'),
+    Constants             = require('../constants/Constants'),
+    ServerActionCreators  = require('../actions/ServerActionCreators'),
+    EventEmitter          = require('events').EventEmitter,
+    merge                 = require('react/lib/merge'),
+    $                     = require('jquery'),
 
-    ActionTypes         = ChatConstants.ActionTypes,
-    CHANGE_EVENT        = 'change',
+    ActionTypes           = Constants.ActionTypes,
+    CHANGE_EVENT          = 'change',
 
-    _projects           = [],
-    _count              = 0,
-    _isLoading          = true;
+    _projects             = [],
+    _count                = 0,
+    _isLoading            = true;
 
 function _addProject(model) {
 
@@ -62,7 +61,7 @@ var ProjectStore = merge(EventEmitter.prototype, {
 
 });
 
-ProjectStore.dispatchToken = ChatAppDispatcher.register(function(payload) {
+ProjectStore.dispatchToken = AppDispatcher.register(function(payload) {
 
   var action = payload.action;
 
@@ -76,7 +75,7 @@ ProjectStore.dispatchToken = ChatAppDispatcher.register(function(payload) {
 
     case ActionTypes.GET_ALL_PROJECTS:
       _isLoading = true;
-      $.when(action.promise).done( ChatServerActionCreators.receiveAllProjects );
+      $.when(action.promise).done( ServerActionCreators.receiveAllProjects );
       ProjectStore.emitChange(); // For loading attr
       break;
 
@@ -84,11 +83,9 @@ ProjectStore.dispatchToken = ChatAppDispatcher.register(function(payload) {
 
       _incrementCount();
 
-      console.log('_incrementCount:post', _count);
-
       window.setTimeout(function () {
 
-        ChatServerActionCreators.getAllProjects(_count);
+        ServerActionCreators.getAllProjects(_count);
 
       }, 0);
 
@@ -98,11 +95,9 @@ ProjectStore.dispatchToken = ChatAppDispatcher.register(function(payload) {
 
       _incrementCount(-1);
 
-      console.log('_incrementCount -1 :post', _count);
-
       window.setTimeout(function () {
 
-        ChatServerActionCreators.getAllProjects(_count);
+        ServerActionCreators.getAllProjects(_count);
 
       }, 0);
 

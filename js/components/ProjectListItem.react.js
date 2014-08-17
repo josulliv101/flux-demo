@@ -12,14 +12,13 @@
  * @jsx React.DOM
  */
 
-var React           = require('react'), 
-    ChatServerActionCreators = require('../actions/ChatServerActionCreators'),
+var React                = require('react'), 
+    ServerActionCreators = require('../actions/ServerActionCreators'),
     ProjectListItem;
 
 ProjectListItem = React.createClass({
 
   render: function() {
-
     return (
       <li className="list-item" onClick={this._onClick}>
         <button>{++this.props.index}: {this.props.name}</button>
@@ -29,7 +28,7 @@ ProjectListItem = React.createClass({
 
   _onClick: function() {
 
-    ChatServerActionCreators.getAllProjects(this.props.count);
+    ServerActionCreators.getAllProjects(this.props.count);
 
   }
 

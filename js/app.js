@@ -4,11 +4,10 @@
 
 // This file bootstraps the entire application.
 
-var ChatApp = require('./components/ChatApp.react');
-var React = require('react');
+var App = require('./components/App.react'),
+	React = require('react');
 
 React.renderComponent(
-    <ChatApp />,
+    <App />,
     document.getElementById('react')
 );
-
