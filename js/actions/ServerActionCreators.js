@@ -16,6 +16,40 @@ module.exports = {
     });
   },
 
+  fetchAllUsers: function() {
+
+    AppDispatcher.handleServerAction({
+
+      type: ActionTypes.FETCH_ALL_USERS,
+
+      promise: WebAPIUtils.fetchAllUsers(5)
+
+    });
+  },
+
+  setActiveUser: function(user) {
+
+    AppDispatcher.handleServerAction({
+
+      type: ActionTypes.SET_ACTIVE_USER,
+
+      user: user
+
+    });
+
+  },
+
+  receiveAllUsers: function(rawUsers) {
+
+    AppDispatcher.handleServerAction({
+
+      type: ActionTypes.RECEIVE_RAW_USERS,
+
+      rawUsers: rawUsers
+
+    });
+  },
+
   receiveAllProjects: function(rawProjects) {
 
     AppDispatcher.handleServerAction({

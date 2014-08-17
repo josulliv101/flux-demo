@@ -12,10 +12,11 @@
  * @jsx React.DOM
  */
 
-var React             = require('react'),
-    ProjectStore      = require('../stores/ProjectStore'),
-    ProjectListItem   = require('../components/ProjectListItem.react'),
-    cx                = require('react/lib/cx');
+var React                 = require('react'),
+    ProjectStore          = require('../stores/ProjectStore'),
+    ProjectListItem       = require('../components/ProjectListItem.react'),
+    ServerActionCreators  = require('../actions/ServerActionCreators'),
+    cx                    = require('react/lib/cx');
 
 function getStateFromStores() {
 
@@ -24,7 +25,7 @@ function getStateFromStores() {
     projects: ProjectStore.getAll(),
 
     isLoading: ProjectStore.isLoading()
-    
+
   };
 }
 
@@ -54,7 +55,7 @@ var ProjectSection = React.createClass({
 
         projectListItems = this.state.projects.map(function(project, i) {
 
-          return ( <ProjectListItem key={project.id} index={i} name={project.name} count={ ProjectStore.getCount() } /> );
+          return ( <ProjectListItem key={project.id} index={i} name={project.name} count={ ProjectStore.getCount() } clickHandler={ServerActionCreators.getAllProjects} /> );
 
         });
 
@@ -63,12 +64,13 @@ var ProjectSection = React.createClass({
     return (
       <div
         className={cx({
+          'section': true,
           'project-section': true,
           'is-loading': this.state.isLoading
       })}>
           <div className="spinner"></div>
           <h4>Projects ({total})</h4>
-          <ul className="project-list">
+          <ul className="list">
             {projectListItems}
           </ul>
       </div>

@@ -4,6 +4,7 @@
 
 var React               = require('react'),
  	ProjectSection        = require('./ProjectSection.react'),
+  UserSection           = require('./UserSection.react'),
 	ServerActionCreators  = require('../actions/ServerActionCreators'),
 	App;
 
@@ -13,6 +14,8 @@ App = React.createClass({
 
   	ServerActionCreators.createProject();
 
+    ServerActionCreators.fetchAllUsers();
+
   },
 
   render: function() {
@@ -21,6 +24,7 @@ App = React.createClass({
       	<button onClick={this._onClickAdd}>Add</button>
       	<button onClick={this._onClickRemove}>Remove</button>
         <ProjectSection />
+        <UserSection />
       </div>
     );
   },

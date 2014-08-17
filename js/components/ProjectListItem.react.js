@@ -14,13 +14,17 @@
 
 var React                = require('react'), 
     ServerActionCreators = require('../actions/ServerActionCreators'),
+    cx                    = require('react/lib/cx'),
     ProjectListItem;
 
 ProjectListItem = React.createClass({
 
   render: function() {
     return (
-      <li className="list-item" onClick={this._onClick}>
+      <li className={cx({
+          'item': true,
+          'active': this.props.isActive
+      })} onClick={this._onClick}>
         <button>{++this.props.index}: {this.props.name}</button>
       </li>
     );
@@ -28,7 +32,7 @@ ProjectListItem = React.createClass({
 
   _onClick: function() {
 
-    ServerActionCreators.getAllProjects(this.props.count);
+    this.props.clickHandler(this.props.count);
 
   }
 
