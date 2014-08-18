@@ -1,6 +1,6 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher'),
     Constants     = require('../constants/Constants'),
-    WebAPIUtils   = require('../utils/WebAPIUtils'),
+    WebAPIUtils   = require('WebAPIUtils'), 
     ActionTypes   = Constants.ActionTypes;
 
 module.exports = {
@@ -12,6 +12,17 @@ module.exports = {
       type: ActionTypes.GET_ALL_PROJECTS,
 
       promise: WebAPIUtils.getAllProjects(count)
+
+    });
+  },
+
+  receiveAllProjects: function(rawProjects) {
+
+    AppDispatcher.handleServerAction({
+
+      type: ActionTypes.RECEIVE_RAW_PROJECTS,
+
+      rawProjects: rawProjects.data
 
     });
   },
@@ -46,17 +57,6 @@ module.exports = {
       type: ActionTypes.RECEIVE_RAW_USERS,
 
       rawUsers: rawUsers
-
-    });
-  },
-
-  receiveAllProjects: function(rawProjects) {
-
-    AppDispatcher.handleServerAction({
-
-      type: ActionTypes.RECEIVE_RAW_PROJECTS,
-
-      rawProjects: rawProjects
 
     });
   },

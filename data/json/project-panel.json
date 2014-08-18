@@ -1,0 +1,71 @@
+{
+   "status":"succeeded",
+   "data":{
+      "allelismSetAllelismCount":0,
+      "baseCatalogPanel":{
+         "activeInd":true,
+         "catalogPanelId":200000001,
+         "catalogPanelVersion":{
+            "draftVersion":null,
+            "majorVersion":1,
+            "minorVersion":0,
+            "status":"FINAL"
+         },
+         "description":"Returns all non-reference variants found in at least one case\" call set but absent from all \"control\" call sets. \"",
+         "documentationText":"More info",
+         "documentationUrl":"http://www.knome.com",
+         "name":"All Non-Reference",
+         "provider":{
+            "id":1,
+            "logo":"logo_path",
+            "name":"Knome",
+            "thisInstallationInd":true
+         },
+         "publishedComment":"First version.",
+         "publishedTimestampText":"2014-08-07",
+         "queries":[
+
+         ]
+      },
+      "catalogPanelId":0,
+      "catalogPanelProviderId":0,
+      "catalogPanelVersion":"",
+      "createdTimestampText":"2014-08-18 10:29:40",
+      "createdUserId":200000001,
+      "definitionTimestampText":"2014-08-18 10:29:35",
+      "description":"Returns all non-reference variants found in at least one case\" call set but absent from all \"control\" call sets. \"",
+      "documentationText":"More info",
+      "documentationUrl":"http://www.knome.com",
+      "executionTimestampText":"",
+      "lockedInd":false,
+      "modifiedInd":true,
+      "name":"All Non-Reference - converted",
+      "projectId":0,
+      "projectPanelId":100000000,
+      "projectPanelName":"",
+      "projectPanelWid":13,
+      "provider":{
+         "id":1,
+         "logo":"logo_path",
+         "name":"Knome",
+         "thisInstallationInd":true
+      },
+      "queries":[
+         {
+            "description":null,
+            "name":"All non-reference",
+            "projectPanelQueryId":100000000,
+            "projectPanelQueryWid":12
+         }
+      ],
+      "rendererJson":"",
+      "rendererRtf":"",
+      "reportId":0,
+      "reportInd":false,
+      "reportTitle":"",
+      "snapshot":"",
+      "snapshotSchemaVersion":"",
+      "updatedTimestampText":"2014-08-18 10:29:40",
+      "updatedUserId":200000001
+   }
+}

@@ -1,0 +1,20 @@
+{
+   "status":"succeeded",
+   "data":[
+      {
+         "arsCid":"NA-7901-R1.Z1",
+         "arsId":200000791,
+         "createdTimestamp":"2013-08-27 15:07:50",
+         "csCid":"NA-7901-R1.Z1.B1",
+         "csId":200000791,
+         "dataApprovalCd":"A",
+         "dataApprovalCdText":"Approved",
+         "dataLocationCd":"RES",
+         "dataLocationCdText":"Resident",
+         "dataStatusCd":"FIN",
+         "dataStatusCdText":"Finished",
+         "sampleId":200000791,
+         "ursId":200000791
+      }
+   ]
+}

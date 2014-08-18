@@ -1,0 +1,9 @@
+{
+   "status":"succeeded",
+   "data":{
+      "default_role":"Technician",
+      "mount_fs_path":"/Volumes/knosys02/qc/isys/ksuite/",
+      "STT":"true",
+      "STI":"true"
+   }
+}

@@ -1,0 +1,60 @@
+{
+   "status":"succeeded",
+   "data":{
+      "collaborators":[
+         {
+            "nameFirst":"Rafael",
+            "nameLast":"Chiti",
+            "nameMiddle":"B",
+            "userId":200000017
+         },
+         {
+            "nameFirst":"Ant",
+            "nameLast":"Kefeli",
+            "nameMiddle":"B",
+            "userId":200000018
+         }
+      ],
+      "createdTimestampText":"2013-08-27 15:07:18",
+      "createdUserId":200000001,
+      "createdUserNameFirst":"User",
+      "createdUserNameLast":"One",
+      "createdUserNameMiddle":"B",
+      "description":"Contains data from kdb-subset and test VCFs..",
+      "leadInvestigatorId":null,
+      "leadInvestigatorNameFirst":null,
+      "leadInvestigatorNameLast":null,
+      "leadInvestigatorNameMiddle":null,
+      "name":"Trio Target Demo",
+      "notes":"",
+      "panelCount":2,
+      "priorityCd":"01",
+      "priorityCdText":"High",
+      "projectCid":"PROJECT-800",
+      "projectId":200000008,
+      "rdcId":2,
+      "rdcName":"RDC - Second Release",
+      "reasonForCanceling":null,
+      "refSequenceSummary":{
+         "rdsCd":"01",
+         "rdsName":"Reference sequence (human)",
+         "rdsVersionId":1,
+         "rdsVersionText":"HG-19/GRCH37",
+         "sourceCd":"03",
+         "sourceName":"NCBI"
+      },
+      "seqCount":3,
+      "setupCompleteInd":true,
+      "situationCd":"NA",
+      "situationCdText":"",
+      "statusCd":"INT",
+      "statusCdText":"Interpreting",
+      "statusCdWhenCanceled":"",
+      "statusCdWhenCanceledText":"",
+      "updatedTimestampText":"2014-08-18 10:29:40",
+      "updatedUserId":200000001,
+      "updatedUserNameFirst":"User",
+      "updatedUserNameLast":"One",
+      "updatedUserNameMiddle":"B"
+   }
+}

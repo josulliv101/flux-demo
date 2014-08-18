@@ -1,0 +1,2129 @@
+{"status":"succeeded", "data":{
+   "pprProjectPanelReportV001" : {
+      "createdTimestamp" : "2014-08-15T10:48:57.898",
+      "createdUser" : {
+         "nameFirst" : "User",
+         "nameMiddle" : "B",
+         "nameLast" : "One",
+         "userId" : 200000001
+      },
+      "installationProviderId" : 1,
+      "installationProviderName" : "Knome",
+      "project" : {
+         "createdTimestamp" : "2013-08-27T15:07:18.0",
+         "createdUser" : {
+            "nameFirst" : "User",
+            "nameMiddle" : "B",
+            "nameLast" : "One",
+            "userId" : 200000001
+         },
+         "description" : "Contains data from kdb-subset and test VCFs..",
+         "leadInvestigator" : {
+         },
+         "name" : "Trio Target Demo",
+         "notes" : "",
+         "panel" : {
+            "catalogPanelId" : 0,
+            "catalogPanelName" : "NA",
+            "catalogPanelProviderId" : 0,
+            "catalogPanelProviderName" : "NA",
+            "createdTimestamp" : "2013-08-27T15:07:18.0",
+            "createdUser" : {
+               "nameFirst" : "User",
+               "nameMiddle" : "B",
+               "nameLast" : "One",
+               "userId" : 200000001
+            },
+            "description" : "Basic Panel",
+            "documentationUrl" : "http://www.knome.com",
+            "lockedInd" : false,
+            "name" : "Basic Panel",
+            "projectPanelId" : 200000080,
+            "queries" : [ {
+               "queryId" : 200000080,
+               "name" : "Called in Any",
+               "criteriaVersion" : 0,
+               "criteria" : {
+                  "cscQueryCriteria" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<CscQueryCriteriaV2><regionMode>TYPE</regionMode><queryName>Called in Any</queryName><queryMode><bins><parentModeType>CALLED_IN_ANY</parentModeType><name>Include (Any)</name><checkboxes><name>0</name><changeable>false</changeable><checked>true</checked><acceptCount>0</acceptCount></checkboxes><checkboxes><name>1</name><changeable>false</changeable><checked>true</checked><acceptCount>1</acceptCount></checkboxes><checkboxes><name>2</name><changeable>false</changeable><checked>true</checked><acceptCount>2</acceptCount></checkboxes><checkboxes><name>N/A</name><changeable>false</changeable><checked>false</checked><acceptCount>-1</acceptCount></checkboxes><minSequences>1</minSequences><sequenceCountNeededToAccept>1</sequenceCountNeededToAccept><nameSettable>false</nameSettable><sequenceList>200000392</sequenceList></bins><modeType>CALLED_IN_ANY</modeType></queryMode><typeProteinCodingInclusion>true</typeProteinCodingInclusion><typeLincRnaInclusion>false</typeLincRnaInclusion><typeMiRnaInclusion>false</typeMiRnaInclusion><typeAllOtherInclusion>false</typeAllOtherInclusion><variantClassSubsInclusion>true</variantClassSubsInclusion><variantClassInsertionsInclusion>true</variantClassInsertionsInclusion><variantClassDeletionsInclusion>true</variantClassDeletionsInclusion><variantClassReferenceAlleleInclusion>false</variantClassReferenceAlleleInclusion><functionalCategoryUpstreamInclusion>false</functionalCategoryUpstreamInclusion><functionalCategory5PrimeInclusion>false</functionalCategory5PrimeInclusion><functionalCategoryIntronicInclusion>false</functionalCategoryIntronicInclusion><functionalCategory3PrimeInclusion>false</functionalCategory3PrimeInclusion><functionalCategoryDownstreamInclusion>false</functionalCategoryDownstreamInclusion><functionalCategoryProteinEffectConsidered>true</functionalCategoryProteinEffectConsidered><functionalCategoryMissenseInclusion>true</functionalCategoryMissenseInclusion><functionalCategoryNonsenseInclusion>true</functionalCategoryNonsenseInclusion><functionalCategoryFrameshiftInclusion>true</functionalCategoryFrameshiftInclusion><functionalCategoryInFrameIndelInclusion>true</functionalCategoryInFrameIndelInclusion><functionalCategoryReadthroughInclusion>true</functionalCategoryReadthroughInclusion><functionalCategorySynonymousInclusion>false</functionalCategorySynonymousInclusion><functionalCategoryStartLossInclusion>true</functionalCategoryStartLossInclusion><functionalCategorySpliceInclusion>true</functionalCategorySpliceInclusion><functionalCategorySpliceType>BROAD</functionalCategorySpliceType><treatMissingGenotypeAsType>NA</treatMissingGenotypeAsType><metricsCallConfidenceMinInclusion>true</metricsCallConfidenceMinInclusion><metricsCallConfidenceMin>20.0</metricsCallConfidenceMin><metricsGATKQualityFilterInclusion>true</metricsGATKQualityFilterInclusion><metricsCallDepthMinInclusion>false</metricsCallDepthMinInclusion><metricsCallDepthMin>30</metricsCallDepthMin><metricsCallDepthMaxInclusion>false</metricsCallDepthMaxInclusion><metricsCallDepthMax>0</metricsCallDepthMax><metricsGenotypeProbabilityInclusion>true</metricsGenotypeProbabilityInclusion><metricsGenotypeProbability>0.95</metricsGenotypeProbability><effectPhastConsScoreMinInclusion>false</effectPhastConsScoreMinInclusion><effectPhastConsScoreMin>0.0</effectPhastConsScoreMin><effectConaccConservationScoreInclusion>false</effectConaccConservationScoreInclusion><effectConaccConservationScore>0.0</effectConaccConservationScore><effectConaccAccelerationScoreInclusion>false</effectConaccAccelerationScoreInclusion><effectConaccAccelerationScore>0.0</effectConaccAccelerationScore></CscQueryCriteriaV2>"
+               }
+            } ],
+            "siteDetails" : [ {
+               "selectedGenesTableData" : [ ],
+               "chromId" : "05",
+               "startCoord" : 1009198,
+               "endCoord" : 1009198,
+               "chromStartUrl" : "http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr5:1009168-1009228",
+               "variants" : [ "A" ],
+               "otherVariants" : [ ],
+               "dbSNPUrl" : [ ],
+               "dbSNPText" : [ ],
+               "phastconsScore" : 0.854,
+               "phylopScore" : 0.892,
+               "queries" : [ "Called in Any" ],
+               "refAllele" : "G",
+               "internalAssociations" : [ ],
+               "externalAssociations" : [ ],
+               "callSetTableData" : [ {
+                  "callConf" : 29,
+                  "callSetId" : "NA-3902-R1.Z1.B1",
+                  "genotype" : "A/A",
+                  "order" : 1,
+                  "passFilter" : true,
+                  "queryBin" : [ "Called in Any-Include (Any)" ],
+                  "readDepth" : 21,
+                  "subjectIdName" : "NEW-36534 / Carlos Pacheo",
+                  "subjectSampleCategory" : "Normal",
+                  "subjectSex" : "M"
+               }, {
+                  "callConf" : 29,
+                  "callSetId" : "NA-7900-R1.Z1.B1",
+                  "genotype" : "A/G",
+                  "order" : 2,
+                  "passFilter" : true,
+                  "readDepth" : 21,
+                  "subjectIdName" : "PT-09834 / Frank Pacheo",
+                  "subjectSampleCategory" : "Normal",
+                  "subjectSex" : "M"
+               }, {
+                  "callConf" : 29,
+                  "callSetId" : "NA-7901-R1.Z1.B1",
+                  "genotype" : "A/G",
+                  "order" : 3,
+                  "passFilter" : true,
+                  "readDepth" : 21,
+                  "subjectIdName" : "PT-23422 / Laura Pacheo",
+                  "subjectSampleCategory" : "Normal",
+                  "subjectSex" : "F"
+               } ],
+               "genes" : [ {
+                  "genomeGeneId" : 145506,
+                  "startCoord" : 1008943,
+                  "endCoord" : 1039058,
+                  "symbol" : "NKD2",
+                  "name" : "naked cuticle homolog 2 (Drosophila) [Source:HGNC Symbol;Acc:17046]",
+                  "geneType" : "mRNA",
+                  "pseudoGeneInd" : false,
+                  "strandInd" : true,
+                  "gene" : {
+                     "geneId" : 871782405,
+                     "symbol" : "NKD2",
+                     "name" : "naked cuticle homolog 2 (Drosophila) [Source:HGNC Symbol;Acc:17046]",
+                     "aliases" : [ {
+                        "alias" : "ENSG00000145506",
+                        "stewardCd" : "04",
+                        "stewardName" : "ArrayExpress"
+                     }, {
+                        "alias" : "Hs.240951",
+                        "stewardCd" : "06",
+                        "stewardName" : "UniGene"
+                     }, {
+                        "alias" : "Naked2",
+                        "stewardCd" : "69",
+                        "stewardName" : "Ensembl external synonms"
+                     }, {
+                        "alias" : "NAKED CUTICLE, DROSOPHILA, HOMOLOG [*607852]",
+                        "stewardCd" : "09",
+                        "stewardName" : "MIM_GENE"
+                     }, {
+                        "alias" : "NKD2",
+                        "stewardCd" : "01",
+                        "stewardName" : "HGNC"
+                     }, {
+                        "alias" : "NKD2",
+                        "stewardCd" : "02",
+                        "stewardName" : "EntrezGene"
+                     }, {
+                        "alias" : "NKD2",
+                        "stewardCd" : "07",
+                        "stewardName" : "WikiGene"
+                     }, {
+                        "alias" : "NKD2",
+                        "stewardCd" : "70",
+                        "stewardName" : "Uniprot_gn"
+                     }, {
+                        "alias" : "OTTHUMG00000090348",
+                        "stewardCd" : "03",
+                        "stewardName" : "OTTG"
+                     } ]
+                  },
+                  "aliases" : [ {
+                     "alias" : "Naked2",
+                     "stewardCd" : "69",
+                     "stewardName" : "Ensembl external synonms"
+                  } ],
+                  "transcripts" : {
+                     "entry" : [ {
+                        "key" : 523688,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 523688,
+                           "transcriptName" : "ENST00000523688",
+                           "cdsStart" : 0,
+                           "cdsEnd" : 0,
+                           "preferredInd" : false,
+                           "biotype" : "retained_intron",
+                           "cdsSpecCd" : "NULL",
+                           "exons" : [ {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036371,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037919,
+                              "exonEnd" : 1038430
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "G",
+                                 "value" : {
+                                    "variant" : "G",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 523688,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              }, {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 523688,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "ENST00000523688",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2-006",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000374691",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000374691",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           } ]
+                        }
+                     }, {
+                        "key" : 513296,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 513296,
+                           "transcriptName" : "ENST00000513296",
+                           "cdsStart" : 0,
+                           "cdsEnd" : 0,
+                           "preferredInd" : false,
+                           "biotype" : "retained_intron",
+                           "cdsSpecCd" : "NULL",
+                           "exons" : [ {
+                              "exonStart" : 1035919,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037919,
+                              "exonEnd" : 1038399
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "G",
+                                 "value" : {
+                                    "variant" : "G",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 513296,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              }, {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 513296,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "ENST00000513296",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2-004",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000365552",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000365552",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           } ]
+                        }
+                     }, {
+                        "key" : 537972,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 537972,
+                           "transcriptName" : "ENST00000537972",
+                           "cdsStart" : 1009172,
+                           "cdsEnd" : 1037783,
+                           "utr5Start" : 1009167,
+                           "utr5End" : 1009172,
+                           "utr3Start" : 1037783,
+                           "utr3End" : 1037783,
+                           "preferredInd" : false,
+                           "ccdsId" : "CCDS59486",
+                           "biotype" : "protein_coding",
+                           "cdsSpecCd" : "B",
+                           "exons" : [ {
+                              "exonStart" : 1009167,
+                              "exonEnd" : 1009197
+                           }, {
+                              "exonStart" : 1009293,
+                              "exonEnd" : 1009329
+                           }, {
+                              "exonStart" : 1009595,
+                              "exonEnd" : 1009675
+                           }, {
+                              "exonStart" : 1032266,
+                              "exonEnd" : 1032327
+                           }, {
+                              "exonStart" : 1033486,
+                              "exonEnd" : 1033614
+                           }, {
+                              "exonStart" : 1034349,
+                              "exonEnd" : 1034445
+                           }, {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036371,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037634,
+                              "exonEnd" : 1037783
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "G",
+                                 "value" : {
+                                    "variant" : "G",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 537972,
+                                    "dnaChange" : "c.25+1G>G",
+                                    "regions" : [ {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    } ],
+                                    "splicePosition" : 1,
+                                    "splicePositionRegion" : {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    }
+                                 }
+                              }, {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 537972,
+                                    "dnaChange" : "c.25+1G>A",
+                                    "regions" : [ {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    } ],
+                                    "splicePosition" : 1,
+                                    "splicePositionRegion" : {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "CCDS59486.1",
+                              "stewardCd" : "34",
+                              "stewardName" : "CCDS"
+                           }, {
+                              "alias" : "ENST00000537972",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "uc010itf.2",
+                              "stewardCd" : "29",
+                              "stewardName" : "UCSC"
+                           } ]
+                        }
+                     }, {
+                        "key" : 274150,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 274150,
+                           "transcriptName" : "ENST00000274150",
+                           "cdsStart" : 1009172,
+                           "cdsEnd" : 1037783,
+                           "utr5Start" : 1009076,
+                           "utr5End" : 1009172,
+                           "utr3Start" : 1037783,
+                           "utr3End" : 1038797,
+                           "preferredInd" : false,
+                           "ccdsId" : "CCDS59486",
+                           "biotype" : "protein_coding",
+                           "cdsSpecCd" : "B",
+                           "exons" : [ {
+                              "exonStart" : 1009076,
+                              "exonEnd" : 1009197
+                           }, {
+                              "exonStart" : 1009293,
+                              "exonEnd" : 1009329
+                           }, {
+                              "exonStart" : 1009595,
+                              "exonEnd" : 1009675
+                           }, {
+                              "exonStart" : 1032266,
+                              "exonEnd" : 1032327
+                           }, {
+                              "exonStart" : 1033486,
+                              "exonEnd" : 1033614
+                           }, {
+                              "exonStart" : 1034349,
+                              "exonEnd" : 1034445
+                           }, {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036371,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037634,
+                              "exonEnd" : 1037813
+                           }, {
+                              "exonStart" : 1037919,
+                              "exonEnd" : 1038797
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "G",
+                                 "value" : {
+                                    "variant" : "G",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 274150,
+                                    "dnaChange" : "c.25+1G>G",
+                                    "regions" : [ {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    } ],
+                                    "splicePosition" : 1,
+                                    "splicePositionRegion" : {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    }
+                                 }
+                              }, {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 274150,
+                                    "dnaChange" : "c.25+1G>A",
+                                    "regions" : [ {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    } ],
+                                    "splicePosition" : 1,
+                                    "splicePositionRegion" : {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "CCDS59486.1",
+                              "stewardCd" : "34",
+                              "stewardName" : "CCDS"
+                           }, {
+                              "alias" : "ENST00000274150",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2-002",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "NM_001271082.1",
+                              "stewardCd" : "35",
+                              "stewardName" : "RefSeq_mRNA"
+                           }, {
+                              "alias" : "OTTHUMT00000365550",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           }, {
+                              "alias" : "OTTHUMT00000365550",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "uc010itf.2",
+                              "stewardCd" : "29",
+                              "stewardName" : "UCSC"
+                           } ]
+                        }
+                     }, {
+                        "key" : 519933,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 519933,
+                           "transcriptName" : "ENST00000519933",
+                           "cdsStart" : 0,
+                           "cdsEnd" : 0,
+                           "preferredInd" : false,
+                           "biotype" : "retained_intron",
+                           "cdsSpecCd" : "NULL",
+                           "exons" : [ {
+                              "exonStart" : 1034250,
+                              "exonEnd" : 1034445
+                           }, {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036224,
+                              "exonEnd" : 1036287
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "G",
+                                 "value" : {
+                                    "variant" : "G",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 519933,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              }, {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 519933,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "ENST00000519933",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2-005",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000374690",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000374690",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           } ]
+                        }
+                     }, {
+                        "key" : 296849,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 296849,
+                           "transcriptName" : "ENST00000296849",
+                           "cdsStart" : 1009172,
+                           "cdsEnd" : 1038488,
+                           "utr5Start" : 1008943,
+                           "utr5End" : 1009172,
+                           "utr3Start" : 1038488,
+                           "utr3End" : 1039058,
+                           "preferredInd" : true,
+                           "ccdsId" : "CCDS3859",
+                           "biotype" : "protein_coding",
+                           "cdsSpecCd" : "B",
+                           "exons" : [ {
+                              "exonStart" : 1008943,
+                              "exonEnd" : 1009197
+                           }, {
+                              "exonStart" : 1009293,
+                              "exonEnd" : 1009329
+                           }, {
+                              "exonStart" : 1009595,
+                              "exonEnd" : 1009675
+                           }, {
+                              "exonStart" : 1032266,
+                              "exonEnd" : 1032327
+                           }, {
+                              "exonStart" : 1033486,
+                              "exonEnd" : 1033614
+                           }, {
+                              "exonStart" : 1034349,
+                              "exonEnd" : 1034445
+                           }, {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036371,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037919,
+                              "exonEnd" : 1039058
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "G",
+                                 "value" : {
+                                    "variant" : "G",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 296849,
+                                    "dnaChange" : "c.25+1G>G",
+                                    "regions" : [ {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    } ],
+                                    "splicePosition" : 1,
+                                    "splicePositionRegion" : {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    }
+                                 }
+                              }, {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 296849,
+                                    "dnaChange" : "c.25+1G>A",
+                                    "regions" : [ {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    } ],
+                                    "splicePosition" : 1,
+                                    "splicePositionRegion" : {
+                                       "number" : 1,
+                                       "formattedRegion" : "Intron 1"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "CCDS3859.1",
+                              "stewardCd" : "34",
+                              "stewardName" : "CCDS"
+                           }, {
+                              "alias" : "ENST00000296849",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2",
+                              "stewardCd" : "01",
+                              "stewardName" : "HGNC"
+                           }, {
+                              "alias" : "NKD2-001",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "NM_033120.3",
+                              "stewardCd" : "35",
+                              "stewardName" : "RefSeq_mRNA"
+                           }, {
+                              "alias" : "OTTHUMT00000206720",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           }, {
+                              "alias" : "OTTHUMT00000206720",
+                              "stewardCd" : "33",
+                              "stewardName" : "shares_CDS_and_UTR_with_OTTT"
+                           }, {
+                              "alias" : "OTTHUMT00000206720",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "uc003jbt.2",
+                              "stewardCd" : "29",
+                              "stewardName" : "UCSC"
+                           } ]
+                        }
+                     }, {
+                        "key" : 382730,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 382730,
+                           "transcriptName" : "ENST00000382730",
+                           "cdsStart" : 1036894,
+                           "cdsEnd" : 1038721,
+                           "utr5Start" : 1036894,
+                           "utr5End" : 1036894,
+                           "utr3Start" : 1038721,
+                           "utr3End" : 1038721,
+                           "preferredInd" : false,
+                           "biotype" : "protein_coding",
+                           "cdsSpecCd" : "B",
+                           "exons" : [ {
+                              "exonStart" : 1036894,
+                              "exonEnd" : 1037018
+                           }, {
+                              "exonStart" : 1038338,
+                              "exonEnd" : 1038721
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "G",
+                                 "value" : {
+                                    "variant" : "G",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 382730,
+                                    "dnaChange" : "-27697G>G upstream",
+                                    "regions" : [ {
+                                       "formattedRegion" : "Upstream"
+                                    } ],
+                                    "splicePosition" : -27821,
+                                    "splicePositionRegion" : {
+                                       "formattedRegion" : "Upstream"
+                                    }
+                                 }
+                              }, {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 382730,
+                                    "dnaChange" : "-27697G>A upstream",
+                                    "regions" : [ {
+                                       "formattedRegion" : "Upstream"
+                                    } ],
+                                    "splicePosition" : -27821,
+                                    "splicePositionRegion" : {
+                                       "formattedRegion" : "Upstream"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "ENST00000382730",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           } ]
+                        }
+                     } ]
+                  },
+                  "geneId" : 871782405,
+                  "geneSymbol" : "NKD2",
+                  "genomeGeneEntrezUrl" : "http://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=NKD2[sym]&Term=Homo%20sapiens[organism]",
+                  "genomeGeneEnsemblUrl" : "http://useast.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000145506",
+                  "geneName" : "naked cuticle homolog 2 (Drosophila)",
+                  "geneOntology" : [ "exocytosis (GO:0006887) Golgi vesicle fusion to target membrane (GO:0048210) negative regulation of canonical Wnt signaling pathway (GO:0090090) positive regulation of establishment of protein localization to plasma membrane (GO:0090004) positive regulation of proteasomal ubiquitin-dependent protein catabolic process (GO:0032436) positive regulation of protein processing (GO:0010954) protein targeting to plasma membrane (GO:0072661) Wnt signaling pathway (GO:0016055)", "basolateral plasma membrane (GO:0016323) cell periphery (GO:0071944) cytoplasmic membrane-bounded vesicle (GO:0016023) cytoplasmic vesicle (GO:0031410) lateral plasma membrane (GO:0016328)", "calcium ion binding (GO:0005509) growth factor binding (GO:0019838) protein binding (GO:0005515) ubiquitin protein ligase binding (GO:0031625)" ],
+                  "geneDescription" : "This gene encodes a member of a family of proteins that function as negative regulators of Wnt receptor signaling through interaction with Dishevelled family members. The encoded protein participates in the delivery of transforming growth factor alpha-containing vesicles to the cell membrane. Alternatively spliced transcript variants encoding multiple isoforms have been observed for this gene. [provided by RefSeq, Aug 2012]",
+                  "strand" : "Forward",
+                  "genomeGeneBiotype" : "protein_coding"
+               } ],
+               "frequenciesTableData" : [ {
+                  "childFrequencies" : [ {
+                     "childFrequencies" : [ {
+                        "region" : "African-American (SW US)"
+                     }, {
+                        "region" : "Luhya (Kenya)"
+                     }, {
+                        "region" : "Yoruba (Nigeria)"
+                     } ],
+                     "region" : "African/African-American"
+                  }, {
+                     "childFrequencies" : [ {
+                        "region" : "Chinese (Han, Beijing)"
+                     }, {
+                        "region" : "Chinese (Han, South China)"
+                     }, {
+                        "region" : "Japanese"
+                     } ],
+                     "region" : "Asian"
+                  }, {
+                     "childFrequencies" : [ {
+                        "region" : "British"
+                     }, {
+                        "region" : "Finnish"
+                     }, {
+                        "region" : "NW European (US)"
+                     }, {
+                        "region" : "Spanish"
+                     }, {
+                        "region" : "Tuscan (Italy)"
+                     } ],
+                     "region" : "European/European-American"
+                  }, {
+                     "childFrequencies" : [ {
+                        "region" : "Colombian"
+                     }, {
+                        "region" : "Mexican (US)"
+                     }, {
+                        "region" : "Puerto Rican"
+                     } ],
+                     "region" : "Other"
+                  } ],
+                  "region" : "World"
+               } ],
+               "transcriptTableData" : [ {
+                  "bioType" : "protein_coding",
+                  "dnaChange" : [ "c.25+1G>A" ],
+                  "ensembl" : "ENST00000537972",
+                  "geneSymbol" : "NKD2",
+                  "polyphenPrediction" : [ null ],
+                  "polyphenScore" : [ null ],
+                  "region" : [ "Intron 1" ],
+                  "selectedInd" : false,
+                  "siftPrediction" : [ null ],
+                  "siftScore" : [ null ],
+                  "splice" : [ null ],
+                  "spliceDistanceFormat" : "java.text.DecimalFormat@67507",
+                  "splicePosition" : [ null ],
+                  "translation" : [ null ]
+               }, {
+                  "bioType" : "protein_coding",
+                  "dnaChange" : [ "c.25+1G>A" ],
+                  "ensembl" : "ENST00000274150",
+                  "geneSymbol" : "NKD2",
+                  "polyphenPrediction" : [ null ],
+                  "polyphenScore" : [ null ],
+                  "region" : [ "Intron 1" ],
+                  "selectedInd" : false,
+                  "siftPrediction" : [ null ],
+                  "siftScore" : [ null ],
+                  "splice" : [ null ],
+                  "spliceDistanceFormat" : "java.text.DecimalFormat@67507",
+                  "splicePosition" : [ null ],
+                  "transcriptName" : "NM_001271082.1",
+                  "translation" : [ null ]
+               }, {
+                  "bioType" : "protein_coding",
+                  "dnaChange" : [ "c.25+1G>A" ],
+                  "ensembl" : "ENST00000296849",
+                  "geneSymbol" : "NKD2",
+                  "polyphenPrediction" : [ null ],
+                  "polyphenScore" : [ null ],
+                  "region" : [ "Intron 1" ],
+                  "selectedInd" : false,
+                  "siftPrediction" : [ null ],
+                  "siftScore" : [ null ],
+                  "splice" : [ null ],
+                  "spliceDistanceFormat" : "java.text.DecimalFormat@67507",
+                  "splicePosition" : [ null ],
+                  "transcriptName" : "NM_033120.3",
+                  "translation" : [ null ]
+               } ]
+            }, {
+               "selectedGenesTableData" : [ ],
+               "chromId" : "05",
+               "startCoord" : 1009311,
+               "endCoord" : 1009310,
+               "chromStartUrl" : "http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr5:1009281-1009340",
+               "variants" : [ "A" ],
+               "otherVariants" : [ ],
+               "dbSNPUrl" : [ ],
+               "dbSNPText" : [ ],
+               "phastconsScore" : 0.657,
+               "phylopScore" : -0.851,
+               "queries" : [ "Called in Any" ],
+               "refAllele" : "-",
+               "internalAssociations" : [ ],
+               "externalAssociations" : [ ],
+               "callSetTableData" : [ {
+                  "callConf" : 100,
+                  "callSetId" : "NA-3902-R1.Z1.B1",
+                  "genotype" : "A/A",
+                  "order" : 1,
+                  "passFilter" : true,
+                  "queryBin" : [ "Called in Any-Include (Any)" ],
+                  "readDepth" : 25,
+                  "subjectIdName" : "NEW-36534 / Carlos Pacheo",
+                  "subjectSampleCategory" : "Normal",
+                  "subjectSex" : "M"
+               }, {
+                  "callConf" : 100,
+                  "callSetId" : "NA-7900-R1.Z1.B1",
+                  "genotype" : "A/-",
+                  "order" : 2,
+                  "passFilter" : true,
+                  "readDepth" : 25,
+                  "subjectIdName" : "PT-09834 / Frank Pacheo",
+                  "subjectSampleCategory" : "Normal",
+                  "subjectSex" : "M"
+               }, {
+                  "callConf" : 100,
+                  "callSetId" : "NA-7901-R1.Z1.B1",
+                  "genotype" : "A/-",
+                  "order" : 3,
+                  "passFilter" : true,
+                  "readDepth" : 25,
+                  "subjectIdName" : "PT-23422 / Laura Pacheo",
+                  "subjectSampleCategory" : "Normal",
+                  "subjectSex" : "F"
+               } ],
+               "genes" : [ {
+                  "genomeGeneId" : 145506,
+                  "startCoord" : 1008943,
+                  "endCoord" : 1039058,
+                  "symbol" : "NKD2",
+                  "name" : "naked cuticle homolog 2 (Drosophila) [Source:HGNC Symbol;Acc:17046]",
+                  "geneType" : "mRNA",
+                  "pseudoGeneInd" : false,
+                  "strandInd" : true,
+                  "gene" : {
+                     "geneId" : 871782405,
+                     "symbol" : "NKD2",
+                     "name" : "naked cuticle homolog 2 (Drosophila) [Source:HGNC Symbol;Acc:17046]",
+                     "aliases" : [ {
+                        "alias" : "ENSG00000145506",
+                        "stewardCd" : "04",
+                        "stewardName" : "ArrayExpress"
+                     }, {
+                        "alias" : "Hs.240951",
+                        "stewardCd" : "06",
+                        "stewardName" : "UniGene"
+                     }, {
+                        "alias" : "Naked2",
+                        "stewardCd" : "69",
+                        "stewardName" : "Ensembl external synonms"
+                     }, {
+                        "alias" : "NAKED CUTICLE, DROSOPHILA, HOMOLOG [*607852]",
+                        "stewardCd" : "09",
+                        "stewardName" : "MIM_GENE"
+                     }, {
+                        "alias" : "NKD2",
+                        "stewardCd" : "01",
+                        "stewardName" : "HGNC"
+                     }, {
+                        "alias" : "NKD2",
+                        "stewardCd" : "02",
+                        "stewardName" : "EntrezGene"
+                     }, {
+                        "alias" : "NKD2",
+                        "stewardCd" : "07",
+                        "stewardName" : "WikiGene"
+                     }, {
+                        "alias" : "NKD2",
+                        "stewardCd" : "70",
+                        "stewardName" : "Uniprot_gn"
+                     }, {
+                        "alias" : "OTTHUMG00000090348",
+                        "stewardCd" : "03",
+                        "stewardName" : "OTTG"
+                     } ]
+                  },
+                  "aliases" : [ {
+                     "alias" : "Naked2",
+                     "stewardCd" : "69",
+                     "stewardName" : "Ensembl external synonms"
+                  } ],
+                  "transcripts" : {
+                     "entry" : [ {
+                        "key" : 523688,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 523688,
+                           "transcriptName" : "ENST00000523688",
+                           "cdsStart" : 0,
+                           "cdsEnd" : 0,
+                           "preferredInd" : false,
+                           "biotype" : "retained_intron",
+                           "cdsSpecCd" : "NULL",
+                           "exons" : [ {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036371,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037919,
+                              "exonEnd" : 1038430
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 523688,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              }, {
+                                 "key" : "-",
+                                 "value" : {
+                                    "variant" : "-",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 523688,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "ENST00000523688",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2-006",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000374691",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000374691",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           } ]
+                        }
+                     }, {
+                        "key" : 513296,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 513296,
+                           "transcriptName" : "ENST00000513296",
+                           "cdsStart" : 0,
+                           "cdsEnd" : 0,
+                           "preferredInd" : false,
+                           "biotype" : "retained_intron",
+                           "cdsSpecCd" : "NULL",
+                           "exons" : [ {
+                              "exonStart" : 1035919,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037919,
+                              "exonEnd" : 1038399
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 513296,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              }, {
+                                 "key" : "-",
+                                 "value" : {
+                                    "variant" : "-",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 513296,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "ENST00000513296",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2-004",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000365552",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000365552",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           } ]
+                        }
+                     }, {
+                        "key" : 537972,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 537972,
+                           "transcriptName" : "ENST00000537972",
+                           "cdsStart" : 1009172,
+                           "cdsEnd" : 1037783,
+                           "utr5Start" : 1009167,
+                           "utr5End" : 1009172,
+                           "utr3Start" : 1037783,
+                           "utr3End" : 1037783,
+                           "preferredInd" : false,
+                           "ccdsId" : "CCDS59486",
+                           "biotype" : "protein_coding",
+                           "cdsSpecCd" : "B",
+                           "exons" : [ {
+                              "exonStart" : 1009167,
+                              "exonEnd" : 1009197
+                           }, {
+                              "exonStart" : 1009293,
+                              "exonEnd" : 1009329
+                           }, {
+                              "exonStart" : 1009595,
+                              "exonEnd" : 1009675
+                           }, {
+                              "exonStart" : 1032266,
+                              "exonEnd" : 1032327
+                           }, {
+                              "exonStart" : 1033486,
+                              "exonEnd" : 1033614
+                           }, {
+                              "exonStart" : 1034349,
+                              "exonEnd" : 1034445
+                           }, {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036371,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037634,
+                              "exonEnd" : 1037783
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 537972,
+                                    "dnaChange" : "c.42_43insA",
+                                    "translationEffect" : "FS",
+                                    "proteinChange" : "p.Arg15fs",
+                                    "regions" : [ {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    } ],
+                                    "splicePosition" : 18,
+                                    "splicePositionRegion" : {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    }
+                                 }
+                              }, {
+                                 "key" : "-",
+                                 "value" : {
+                                    "variant" : "-",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 537972,
+                                    "dnaChange" : "c.42_43ins-",
+                                    "translationEffect" : "SYN",
+                                    "proteinChange" : "p.(=)",
+                                    "regions" : [ {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    } ],
+                                    "splicePosition" : 18,
+                                    "splicePositionRegion" : {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "CCDS59486.1",
+                              "stewardCd" : "34",
+                              "stewardName" : "CCDS"
+                           }, {
+                              "alias" : "ENST00000537972",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "uc010itf.2",
+                              "stewardCd" : "29",
+                              "stewardName" : "UCSC"
+                           } ]
+                        }
+                     }, {
+                        "key" : 274150,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 274150,
+                           "transcriptName" : "ENST00000274150",
+                           "cdsStart" : 1009172,
+                           "cdsEnd" : 1037783,
+                           "utr5Start" : 1009076,
+                           "utr5End" : 1009172,
+                           "utr3Start" : 1037783,
+                           "utr3End" : 1038797,
+                           "preferredInd" : false,
+                           "ccdsId" : "CCDS59486",
+                           "biotype" : "protein_coding",
+                           "cdsSpecCd" : "B",
+                           "exons" : [ {
+                              "exonStart" : 1009076,
+                              "exonEnd" : 1009197
+                           }, {
+                              "exonStart" : 1009293,
+                              "exonEnd" : 1009329
+                           }, {
+                              "exonStart" : 1009595,
+                              "exonEnd" : 1009675
+                           }, {
+                              "exonStart" : 1032266,
+                              "exonEnd" : 1032327
+                           }, {
+                              "exonStart" : 1033486,
+                              "exonEnd" : 1033614
+                           }, {
+                              "exonStart" : 1034349,
+                              "exonEnd" : 1034445
+                           }, {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036371,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037634,
+                              "exonEnd" : 1037813
+                           }, {
+                              "exonStart" : 1037919,
+                              "exonEnd" : 1038797
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 274150,
+                                    "dnaChange" : "c.42_43insA",
+                                    "translationEffect" : "FS",
+                                    "proteinChange" : "p.Arg15fs",
+                                    "regions" : [ {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    } ],
+                                    "splicePosition" : 18,
+                                    "splicePositionRegion" : {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    }
+                                 }
+                              }, {
+                                 "key" : "-",
+                                 "value" : {
+                                    "variant" : "-",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 274150,
+                                    "dnaChange" : "c.42_43ins-",
+                                    "translationEffect" : "SYN",
+                                    "proteinChange" : "p.(=)",
+                                    "regions" : [ {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    } ],
+                                    "splicePosition" : 18,
+                                    "splicePositionRegion" : {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "CCDS59486.1",
+                              "stewardCd" : "34",
+                              "stewardName" : "CCDS"
+                           }, {
+                              "alias" : "ENST00000274150",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2-002",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "NM_001271082.1",
+                              "stewardCd" : "35",
+                              "stewardName" : "RefSeq_mRNA"
+                           }, {
+                              "alias" : "OTTHUMT00000365550",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           }, {
+                              "alias" : "OTTHUMT00000365550",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "uc010itf.2",
+                              "stewardCd" : "29",
+                              "stewardName" : "UCSC"
+                           } ]
+                        }
+                     }, {
+                        "key" : 519933,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 519933,
+                           "transcriptName" : "ENST00000519933",
+                           "cdsStart" : 0,
+                           "cdsEnd" : 0,
+                           "preferredInd" : false,
+                           "biotype" : "retained_intron",
+                           "cdsSpecCd" : "NULL",
+                           "exons" : [ {
+                              "exonStart" : 1034250,
+                              "exonEnd" : 1034445
+                           }, {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036224,
+                              "exonEnd" : 1036287
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 519933,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              }, {
+                                 "key" : "-",
+                                 "value" : {
+                                    "variant" : "-",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 519933,
+                                    "splicePositionRegion" : {
+                                       "number" : 0,
+                                       "formattedRegion" : ""
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "ENST00000519933",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2-005",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000374690",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "OTTHUMT00000374690",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           } ]
+                        }
+                     }, {
+                        "key" : 296849,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 296849,
+                           "transcriptName" : "ENST00000296849",
+                           "cdsStart" : 1009172,
+                           "cdsEnd" : 1038488,
+                           "utr5Start" : 1008943,
+                           "utr5End" : 1009172,
+                           "utr3Start" : 1038488,
+                           "utr3End" : 1039058,
+                           "preferredInd" : true,
+                           "ccdsId" : "CCDS3859",
+                           "biotype" : "protein_coding",
+                           "cdsSpecCd" : "B",
+                           "exons" : [ {
+                              "exonStart" : 1008943,
+                              "exonEnd" : 1009197
+                           }, {
+                              "exonStart" : 1009293,
+                              "exonEnd" : 1009329
+                           }, {
+                              "exonStart" : 1009595,
+                              "exonEnd" : 1009675
+                           }, {
+                              "exonStart" : 1032266,
+                              "exonEnd" : 1032327
+                           }, {
+                              "exonStart" : 1033486,
+                              "exonEnd" : 1033614
+                           }, {
+                              "exonStart" : 1034349,
+                              "exonEnd" : 1034445
+                           }, {
+                              "exonStart" : 1034870,
+                              "exonEnd" : 1035018
+                           }, {
+                              "exonStart" : 1035503,
+                              "exonEnd" : 1035588
+                           }, {
+                              "exonStart" : 1036371,
+                              "exonEnd" : 1036499
+                           }, {
+                              "exonStart" : 1037919,
+                              "exonEnd" : 1039058
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 296849,
+                                    "dnaChange" : "c.42_43insA",
+                                    "translationEffect" : "FS",
+                                    "proteinChange" : "p.Arg15fs",
+                                    "regions" : [ {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    } ],
+                                    "splicePosition" : 18,
+                                    "splicePositionRegion" : {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    }
+                                 }
+                              }, {
+                                 "key" : "-",
+                                 "value" : {
+                                    "variant" : "-",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 296849,
+                                    "dnaChange" : "c.42_43ins-",
+                                    "translationEffect" : "SYN",
+                                    "proteinChange" : "p.(=)",
+                                    "regions" : [ {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    } ],
+                                    "splicePosition" : 18,
+                                    "splicePositionRegion" : {
+                                       "number" : 2,
+                                       "formattedRegion" : "Exon 2"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "CCDS3859.1",
+                              "stewardCd" : "34",
+                              "stewardName" : "CCDS"
+                           }, {
+                              "alias" : "ENST00000296849",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           }, {
+                              "alias" : "NKD2",
+                              "stewardCd" : "01",
+                              "stewardName" : "HGNC"
+                           }, {
+                              "alias" : "NKD2-001",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "NM_033120.3",
+                              "stewardCd" : "35",
+                              "stewardName" : "RefSeq_mRNA"
+                           }, {
+                              "alias" : "OTTHUMT00000206720",
+                              "stewardCd" : "25",
+                              "stewardName" : "OTTT"
+                           }, {
+                              "alias" : "OTTHUMT00000206720",
+                              "stewardCd" : "33",
+                              "stewardName" : "shares_CDS_and_UTR_with_OTTT"
+                           }, {
+                              "alias" : "OTTHUMT00000206720",
+                              "stewardCd" : "24",
+                              "stewardName" : "Vega_transcript"
+                           }, {
+                              "alias" : "uc003jbt.2",
+                              "stewardCd" : "29",
+                              "stewardName" : "UCSC"
+                           } ]
+                        }
+                     }, {
+                        "key" : 382730,
+                        "value" : {
+                           "genomeGeneId" : 145506,
+                           "transcriptId" : 382730,
+                           "transcriptName" : "ENST00000382730",
+                           "cdsStart" : 1036894,
+                           "cdsEnd" : 1038721,
+                           "utr5Start" : 1036894,
+                           "utr5End" : 1036894,
+                           "utr3Start" : 1038721,
+                           "utr3End" : 1038721,
+                           "preferredInd" : false,
+                           "biotype" : "protein_coding",
+                           "cdsSpecCd" : "B",
+                           "exons" : [ {
+                              "exonStart" : 1036894,
+                              "exonEnd" : 1037018
+                           }, {
+                              "exonStart" : 1038338,
+                              "exonEnd" : 1038721
+                           } ],
+                           "impacts" : {
+                              "entry" : [ {
+                                 "key" : "A",
+                                 "value" : {
+                                    "variant" : "A",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 382730,
+                                    "dnaChange" : "-27585_-27584insA upstream",
+                                    "regions" : [ {
+                                       "formattedRegion" : "Upstream"
+                                    } ],
+                                    "splicePosition" : -27708,
+                                    "splicePositionRegion" : {
+                                       "formattedRegion" : "Upstream"
+                                    }
+                                 }
+                              }, {
+                                 "key" : "-",
+                                 "value" : {
+                                    "variant" : "-",
+                                    "genomeGeneId" : 145506,
+                                    "transcriptId" : 382730,
+                                    "dnaChange" : "-27585_-27584ins- upstream",
+                                    "regions" : [ {
+                                       "formattedRegion" : "Upstream"
+                                    } ],
+                                    "splicePosition" : -27708,
+                                    "splicePositionRegion" : {
+                                       "formattedRegion" : "Upstream"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "aliases" : [ {
+                              "alias" : "ENST00000382730",
+                              "stewardCd" : "43",
+                              "stewardName" : "Ensembl"
+                           } ]
+                        }
+                     } ]
+                  },
+                  "geneId" : 871782405,
+                  "geneSymbol" : "NKD2",
+                  "genomeGeneEntrezUrl" : "http://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=NKD2[sym]&Term=Homo%20sapiens[organism]",
+                  "genomeGeneEnsemblUrl" : "http://useast.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000145506",
+                  "geneName" : "naked cuticle homolog 2 (Drosophila)",
+                  "geneOntology" : [ "exocytosis (GO:0006887) Golgi vesicle fusion to target membrane (GO:0048210) negative regulation of canonical Wnt signaling pathway (GO:0090090) positive regulation of establishment of protein localization to plasma membrane (GO:0090004) positive regulation of proteasomal ubiquitin-dependent protein catabolic process (GO:0032436) positive regulation of protein processing (GO:0010954) protein targeting to plasma membrane (GO:0072661) Wnt signaling pathway (GO:0016055)", "basolateral plasma membrane (GO:0016323) cell periphery (GO:0071944) cytoplasmic membrane-bounded vesicle (GO:0016023) cytoplasmic vesicle (GO:0031410) lateral plasma membrane (GO:0016328)", "calcium ion binding (GO:0005509) growth factor binding (GO:0019838) protein binding (GO:0005515) ubiquitin protein ligase binding (GO:0031625)" ],
+                  "geneDescription" : "This gene encodes a member of a family of proteins that function as negative regulators of Wnt receptor signaling through interaction with Dishevelled family members. The encoded protein participates in the delivery of transforming growth factor alpha-containing vesicles to the cell membrane. Alternatively spliced transcript variants encoding multiple isoforms have been observed for this gene. [provided by RefSeq, Aug 2012]",
+                  "strand" : "Forward",
+                  "genomeGeneBiotype" : "protein_coding"
+               } ],
+               "frequenciesTableData" : [ {
+                  "childFrequencies" : [ {
+                     "childFrequencies" : [ {
+                        "region" : "African-American (SW US)"
+                     }, {
+                        "region" : "Luhya (Kenya)"
+                     }, {
+                        "region" : "Yoruba (Nigeria)"
+                     } ],
+                     "region" : "African/African-American"
+                  }, {
+                     "childFrequencies" : [ {
+                        "region" : "Chinese (Han, Beijing)"
+                     }, {
+                        "region" : "Chinese (Han, South China)"
+                     }, {
+                        "region" : "Japanese"
+                     } ],
+                     "region" : "Asian"
+                  }, {
+                     "childFrequencies" : [ {
+                        "region" : "British"
+                     }, {
+                        "region" : "Finnish"
+                     }, {
+                        "region" : "NW European (US)"
+                     }, {
+                        "region" : "Spanish"
+                     }, {
+                        "region" : "Tuscan (Italy)"
+                     } ],
+                     "region" : "European/European-American"
+                  }, {
+                     "childFrequencies" : [ {
+                        "region" : "Colombian"
+                     }, {
+                        "region" : "Mexican (US)"
+                     }, {
+                        "region" : "Puerto Rican"
+                     } ],
+                     "region" : "Other"
+                  } ],
+                  "region" : "World"
+               } ],
+               "transcriptTableData" : [ {
+                  "bioType" : "protein_coding",
+                  "dnaChange" : [ "c.42_43insA" ],
+                  "ensembl" : "ENST00000537972",
+                  "geneSymbol" : "NKD2",
+                  "polyphenPrediction" : [ null ],
+                  "polyphenScore" : [ null ],
+                  "region" : [ "Exon 2" ],
+                  "selectedInd" : false,
+                  "siftPrediction" : [ null ],
+                  "siftScore" : [ null ],
+                  "splice" : [ null ],
+                  "spliceDistanceFormat" : "java.text.DecimalFormat@67507",
+                  "splicePosition" : [ null ],
+                  "translation" : [ "p.Arg15fs" ]
+               }, {
+                  "bioType" : "protein_coding",
+                  "dnaChange" : [ "c.42_43insA" ],
+                  "ensembl" : "ENST00000274150",
+                  "geneSymbol" : "NKD2",
+                  "polyphenPrediction" : [ null ],
+                  "polyphenScore" : [ null ],
+                  "region" : [ "Exon 2" ],
+                  "selectedInd" : false,
+                  "siftPrediction" : [ null ],
+                  "siftScore" : [ null ],
+                  "splice" : [ null ],
+                  "spliceDistanceFormat" : "java.text.DecimalFormat@67507",
+                  "splicePosition" : [ null ],
+                  "transcriptName" : "NM_001271082.1",
+                  "translation" : [ "p.Arg15fs" ]
+               }, {
+                  "bioType" : "protein_coding",
+                  "dnaChange" : [ "c.42_43insA" ],
+                  "ensembl" : "ENST00000296849",
+                  "geneSymbol" : "NKD2",
+                  "polyphenPrediction" : [ null ],
+                  "polyphenScore" : [ null ],
+                  "region" : [ "Exon 2" ],
+                  "selectedInd" : false,
+                  "siftPrediction" : [ null ],
+                  "siftScore" : [ null ],
+                  "splice" : [ null ],
+                  "spliceDistanceFormat" : "java.text.DecimalFormat@67507",
+                  "splicePosition" : [ null ],
+                  "transcriptName" : "NM_033120.3",
+                  "translation" : [ "p.Arg15fs" ]
+               } ]
+            } ],
+            "updatedTimeStamp" : "2014-08-13T17:44:18.385",
+            "updatedUser" : {
+               "nameFirst" : "User",
+               "nameMiddle" : "B",
+               "nameLast" : "One",
+               "userId" : 200000001
+            }
+         },
+         "priorityCd" : "01",
+         "priorityCdText" : "High",
+         "projectCid" : "PROJECT-800",
+         "projectId" : 200000008,
+         "rdc" : {
+            "rdcId" : 2,
+            "name" : "RDC - Second Release",
+            "description" : "All stable reference data used by knoSOFT/kGAP",
+            "rdsVersions" : [ {
+               "rdsCd" : "01",
+               "rdsName" : "Reference sequence (human)",
+               "rdsContent" : "Reference sequence",
+               "rdsVersionId" : 1,
+               "rdsVersionText" : "HG-19/GRCH37",
+               "sourceCd" : "03",
+               "sourceName" : "NCBI"
+            }, {
+               "rdsCd" : "02",
+               "rdsName" : "Phastcons",
+               "rdsContent" : "Phastcons score per chrom position",
+               "rdsVersionId" : 2,
+               "rdsVersionText" : "v46",
+               "sourceCd" : "05",
+               "sourceName" : "UCSC"
+            }, {
+               "rdsCd" : "03",
+               "rdsName" : "PhyloP",
+               "rdsContent" : "PhyloP score per chrom position",
+               "rdsVersionId" : 3,
+               "rdsVersionText" : "v46",
+               "sourceCd" : "05",
+               "sourceName" : "UCSC"
+            }, {
+               "rdsCd" : "04",
+               "rdsName" : "Ensembl/proteins",
+               "rdsContent" : "Protein definitions, GO terms",
+               "rdsVersionId" : 15,
+               "rdsVersionText" : "V74",
+               "sourceCd" : "04",
+               "sourceName" : "EBI"
+            }, {
+               "rdsCd" : "05",
+               "rdsName" : "Ensembl/genes",
+               "rdsContent" : "Gene definitions",
+               "rdsVersionId" : 14,
+               "rdsVersionText" : "V74",
+               "sourceCd" : "04",
+               "sourceName" : "EBI"
+            }, {
+               "rdsCd" : "06",
+               "rdsName" : "dbSNP",
+               "rdsContent" : "Allelism definitions",
+               "rdsVersionId" : 16,
+               "rdsVersionText" : "V139",
+               "sourceCd" : "03",
+               "sourceName" : "NCBI"
+            }, {
+               "rdsCd" : "07",
+               "rdsName" : "HGMD",
+               "rdsContent" : "Variant-phenotype associations",
+               "rdsVersionId" : 17,
+               "rdsVersionText" : "2013.4",
+               "sourceCd" : "08",
+               "sourceName" : "BIOBASE"
+            }, {
+               "rdsCd" : "08",
+               "rdsName" : "HPO/OMIM",
+               "rdsContent" : "Gene-phenotype associations",
+               "rdsVersionId" : 18,
+               "rdsVersionText" : "BUILD-2014",
+               "sourceCd" : "09",
+               "sourceName" : "Charite-Universitatsmedizin Berlin"
+            }, {
+               "rdsCd" : "09",
+               "rdsName" : "1000Genomes",
+               "rdsContent" : "Allelisms and variant frequency per population",
+               "rdsVersionId" : 9,
+               "rdsVersionText" : "V3.20110521",
+               "sourceCd" : "07",
+               "sourceName" : "1000Genomes"
+            }, {
+               "rdsCd" : "10",
+               "rdsName" : "ESP/EVS",
+               "rdsContent" : "Allelisms and variant frequency per population",
+               "rdsVersionId" : 10,
+               "rdsVersionText" : "ESP6500S",
+               "sourceCd" : "06",
+               "sourceName" : "Washington University"
+            }, {
+               "rdsCd" : "11",
+               "rdsName" : "Usual Suspects",
+               "rdsContent" : "Segments that are difficult to call",
+               "rdsVersionId" : 11,
+               "rdsVersionText" : "2013",
+               "sourceCd" : "02",
+               "sourceName" : "Knome"
+            }, {
+               "rdsCd" : "12",
+               "rdsName" : "Rare Reference",
+               "rdsContent" : "Segments that are house a rare reference allele",
+               "rdsVersionId" : 12,
+               "rdsVersionText" : "2013",
+               "sourceCd" : "02",
+               "sourceName" : "Knome"
+            }, {
+               "rdsCd" : "13",
+               "rdsName" : "Preferred Transcripts",
+               "rdsContent" : "Preferred  transcripts",
+               "rdsVersionId" : 20,
+               "rdsVersionText" : "V74",
+               "sourceCd" : "01",
+               "sourceName" : "Customer"
+            } ],
+            "dataCompatibilityBin" : 1
+         },
+         "refSequenceId" : 1,
+         "seqCount" : 3,
+         "sequences" : [ {
+            "sequenceId" : "200000392",
+            "name" : "Carlos - NA3902",
+            "statusCd" : "QCC",
+            "statusCdText" : "QC Completed",
+            "dataOriginCd" : "E",
+            "dataOriginCdText" : "External",
+            "ars" : {
+               "arsId" : 200000392,
+               "ursId" : 200000392,
+               "refSequenceId" : 1,
+               "arsCid" : "NA-3902-R1.Z1",
+               "notes" : "Carlos - NA3902",
+               "alignSoftwareCd" : "01",
+               "alignSoftwareCdText" : "BWA 0.5.91",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "EXT",
+               "dataLocationCdText" : "External",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "refSequence" : {
+                  "rdsCd" : "01",
+                  "rdsName" : "Reference sequence (human)",
+                  "rdsVersionId" : 1,
+                  "rdsVersionText" : "HG-19/GRCH37",
+                  "sourceCd" : "03",
+                  "sourceName" : "NCBI"
+               },
+               "dataCompatibleInd" : false
+            },
+            "urs" : {
+               "ursId" : 200000392,
+               "sampleId" : 200000392,
+               "ursCid" : "NA-3902-R1",
+               "notes" : "Carlos - NA3902",
+               "seqPlatformCd" : "01",
+               "seqPlatformCdText" : "HiSeq 2000",
+               "seqSoftwareCd" : "01",
+               "seqSoftwareCdText" : "CASAVA 1.8.2",
+               "seqTargetTypeCd" : "G",
+               "seqTargetTypeCdText" : "Whole-Genome",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "EXT",
+               "dataLocationCdText" : "External",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "dataCompatibleInd" : false,
+               "createdTimestamp" : "2013-08-27T15:07:35.0"
+            },
+            "cs" : {
+               "csCid" : "NA-3902-R1.Z1.B1",
+               "notes" : "Carlos - NA3902 (NOT VALID)",
+               "callSoftwareCd" : "01",
+               "callSoftwareCdText" : "GATK 1.6",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "RES",
+               "dataLocationCdText" : "Resident",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "csId" : 200000392,
+               "arsId" : 200000392,
+               "createdTimestamp" : "2013-08-27T15:07:51.0"
+            },
+            "subject" : {
+               "subjectId" : 200000392,
+               "subjectCid" : "NEW-36534",
+               "nameFirst" : "Carlos",
+               "nameLast" : "Pacheo",
+               "sexCd" : "M",
+               "sexCdText" : "Male",
+               "dob" : "1965-11-15T00:00:00.0",
+               "notes" : "Laura and Frank's child",
+               "ancestryCd" : "02",
+               "ancestryCdText" : "European"
+            },
+            "sample" : {
+               "sampleCid" : "NA3902",
+               "categoryCd" : "N",
+               "tissueTypeCd" : "01",
+               "categoryCdText" : "Normal",
+               "tissueTypeCdText" : "blood",
+               "collectionDate" : "2013-01-27T00:00:00.0",
+               "subjectId" : 200000392,
+               "sampleId" : 200000392
+            },
+            "dataPackage" : {
+               "dataPackageId" : 200000392,
+               "dataPackageCd" : "01",
+               "dataPackageName" : "Illumina",
+               "dataPackageDirectory" : "test",
+               "categoryCd" : "CS",
+               "categoryName" : "Call Set",
+               "description" : "This is a package description.",
+               "processCd" : "IMPT",
+               "adapterCd" : "IM005_GATK_2_X",
+               "adapterModuleName" : "IM005_GATK_2_X",
+               "builtInInd" : true,
+               "projectId" : 200000004,
+               "projectSeqId" : 200000392
+            }
+         }, {
+            "sequenceId" : "200000790",
+            "name" : "Frank - NA7900",
+            "statusCd" : "QCC",
+            "statusCdText" : "QC Completed",
+            "dataOriginCd" : "E",
+            "dataOriginCdText" : "External",
+            "ars" : {
+               "arsId" : 200000790,
+               "ursId" : 200000790,
+               "refSequenceId" : 1,
+               "arsCid" : "NA-7900-R1.Z1",
+               "notes" : "Frank - NA7900",
+               "alignSoftwareCd" : "01",
+               "alignSoftwareCdText" : "BWA 0.5.91",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "EXT",
+               "dataLocationCdText" : "External",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "refSequence" : {
+                  "rdsCd" : "01",
+                  "rdsName" : "Reference sequence (human)",
+                  "rdsVersionId" : 1,
+                  "rdsVersionText" : "HG-19/GRCH37",
+                  "sourceCd" : "03",
+                  "sourceName" : "NCBI"
+               },
+               "dataCompatibleInd" : false
+            },
+            "urs" : {
+               "ursId" : 200000790,
+               "sampleId" : 200000790,
+               "ursCid" : "NA-7900-R1",
+               "notes" : "Frank - NA7900",
+               "seqPlatformCd" : "02",
+               "seqPlatformCdText" : "MiSeq 500",
+               "seqSoftwareCd" : "01",
+               "seqSoftwareCdText" : "CASAVA 1.8.2",
+               "seqTargetTypeCd" : "G",
+               "seqTargetTypeCdText" : "Whole-Genome",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "EXT",
+               "dataLocationCdText" : "External",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "dataCompatibleInd" : false,
+               "createdTimestamp" : "2013-03-27T15:07:34.0"
+            },
+            "cs" : {
+               "csCid" : "NA-7900-R1.Z1.B1",
+               "notes" : "Frank - NA7900 (NOT VALID)",
+               "callSoftwareCd" : "02",
+               "callSoftwareCdText" : "CASAVA 1.8.2",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "RES",
+               "dataLocationCdText" : "Resident",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "csId" : 200000790,
+               "arsId" : 200000790,
+               "createdTimestamp" : "2013-08-27T15:07:49.0"
+            },
+            "subject" : {
+               "subjectId" : 200000790,
+               "subjectCid" : "PT-09834",
+               "nameFirst" : "Frank",
+               "nameLast" : "Pacheo",
+               "sexCd" : "M",
+               "sexCdText" : "Male",
+               "dob" : "1945-04-09T00:00:00.0",
+               "notes" : "Laura's spouse",
+               "ancestryCd" : "02",
+               "ancestryCdText" : "European"
+            },
+            "sample" : {
+               "sampleCid" : "NA7900",
+               "categoryCd" : "N",
+               "tissueTypeCd" : "02",
+               "categoryCdText" : "Normal",
+               "tissueTypeCdText" : "lung tissue",
+               "collectionDate" : "2012-01-05T00:00:00.0",
+               "subjectId" : 200000790,
+               "sampleId" : 200000790
+            },
+            "dataPackage" : {
+               "dataPackageId" : 200000790,
+               "dataPackageCd" : "01",
+               "dataPackageName" : "Illumina",
+               "dataPackageDirectory" : "test",
+               "categoryCd" : "CS",
+               "categoryName" : "Call Set",
+               "description" : "This is a package description.",
+               "processCd" : "IMPT",
+               "adapterCd" : "IM005_GATK_2_X",
+               "adapterModuleName" : "IM005_GATK_2_X",
+               "builtInInd" : true,
+               "projectId" : 200000004,
+               "projectSeqId" : 200000790
+            }
+         }, {
+            "sequenceId" : "200000791",
+            "name" : "Laura - NA7901",
+            "statusCd" : "QCC",
+            "statusCdText" : "QC Completed",
+            "dataOriginCd" : "E",
+            "dataOriginCdText" : "External",
+            "ars" : {
+               "arsId" : 200000791,
+               "ursId" : 200000791,
+               "refSequenceId" : 1,
+               "arsCid" : "NA-7901-R1.Z1",
+               "notes" : "Laura - NA7901",
+               "alignSoftwareCd" : "01",
+               "alignSoftwareCdText" : "BWA 0.5.91",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "EXT",
+               "dataLocationCdText" : "External",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "refSequence" : {
+                  "rdsCd" : "01",
+                  "rdsName" : "Reference sequence (human)",
+                  "rdsVersionId" : 1,
+                  "rdsVersionText" : "HG-19/GRCH37",
+                  "sourceCd" : "03",
+                  "sourceName" : "NCBI"
+               },
+               "dataCompatibleInd" : false
+            },
+            "urs" : {
+               "ursId" : 200000791,
+               "sampleId" : 200000791,
+               "ursCid" : "NA-7901-R1",
+               "notes" : "Laura - NA7901",
+               "seqPlatformCd" : "02",
+               "seqPlatformCdText" : "MiSeq 500",
+               "seqSoftwareCd" : "01",
+               "seqSoftwareCdText" : "CASAVA 1.8.2",
+               "seqTargetTypeCd" : "G",
+               "seqTargetTypeCdText" : "Whole-Genome",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "EXT",
+               "dataLocationCdText" : "External",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "dataCompatibleInd" : false,
+               "createdTimestamp" : "2013-03-27T15:07:34.0"
+            },
+            "cs" : {
+               "csCid" : "NA-7901-R1.Z1.B1",
+               "notes" : "Laura - NA7901 (NOT VALID)",
+               "callSoftwareCd" : "02",
+               "callSoftwareCdText" : "CASAVA 1.8.2",
+               "dataStatusCd" : "FIN",
+               "dataStatusCdText" : "Finished",
+               "dataLocationCd" : "RES",
+               "dataLocationCdText" : "Resident",
+               "dataOriginCd" : "E",
+               "dataOriginCdText" : "External",
+               "dataApprovalCd" : "A",
+               "dataApprovalCdText" : "Approved",
+               "csId" : 200000791,
+               "arsId" : 200000791,
+               "createdTimestamp" : "2013-08-27T15:07:50.0"
+            },
+            "subject" : {
+               "subjectId" : 200000791,
+               "subjectCid" : "PT-23422",
+               "nameFirst" : "Laura",
+               "nameMiddle" : "Madelena",
+               "nameLast" : "Pacheo",
+               "sexCd" : "F",
+               "sexCdText" : "Female",
+               "dob" : "1948-09-21T00:00:00.0",
+               "notes" : "Frank's spouse",
+               "ancestryCd" : "02",
+               "ancestryCdText" : "European"
+            },
+            "sample" : {
+               "sampleCid" : "NA7901",
+               "categoryCd" : "N",
+               "tissueTypeCd" : "02",
+               "categoryCdText" : "Normal",
+               "tissueTypeCdText" : "lung tissue",
+               "collectionDate" : "2012-01-05T00:00:00.0",
+               "subjectId" : 200000791,
+               "sampleId" : 200000791
+            },
+            "dataPackage" : {
+               "dataPackageId" : 200000791,
+               "dataPackageCd" : "01",
+               "dataPackageName" : "Illumina",
+               "dataPackageDirectory" : "test",
+               "categoryCd" : "CS",
+               "categoryName" : "Call Set",
+               "description" : "This is a package description.",
+               "processCd" : "IMPT",
+               "adapterCd" : "IM005_GATK_2_X",
+               "adapterModuleName" : "IM005_GATK_2_X",
+               "builtInInd" : true,
+               "projectId" : 200000004,
+               "projectSeqId" : 200000791
+            }
+         } ],
+         "situationCd" : "NA",
+         "situationCdText" : "",
+         "statusCd" : "INT",
+         "statusCdText" : "Interpreting"
+      },
+      "reportId" : "",
+      "reportTitle" : "Untitled report"
+   }
+}}

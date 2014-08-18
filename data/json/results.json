@@ -1,0 +1,4807 @@
+{
+   "status":"succeeded",
+   "data":[
+      {
+         "allAlleles":[
+            "C",
+            "-"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"01",
+         "allelismEnd":24741587,
+         "allelismIdx":0,
+         "allelismStart":24741587,
+         "callDepths":[
+            "22",
+            "22",
+            "22"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "50",
+            "50",
+            "50"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"01:24741588",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "-697_-696ins- upstream"
+            ],
+            [
+               "-1_1ins- upstream"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NIPAL3",
+            "STPG1"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Upstream"
+            ],
+            [
+               "Upstream-5'UTR 1"
+            ]
+         ],
+         "genotypes":[
+            "C/-",
+            "C/-",
+            "C/-"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0,
+         "phylopScore":-0.665,
+         "polyphenPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"-",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000374399",
+            "ENST00000374409"
+         ],
+         "translationEffect":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "C"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "-"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"01",
+         "allelismEnd":24741588,
+         "allelismIdx":1,
+         "allelismStart":24741588,
+         "callDepths":[
+            "23",
+            "23",
+            "23"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "50",
+            "50",
+            "50"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"01:24741589",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "-696_-695insA upstream"
+            ],
+            [
+               "-2_-1insT upstream"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NIPAL3",
+            "STPG1"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Upstream"
+            ],
+            [
+               "Upstream"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/-",
+            "A/-"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0,
+         "phylopScore":0.276,
+         "polyphenPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"-",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000374399",
+            "ENST00000374409"
+         ],
+         "translationEffect":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "-"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"01",
+         "allelismEnd":24741589,
+         "allelismIdx":2,
+         "allelismStart":24741589,
+         "callDepths":[
+            "24",
+            "24",
+            "24"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "50",
+            "50",
+            "50"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"01:24741590",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "-695_-694ins- upstream"
+            ],
+            [
+               "-3_-2ins- upstream"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NIPAL3",
+            "STPG1"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Upstream"
+            ],
+            [
+               "Upstream"
+            ]
+         ],
+         "genotypes":[
+            "A/-",
+            "A/-",
+            "A/-"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0,
+         "phylopScore":-0.303,
+         "polyphenPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"-",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000374399",
+            "ENST00000374409"
+         ],
+         "translationEffect":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "T"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1007951,
+         "allelismIdx":3,
+         "allelismStart":1007950,
+         "callDepths":[
+            "14",
+            "14",
+            "14"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "10",
+            "10",
+            "10"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1007951",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "-993T>T upstream"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Upstream"
+            ]
+         ],
+         "genotypes":[
+            "A/T",
+            "A/A",
+            "A/T"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.021,
+         "phylopScore":0.611,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "T",
+            "A"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1008951,
+         "allelismIdx":4,
+         "allelismStart":1008950,
+         "callDepths":[
+            "",
+            "16",
+            "16"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "",
+            "50",
+            "50"
+         ],
+         "callQualityFilter":[
+            null,
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1008951",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.-222T>T"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "5'UTR 1"
+            ]
+         ],
+         "genotypes":[
+            "?/?",
+            "T/A",
+            "A/T"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.014,
+         "phylopScore":0.741,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "C"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1008961,
+         "allelismIdx":5,
+         "allelismStart":1008960,
+         "callDepths":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "75",
+            "75",
+            "75"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1008961",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.-212C>A"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "5'UTR 1"
+            ]
+         ],
+         "genotypes":[
+            "A/C",
+            "A/A",
+            "A/C"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0,
+         "phylopScore":-0.517,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"C",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "G"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1009172,
+         "allelismIdx":6,
+         "allelismStart":1009171,
+         "callDepths":[
+            "15",
+            "15",
+            "15"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "29",
+            "29",
+            "29"
+         ],
+         "callQualityFilter":[
+            "q10;s50",
+            "q10;s50",
+            "q10;s50"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1009172",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.-1G>A"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "5'UTR 1"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/G",
+            "A/G"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.904,
+         "phylopScore":-0.328,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"G",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "G"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1009198,
+         "allelismIdx":7,
+         "allelismStart":1009197,
+         "callDepths":[
+            "21",
+            "21",
+            "21"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "29",
+            "29",
+            "29"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1009198",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.25+1G>A"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Intron 1"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/G",
+            "A/G"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.854,
+         "phylopScore":0.892,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"G",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               "Narrow"
+            ]
+         ],
+         "splicePos":[
+            [
+               "1"
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "T",
+            "A"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1009199,
+         "allelismIdx":8,
+         "allelismStart":1009198,
+         "callDepths":[
+            "",
+            "22",
+            "22"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "",
+            "29",
+            "29"
+         ],
+         "callQualityFilter":[
+            null,
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1009199",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.25+2T>T"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Intron 1"
+            ]
+         ],
+         "genotypes":[
+            "?/?",
+            "T/A",
+            "A/T"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.851,
+         "phylopScore":0.741,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               "Narrow"
+            ]
+         ],
+         "splicePos":[
+            [
+               "2"
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "-"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1009310,
+         "allelismIdx":10,
+         "allelismStart":1009310,
+         "callDepths":[
+            "25",
+            "25",
+            "25"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "100",
+            "100",
+            "100"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1009311",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.42_43insA"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Exon 2"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/-",
+            "A/-"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.657,
+         "phylopScore":-0.851,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               "p.Arg15fs"
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"-",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               "frameshift"
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "-",
+            "G"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1009321,
+         "allelismIdx":11,
+         "allelismStart":1009320,
+         "callDepths":[
+            "26",
+            "26",
+            "26"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "100",
+            "100",
+            "100"
+         ],
+         "callQualityFilter":[
+            "q10;s50",
+            "q10;s50",
+            "q10;s50"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1009321",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.53delG"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Exon 2"
+            ]
+         ],
+         "genotypes":[
+            "-/G",
+            "-/-",
+            "-/-"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.972,
+         "phylopScore":0.752,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               "p.Ser18fs"
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"G",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               "frameshift"
+            ]
+         ],
+         "variants":[
+            "-"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "G"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1009501,
+         "allelismIdx":12,
+         "allelismStart":1009500,
+         "callDepths":[
+            "19",
+            "19",
+            "19"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "75",
+            "75",
+            "75"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1009501",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.62-95G>G"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Intron 2"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/A",
+            "A/G"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.001,
+         "phylopScore":-0.133,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"G",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "T",
+            "A"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1009594,
+         "allelismIdx":13,
+         "allelismStart":1009593,
+         "callDepths":[
+            "24",
+            "24",
+            "24"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "127",
+            "127",
+            "127"
+         ],
+         "callQualityFilter":[
+            "q10;s50",
+            "q10;s50",
+            "q10;s50"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1009594",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.62-2A>T"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Intron 2"
+            ]
+         ],
+         "genotypes":[
+            "T/A",
+            "T/T",
+            "T/T"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":1,
+         "phylopScore":1.005,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"A",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               "Narrow"
+            ]
+         ],
+         "splicePos":[
+            [
+               "-2"
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "T"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "G"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1032327,
+         "allelismIdx":15,
+         "allelismStart":1032326,
+         "callDepths":[
+            "25",
+            "25",
+            "25"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "127",
+            "127",
+            "127"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1032327",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.202G>A"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Exon 4"
+            ]
+         ],
+         "genotypes":[
+            "A/G",
+            "A/A",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.91,
+         "phylopScore":1.898,
+         "polyphenPredictions":[
+            [
+               "probably_damaging"
+            ]
+         ],
+         "polyphenScores":[
+            [
+               "0.999000"
+            ]
+         ],
+         "proteinChanges":[
+            [
+               "p.Val68Met"
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"G",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               "tolerated"
+            ]
+         ],
+         "siftScores":[
+            [
+               "0.060000"
+            ]
+         ],
+         "splice":[
+            [
+               "Broad"
+            ]
+         ],
+         "splicePos":[
+            [
+               "-1"
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               "missense"
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "C"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1032335,
+         "allelismIdx":16,
+         "allelismStart":1032334,
+         "callDepths":[
+            "26",
+            "26",
+            "26"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "",
+            "",
+            ""
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1032335",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.202+8C>A"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Intron 4"
+            ]
+         ],
+         "genotypes":[
+            "A/C",
+            "A/A",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.001,
+         "phylopScore":-0.166,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"C",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               "Broad"
+            ]
+         ],
+         "splicePos":[
+            [
+               "8"
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "C"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1038491,
+         "allelismIdx":19,
+         "allelismStart":1038490,
+         "callDepths":[
+            "28",
+            "28",
+            "28"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "",
+            "",
+            ""
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1038491",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.*3C>C"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "3'UTR 10"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/C",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.021,
+         "phylopScore":1.188,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"C",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "T"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"05",
+         "allelismEnd":1040051,
+         "allelismIdx":20,
+         "allelismStart":1040050,
+         "callDepths":[
+            "29",
+            "29",
+            "29"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "100",
+            "100",
+            "100"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"05:1040051",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "+993T>T downstream"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "NKD2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Downstream"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/T",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.029,
+         "phylopScore":-1.52,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000296849"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "G"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"14",
+         "allelismEnd":102028701,
+         "allelismIdx":21,
+         "allelismStart":102028700,
+         "callDepths":[
+            "30",
+            "30",
+            "30"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"14:102028701",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.868G>A"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "DIO3"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Exon 1"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/G",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.998,
+         "phylopScore":0.261,
+         "polyphenPredictions":[
+            [
+               "benign"
+            ]
+         ],
+         "polyphenScores":[
+            [
+               "0.036000"
+            ]
+         ],
+         "proteinChanges":[
+            [
+               "p.Glu290Lys"
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"G",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               "tolerated"
+            ]
+         ],
+         "siftScores":[
+            [
+               "0.050000"
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000510508"
+         ],
+         "translationEffect":[
+            [
+               "missense"
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "C",
+            "G"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"16",
+         "allelismEnd":20796387,
+         "allelismIdx":22,
+         "allelismStart":20796386,
+         "callDepths":[
+            "31",
+            "31",
+            "31"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"16:20796387",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.1101G>C"
+            ],
+            [
+               "+11279C>G downstream"
+            ],
+            [
+               null
+            ]
+         ],
+         "extClass":[
+            "DFP"
+         ],
+         "extPhen":[
+            "Hypertension, association with"
+         ],
+         "extSource":[
+            "HGMD"
+         ],
+         "extVariant":[
+            "C"
+         ],
+         "freqWorld1k":[
+            "  8.39"
+         ],
+         "freqWorldESP":[
+            "  6.98"
+         ],
+         "geneNames":[
+            "ACSM3",
+            "ERI2",
+            "RNU6-944P"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Exon 8"
+            ],
+            [
+               "Downstream"
+            ],
+            [
+               null
+            ]
+         ],
+         "genotypes":[
+            "C/C",
+            "C/G",
+            "C/C"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.127,
+         "phylopScore":0.747,
+         "polyphenPredictions":[
+            [
+               "benign"
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               "0.079000"
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               "p.Lys367Asn"
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"G",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               "tolerated"
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               "0.340000"
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000289416",
+            "ENST00000357967",
+            "ENST00000364023"
+         ],
+         "translationEffect":[
+            [
+               "missense"
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "C"
+         ]
+      },
+      {
+         "allAlleles":[
+            "C",
+            "T"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"16",
+         "allelismEnd":20808801,
+         "allelismIdx":23,
+         "allelismStart":20808800,
+         "callDepths":[
+            "32",
+            "32",
+            ""
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            ""
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            null
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"16:20808801",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.*507T>C"
+            ],
+            [
+               "c.*245A>G"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "ACSM3",
+            "ERI2"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "3'UTR 14"
+            ],
+            [
+               "3'UTR 9"
+            ]
+         ],
+         "genotypes":[
+            "C/T",
+            "C/T",
+            "?/?"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.003,
+         "phylopScore":-0.501,
+         "polyphenPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000289416",
+            "ENST00000357967"
+         ],
+         "translationEffect":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "C"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "C"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"19",
+         "allelismEnd":55895090,
+         "allelismIdx":24,
+         "allelismStart":55895089,
+         "callDepths":[
+            "33",
+            "33",
+            "33"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"19:55895090",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.*7G>T"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "TMEM238"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "3'UTR 1"
+            ]
+         ],
+         "genotypes":[
+            "A/C",
+            "A/C",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.031,
+         "phylopScore":1.647,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"C",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000444469"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "C"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"X",
+         "allelismEnd":595514,
+         "allelismIdx":27,
+         "allelismStart":595513,
+         "callDepths":[
+            "35",
+            "35",
+            "35"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"X:595514",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.439C>C"
+            ],
+            [
+               "c.439C>C"
+            ]
+         ],
+         "extClass":[
+            "DM?"
+         ],
+         "extPhen":[
+            "Leri-Weill dyschondrosteosis"
+         ],
+         "extSource":[
+            "HGMD"
+         ],
+         "extVariant":[
+            "A"
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "SHOX",
+            "SHOX"
+         ],
+         "genePhen":[
+            "LANGER MESOMELIC DYSPLASIA; LMD",
+            "LERI-WEILL DYSCHONDROSTEOSIS",
+            "SHORT STATURE, IDIOPATHIC, X-LINKED; ISS"
+         ],
+         "geneRegion":[
+            [
+               "Exon 3"
+            ],
+            [
+               "Exon 3"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/C",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":1,
+         "phylopScore":0.798,
+         "polyphenPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               "p.(=)"
+            ],
+            [
+               "p.(=)"
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"C",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000334060",
+            "ENST00000381578"
+         ],
+         "translationEffect":[
+            [
+               "synonymous"
+            ],
+            [
+               "synonymous"
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "C"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"X",
+         "allelismEnd":2670096,
+         "allelismIdx":28,
+         "allelismStart":2670095,
+         "callDepths":[
+            "36",
+            "36",
+            "36"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"X:2670096",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.-220C>C"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "XG"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "5'UTR 1"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/C",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0,
+         "phylopScore":0.082,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"C",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000426774"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "-",
+            "T"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"X",
+         "allelismEnd":2732402,
+         "allelismIdx":29,
+         "allelismStart":2732401,
+         "callDepths":[
+            "27",
+            "27",
+            "27"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"X:2732402",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.530-3delC"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "XG"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               "Intron 9"
+            ]
+         ],
+         "genotypes":[
+            "-/-",
+            "-/T",
+            "-/-"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.119,
+         "phylopScore":0.865,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               "Broad"
+            ]
+         ],
+         "splicePos":[
+            [
+               "-3"
+            ]
+         ],
+         "transcripts":[
+            "ENST00000426774"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "-"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "-"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"X",
+         "allelismEnd":150194768,
+         "allelismIdx":30,
+         "allelismStart":150194768,
+         "callDepths":[
+            "28",
+            "28",
+            "28"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"X:150194769",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               null
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "5S_rRNA"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               null
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "-/A",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0,
+         "phylopScore":-1.476,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"-",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000391293"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "-"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"X",
+         "allelismEnd":150194784,
+         "allelismIdx":32,
+         "allelismStart":150194783,
+         "callDepths":[
+            "",
+            "29",
+            "29"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            null,
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"X:150194784",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               null
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "5S_rRNA"
+         ],
+         "genePhen":[
+
+         ],
+         "geneRegion":[
+            [
+               null
+            ]
+         ],
+         "genotypes":[
+            "?/?",
+            "-/-",
+            "-/-"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0,
+         "phylopScore":-0.501,
+         "polyphenPredictions":[
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000391293"
+         ],
+         "translationEffect":[
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "-"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A",
+            "T"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"Y",
+         "allelismEnd":21870761,
+         "allelismIdx":33,
+         "allelismStart":21870760,
+         "callDepths":[
+            "38",
+            "38",
+            "38"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"Y:21870761",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "c.3174A>T"
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "KDM5D"
+         ],
+         "genePhen":[
+            "JUMONJI, AT-RICH INTERACTIVE DOMAIN 1D"
+         ],
+         "geneRegion":[
+            [
+               "Exon 22"
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/T",
+            "A/?"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":0.999,
+         "phylopScore":0.812,
+         "polyphenPredictions":[
+            [
+               "probably_damaging"
+            ]
+         ],
+         "polyphenScores":[
+            [
+               "0.994000"
+            ]
+         ],
+         "proteinChanges":[
+            [
+               "p.Gln1058His"
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               "deleterious"
+            ]
+         ],
+         "siftScores":[
+            [
+               "0.010000"
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               "-1"
+            ]
+         ],
+         "transcripts":[
+            "ENST00000541639"
+         ],
+         "translationEffect":[
+            [
+               "missense"
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      },
+      {
+         "allAlleles":[
+            "A"
+         ],
+         "alleleCount":[
+            ";;",
+            ";;",
+            ";;"
+         ],
+         "allelismChrom":"M",
+         "allelismEnd":14151,
+         "allelismIdx":25,
+         "allelismStart":14150,
+         "callDepths":[
+            "39",
+            "39",
+            "39"
+         ],
+         "callProbability":[
+            "",
+            "",
+            ""
+         ],
+         "callQuality":[
+            "20",
+            "20",
+            "20"
+         ],
+         "callQualityFilter":[
+            "pass",
+            "pass",
+            "pass"
+         ],
+         "callSetId":[
+            "NA-3902-R1.Z1.B1",
+            "NA-7900-R1.Z1.B1",
+            "NA-7901-R1.Z1.B1"
+         ],
+         "callsetIds":[
+
+         ],
+         "chrStart":"M:14151",
+         "cosmic":[
+
+         ],
+         "dbSNP":[
+
+         ],
+         "dnaChanges":[
+            [
+               "-596T>A upstream"
+            ],
+            [
+               "+3T>A downstream"
+            ],
+            [
+               "c.523A>T"
+            ],
+            [
+               null
+            ]
+         ],
+         "extClass":[
+
+         ],
+         "extPhen":[
+
+         ],
+         "extSource":[
+
+         ],
+         "extVariant":[
+
+         ],
+         "freqWorld1k":[
+
+         ],
+         "freqWorldESP":[
+
+         ],
+         "geneNames":[
+            "MT-CYB",
+            "MT-ND5",
+            "MT-ND6",
+            "MT-TE"
+         ],
+         "genePhen":[
+            "CYTOCHROME B OF COMPLEX III",
+            "COMPLEX I, SUBUNIT ND5",
+            "COMPLEX I, SUBUNIT ND6"
+         ],
+         "geneRegion":[
+            [
+               "Upstream"
+            ],
+            [
+               "Downstream"
+            ],
+            [
+               "Exon 1"
+            ],
+            [
+               null
+            ]
+         ],
+         "genotypes":[
+            "A/A",
+            "A/A",
+            "A/A"
+         ],
+         "intClass":[
+
+         ],
+         "intMOI":[
+
+         ],
+         "intPhen":[
+
+         ],
+         "intText":[
+
+         ],
+         "intVariant":[
+
+         ],
+         "pVal":null,
+         "phastConsScore":null,
+         "phylopScore":null,
+         "polyphenPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "polyphenScores":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "proteinChanges":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "query":[
+            [
+               "All non-reference"
+            ]
+         ],
+         "reference":"T",
+         "report":"UNDECIDED",
+         "siftPredictions":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "siftScores":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splice":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "splicePos":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "transcripts":[
+            "ENST00000361789",
+            "ENST00000361567",
+            "ENST00000361681",
+            "ENST00000387459"
+         ],
+         "translationEffect":[
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ],
+            [
+               null
+            ]
+         ],
+         "variants":[
+            "A"
+         ]
+      }
+   ]
+}

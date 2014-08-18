@@ -1,0 +1,762 @@
+{
+   "status":"succeeded",
+   "data":{
+      "callSetTableColumnNames":[
+         {
+            "column":"order",
+            "name":"ORDER"
+         },
+         {
+            "column":"callSetId",
+            "name":"CALL SET"
+         },
+         {
+            "column":"subjectIdName",
+            "name":"SUBJ ID/NAME"
+         },
+         {
+            "column":"subjectSexCd",
+            "name":"SEX"
+         },
+         {
+            "column":"subjectSampleCategory",
+            "name":"T/N"
+         },
+         {
+            "column":"queryBin",
+            "name":"QUERY BIN"
+         },
+         {
+            "column":"genotype",
+            "name":"GENOTYPE"
+         },
+         {
+            "column":"genotypeProbability",
+            "name":"GT PROB"
+         },
+         {
+            "column":"callConf",
+            "name":"CONF"
+         },
+         {
+            "column":"readDepth",
+            "name":"DEPTH"
+         },
+         {
+            "column":"passFilter",
+            "name":"PASS"
+         },
+         {
+            "column":"counts",
+            "name":"COUNTS"
+         },
+         {
+            "column":"bamUrl",
+            "name":"BAM"
+         },
+         {
+            "column":"recordFromGvcfBlock",
+            "name":"GVCF"
+         }
+      ],
+      "callSetTableData":[
+         {
+            "bamUrl":null,
+            "callConf":50,
+            "callSetId":"NA-3902-R1.Z1.B1",
+            "counts":null,
+            "genotype":"C/-",
+            "genotypeProbability":null,
+            "order":1,
+            "passFilter":true,
+            "queryBin":[
+
+            ],
+            "readDepth":22,
+            "recordFromGvcfBlock":false,
+            "subjectIdName":"NEW-36534 / Carlos Pacheo",
+            "subjectSampleCategory":"N",
+            "subjectSexCd":"MALE"
+         },
+         {
+            "bamUrl":null,
+            "callConf":50,
+            "callSetId":"NA-7900-R1.Z1.B1",
+            "counts":null,
+            "genotype":"C/-",
+            "genotypeProbability":null,
+            "order":2,
+            "passFilter":true,
+            "queryBin":[
+               "All non-reference-Case (Any)"
+            ],
+            "readDepth":22,
+            "recordFromGvcfBlock":false,
+            "subjectIdName":"PT-09834 / Frank Pacheo",
+            "subjectSampleCategory":"N",
+            "subjectSexCd":"MALE"
+         },
+         {
+            "bamUrl":null,
+            "callConf":50,
+            "callSetId":"NA-7901-R1.Z1.B1",
+            "counts":null,
+            "genotype":"C/-",
+            "genotypeProbability":null,
+            "order":3,
+            "passFilter":true,
+            "queryBin":[
+
+            ],
+            "readDepth":22,
+            "recordFromGvcfBlock":false,
+            "subjectIdName":"PT-23422 / Laura Pacheo",
+            "subjectSampleCategory":"N",
+            "subjectSexCd":"FEMALE"
+         }
+      ],
+      "chromId":"01",
+      "chromStartUrl":"http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr1:24741558-24741617",
+      "clinVarUrl":"http://www.ncbi.nlm.nih.gov/clinvar/?term=01[chr] and 24741587[Base position]",
+      "cosmicText":[
+
+      ],
+      "cosmicUrl":[
+
+      ],
+      "dbSNPText":[
+
+      ],
+      "dbSNPUrl":[
+
+      ],
+      "dnaChange":null,
+      "endCoord":24741587,
+      "externalAssociations":[
+
+      ],
+      "frequenciesTableColumnNames":[
+         {
+            "column":"region",
+            "name":"REGION"
+         },
+         {
+            "column":"thousandGenomesFreqs",
+            "name":"1000 Genomes Project (%)"
+         },
+         {
+            "column":"espFreqs",
+            "name":"Exome Seq Project (%)"
+         }
+      ],
+      "frequenciesTableData":[
+         {
+            "childFrequencies":[
+               {
+                  "childFrequencies":[
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"African-American (SW US)",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Luhya (Kenya)",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Yoruba (Nigeria)",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     }
+                  ],
+                  "espFreqs":[
+
+                  ],
+                  "region":"African/African-American",
+                  "thousandGenomesFreqs":[
+
+                  ]
+               },
+               {
+                  "childFrequencies":[
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Chinese (Han, Beijing)",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Chinese (Han, South China)",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Japanese",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     }
+                  ],
+                  "espFreqs":[
+
+                  ],
+                  "region":"Asian",
+                  "thousandGenomesFreqs":[
+
+                  ]
+               },
+               {
+                  "childFrequencies":[
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"British",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Finnish",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"NW European (US)",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Spanish",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Tuscan (Italy)",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     }
+                  ],
+                  "espFreqs":[
+
+                  ],
+                  "region":"European/European-American",
+                  "thousandGenomesFreqs":[
+
+                  ]
+               },
+               {
+                  "childFrequencies":[
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Colombian",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Mexican (US)",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     },
+                     {
+                        "childFrequencies":[
+
+                        ],
+                        "espFreqs":[
+
+                        ],
+                        "region":"Puerto Rican",
+                        "thousandGenomesFreqs":[
+
+                        ]
+                     }
+                  ],
+                  "espFreqs":[
+
+                  ],
+                  "region":"Other",
+                  "thousandGenomesFreqs":[
+
+                  ]
+               }
+            ],
+            "espFreqs":[
+
+            ],
+            "region":"World",
+            "thousandGenomesFreqs":[
+
+            ]
+         }
+      ],
+      "genes":[
+         {
+            "aliases":[
+               {
+                  "aliasValue":"C1orf201"
+               },
+               {
+                  "aliasValue":"FLJ33340"
+               },
+               {
+                  "aliasValue":"MAPO2"
+               }
+            ],
+            "biotype":"protein_coding",
+            "geneDescription":null,
+            "geneId":1011607677,
+            "geneName":"sperm-tail PG-rich repeat containing 1",
+            "geneOntology":[
+               [
+                  "apoptotic process (GO:0006915)"
+               ],
+               [
+                  "cytoplasm (GO:0005737)",
+                  "nucleus (GO:0005634)"
+               ],
+               [
+
+               ]
+            ],
+            "geneSymbol":"STPG1",
+            "geneType":"mRNA",
+            "genomeGeneBiotype":null,
+            "genomeGeneEnsemblUrl":"http://useast.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000001460",
+            "genomeGeneEntrezUrl":"http://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=STPG1[sym]&Term=Homo%20sapiens[organism]",
+            "hgmdDiseases":[
+
+            ],
+            "hpoDiseases":[
+
+            ],
+            "phenotypes":[
+
+            ],
+            "strand":"Reverse"
+         },
+         {
+            "aliases":[
+               {
+                  "aliasValue":"DJ462O23.2"
+               },
+               {
+                  "aliasValue":"NPAL3"
+               }
+            ],
+            "biotype":"protein_coding",
+            "geneDescription":null,
+            "geneId":985852668,
+            "geneName":"NIPA-like domain containing 3",
+            "geneOntology":[
+               [
+                  "magnesium ion transport (GO:0015693)"
+               ],
+               [
+                  "integral to membrane (GO:0016021)",
+                  "membrane (GO:0016020)"
+               ],
+               [
+                  "magnesium ion transmembrane transporter activity (GO:0015095)"
+               ]
+            ],
+            "geneSymbol":"NIPAL3",
+            "geneType":"mRNA",
+            "genomeGeneBiotype":null,
+            "genomeGeneEnsemblUrl":"http://useast.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000001461",
+            "genomeGeneEntrezUrl":"http://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=NIPAL3[sym]&Term=Homo%20sapiens[organism]",
+            "hgmdDiseases":[
+
+            ],
+            "hpoDiseases":[
+
+            ],
+            "phenotypes":[
+
+            ],
+            "strand":"Forward"
+         }
+      ],
+      "googleScholarUrl":"",
+      "internalAssociations":[
+
+      ],
+      "otherVariants":[
+
+      ],
+      "phastconsScore":0,
+      "phylopScore":-0.665,
+      "pubMedUrl":"",
+      "queries":[
+         "All non-reference"
+      ],
+      "refAllele":"-",
+      "selectedGenesColumnNames":[
+         {
+            "column":"geneSymbol",
+            "name":"GENE"
+         },
+         {
+            "column":"transcriptName",
+            "name":"REFSEQ"
+         },
+         {
+            "column":"translation",
+            "name":"TRANSLATION"
+         },
+         {
+            "column":"dnaChange",
+            "name":"C-DNA"
+         }
+      ],
+      "selectedGenesTableData":[
+         {
+            "dnaChange":[
+               "-1_1ins- upstream"
+            ],
+            "geneSymbol":"STPG1",
+            "transcriptName":"ENST00000374409",
+            "translation":[
+               null
+            ]
+         },
+         {
+            "dnaChange":[
+               "-697_-696ins- upstream"
+            ],
+            "geneSymbol":"NIPAL3",
+            "transcriptName":"ENST00000374399",
+            "translation":[
+               null
+            ]
+         }
+      ],
+      "startCoord":24741588,
+      "transcriptTableColumnNames":[
+         {
+            "column":"geneSymbol",
+            "name":"GENE"
+         },
+         {
+            "column":"transcriptName",
+            "name":"REFSEQ"
+         },
+         {
+            "column":"ensembl",
+            "name":"ENSEMBL"
+         },
+         {
+            "column":"selectedInd",
+            "name":"SELECTED"
+         },
+         {
+            "column":"translation",
+            "name":"TRANSLATION"
+         },
+         {
+            "column":"biotype",
+            "name":"BIOTYPE"
+         },
+         {
+            "column":"siftScore",
+            "name":"SIFT"
+         },
+         {
+            "column":"siftPrediction",
+            "name":"SIFT PREDICTION"
+         },
+         {
+            "column":"polyphenScore",
+            "name":"PP-2"
+         },
+         {
+            "column":"polyphenPrediction",
+            "name":"PP-2 PREDICTION"
+         },
+         {
+            "column":"splice",
+            "name":"SPLICE"
+         },
+         {
+            "column":"splicePosition",
+            "name":"SPLICE POS"
+         },
+         {
+            "column":"region",
+            "name":"REGION"
+         },
+         {
+            "column":"cdsSpecCd",
+            "name":"CDS INC"
+         },
+         {
+            "column":"dnaChange",
+            "name":"C-DNA"
+         }
+      ],
+      "transcriptTableData":[
+         {
+            "biotype":"protein_coding",
+            "cdsSpecCd":"5' and 3'",
+            "dnaChange":[
+               "-1373_-1372ins- upstream"
+            ],
+            "ensembl":"ENST00000003583",
+            "geneSymbol":"STPG1",
+            "polyphenPrediction":[
+               null
+            ],
+            "polyphenScore":[
+               null
+            ],
+            "region":[
+               "Upstream"
+            ],
+            "selectedInd":false,
+            "siftPrediction":[
+               null
+            ],
+            "siftScore":[
+               null
+            ],
+            "splice":[
+               null
+            ],
+            "splicePosition":[
+               null
+            ],
+            "transcriptName":"NM_178122.4",
+            "translation":[
+               null
+            ]
+         },
+         {
+            "biotype":"protein_coding",
+            "cdsSpecCd":"5' and 3'",
+            "dnaChange":[
+               "-1358_-1357ins- upstream"
+            ],
+            "ensembl":"ENST00000337248",
+            "geneSymbol":"STPG1",
+            "polyphenPrediction":[
+               null
+            ],
+            "polyphenScore":[
+               null
+            ],
+            "region":[
+               "Upstream"
+            ],
+            "selectedInd":false,
+            "siftPrediction":[
+               null
+            ],
+            "siftScore":[
+               null
+            ],
+            "splice":[
+               null
+            ],
+            "splicePosition":[
+               null
+            ],
+            "transcriptName":"NM_001199013.1",
+            "translation":[
+               null
+            ]
+         },
+         {
+            "biotype":"protein_coding",
+            "cdsSpecCd":"5' and 3'",
+            "dnaChange":[
+               "-1_1ins- upstream"
+            ],
+            "ensembl":"ENST00000374409",
+            "geneSymbol":"STPG1",
+            "polyphenPrediction":[
+               null
+            ],
+            "polyphenScore":[
+               null
+            ],
+            "region":[
+               "Upstream-5'UTR 1"
+            ],
+            "selectedInd":true,
+            "siftPrediction":[
+               null
+            ],
+            "siftScore":[
+               null
+            ],
+            "splice":[
+               null
+            ],
+            "splicePosition":[
+               null
+            ],
+            "transcriptName":"NM_001199012.1",
+            "translation":[
+               null
+            ]
+         },
+         {
+            "biotype":"protein_coding",
+            "cdsSpecCd":"5' and 3'",
+            "dnaChange":[
+               "-13639_-13638ins- upstream"
+            ],
+            "ensembl":"ENST00000440416",
+            "geneSymbol":"STPG1",
+            "polyphenPrediction":[
+               null
+            ],
+            "polyphenScore":[
+               null
+            ],
+            "region":[
+               "Upstream"
+            ],
+            "selectedInd":false,
+            "siftPrediction":[
+               null
+            ],
+            "siftScore":[
+               null
+            ],
+            "splice":[
+               null
+            ],
+            "splicePosition":[
+               null
+            ],
+            "transcriptName":null,
+            "translation":[
+               null
+            ]
+         },
+         {
+            "biotype":"protein_coding",
+            "cdsSpecCd":"5' and 3'",
+            "dnaChange":[
+               "-697_-696ins- upstream"
+            ],
+            "ensembl":"ENST00000374399",
+            "geneSymbol":"NIPAL3",
+            "polyphenPrediction":[
+               null
+            ],
+            "polyphenScore":[
+               null
+            ],
+            "region":[
+               "Upstream"
+            ],
+            "selectedInd":true,
+            "siftPrediction":[
+               null
+            ],
+            "siftScore":[
+               null
+            ],
+            "splice":[
+               null
+            ],
+            "splicePosition":[
+               null
+            ],
+            "transcriptName":"NM_020448.4",
+            "translation":[
+               null
+            ]
+         }
+      ],
+      "variants":[
+         "C"
+      ]
+   }
+}

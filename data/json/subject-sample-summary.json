@@ -1,0 +1,15 @@
+{
+   "status":"succeeded",
+   "data":[
+      {
+         "collectionDate":"2013-01-27 00:00:00",
+         "sampleCategoryCd":"N",
+         "sampleCategoryCdText":"Normal",
+         "sampleCid":"NA3902",
+         "sampleId":200000392,
+         "sampleTissueTypeCd":"01",
+         "sampleTissueTypeCdText":"blood",
+         "subjectId":200000392
+      }
+   ]
+}

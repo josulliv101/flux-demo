@@ -47,6 +47,15 @@ gulp.task('connect', connect.server({
     root: [__dirname],
     port: 9002,
     livereload: true,
+    middleware: function(connect, o) {
+        return [ (function() {
+            var url = require('url');
+            var proxy = require('proxy-middleware');
+            var options = url.parse('http://10.11.13.49:8181/site');
+            options.route = '/site';
+            return proxy(options);
+        })() ];
+    },
     open:{
     browser:  'Google Chrome' //'chrome'
   }

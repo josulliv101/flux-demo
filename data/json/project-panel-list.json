@@ -1,0 +1,40 @@
+{
+   "status":"succeeded",
+   "data":{
+      "name":"Trio Target Demo",
+      "panels":[
+         {
+            "lockedInd":false,
+            "name":"All Non-Reference - converted",
+            "projectPanelId":100000000,
+            "projectPanelWid":13,
+            "queries":[
+               {
+                  "binningRulesSatisfiedInd":true,
+                  "comparisonMode":"Present in Any",
+                  "name":"All non-reference",
+                  "projectPanelQueryId":100000000,
+                  "projectPanelQueryWid":12
+               }
+            ]
+         },
+         {
+            "lockedInd":false,
+            "name":"Basic Panel",
+            "projectPanelId":200000080,
+            "projectPanelWid":14,
+            "queries":[
+               {
+                  "binningRulesSatisfiedInd":true,
+                  "comparisonMode":"Called in Any",
+                  "name":"Called in Any",
+                  "projectPanelQueryId":200000080,
+                  "projectPanelQueryWid":13
+               }
+            ]
+         }
+      ],
+      "projectCid":"PROJECT-800",
+      "projectId":200000008
+   }
+}

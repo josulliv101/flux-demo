@@ -1,0 +1,44 @@
+{
+   "status":"succeeded",
+   "data":[
+      {
+         "csCid":"NA-3902-R1.Z1.B1",
+         "sampleCategoryCd":"N",
+         "sampleCategoryCdText":"Normal",
+         "seqId":200000392,
+         "seqName":"Carlos - NA3902",
+         "seqWid":25,
+         "subjectNameFirst":"Carlos",
+         "subjectNameLast":"Pacheo",
+         "subjectNameMiddle":null,
+         "subjectSexCd":"M",
+         "subjectSexCdText":"Male"
+      },
+      {
+         "csCid":"NA-7900-R1.Z1.B1",
+         "sampleCategoryCd":"N",
+         "sampleCategoryCdText":"Normal",
+         "seqId":200000790,
+         "seqName":"Frank - NA7900",
+         "seqWid":26,
+         "subjectNameFirst":"Frank",
+         "subjectNameLast":"Pacheo",
+         "subjectNameMiddle":null,
+         "subjectSexCd":"M",
+         "subjectSexCdText":"Male"
+      },
+      {
+         "csCid":"NA-7901-R1.Z1.B1",
+         "sampleCategoryCd":"N",
+         "sampleCategoryCdText":"Normal",
+         "seqId":200000791,
+         "seqName":"Laura - NA7901",
+         "seqWid":27,
+         "subjectNameFirst":"Laura",
+         "subjectNameLast":"Pacheo",
+         "subjectNameMiddle":"Madelena",
+         "subjectSexCd":"F",
+         "subjectSexCdText":"Female"
+      }
+   ]
+}

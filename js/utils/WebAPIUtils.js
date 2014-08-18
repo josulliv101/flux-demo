@@ -8,17 +8,15 @@ module.exports = {
 
   getAllProjects: function(count) {
 
-    return $.getJSON( url, {
+      var params = {};
+      params.dataType = 'json';
+      params.contentType = 'application/json';
+      params.type = 'POST';
+      params.data = "";
+      params.url = '/site/query?action=getProjectSummaries';
+      params.headers = {'Authorization': 'Bearer ' + 'eyJhbGciOiJIUzI1NiIsImtpZCI6ImtleTIifQ.eyJpc3MiOiJrbm9tZS5jb20iLCJpYXQiOjE0MDgzOTg2NzJ9.VDn_dPJLietQUYT5vr6xOl7qQkldWYciowj-7skuJr0' };
 
-      'rows': count || 0, //Math.floor(Math.random() * 20) + 1,
-
-      'name': '{lorem|3}',
-
-      'id': '{index}',
-
-      'delay': 1
-
-    });
+    return $.ajax(params);
   },
 
   fetchAllUsers: function(count) {

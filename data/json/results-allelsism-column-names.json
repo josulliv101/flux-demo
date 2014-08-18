@@ -1,0 +1,129 @@
+{
+   "status":"succeeded",
+   "data":[
+      {
+         "column":"report",
+         "name":"RPT"
+      },
+      {
+         "column":"chrStart",
+         "name":"CHR:START"
+      },
+      {
+         "column":"dbSNP",
+         "name":"DB-SNP"
+      },
+      {
+         "column":"cosmic",
+         "name":"COSMIC"
+      },
+      {
+         "column":"reference",
+         "name":"REF"
+      },
+      {
+         "column":"genotypes",
+         "name":"GENOTYPES"
+      },
+      {
+         "column":"variants",
+         "name":"VAR"
+      },
+      {
+         "column":"query",
+         "name":"QUERY"
+      },
+      {
+         "column":"geneNames",
+         "name":"GENE"
+      },
+      {
+         "column":"proteinChanges",
+         "name":"TRANSLATION"
+      },
+      {
+         "column":"geneRegion",
+         "name":"REGION"
+      },
+      {
+         "column":"genePhen",
+         "name":"GENE PHEN"
+      },
+      {
+         "column":"intVariant",
+         "name":"INT VAR"
+      },
+      {
+         "column":"intClass",
+         "name":"INT CLASS"
+      },
+      {
+         "column":"intPhen",
+         "name":"INT PHEN"
+      },
+      {
+         "column":"intMOI",
+         "name":"INT MOI"
+      },
+      {
+         "column":"extVariant",
+         "name":"EXT VAR"
+      },
+      {
+         "column":"extClass",
+         "name":"EXT CLASS"
+      },
+      {
+         "column":"extPhen",
+         "name":"EXT PHEN"
+      },
+      {
+         "column":"extSource",
+         "name":"EXT SOURCE"
+      },
+      {
+         "column":"translationEffect",
+         "name":"EFFECT"
+      },
+      {
+         "column":"splice",
+         "name":"SPLICE"
+      },
+      {
+         "column":"freqWorldESP",
+         "name":"ESP %"
+      },
+      {
+         "column":"freqWorld1k",
+         "name":"1KG %"
+      },
+      {
+         "column":"pVal",
+         "name":"P-VAL"
+      },
+      {
+         "column":"phastConsScore",
+         "name":"PHASTCONS"
+      },
+      {
+         "column":"phylopScore",
+         "name":"PHYLOP"
+      },
+      {
+         "column":"siftScores",
+         "name":"SIFT"
+      },
+      {
+         "column":"siftPredictions",
+         "name":"SIFT PREDICTION"
+      },
+      {
+         "column":"polyphenScores",
+         "name":"PP-2"
+      },
+      {
+         "column":"polyphenPredictions",
+         "name":"PP-2 PREDICTION"
+      }
+   ]
+}
