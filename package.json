@@ -1,5 +1,5 @@
 {
-  "name": "flux-chat",
+  "name": "flux-demo",
   "version": "0.0.1",
   "description": "Example Flux chat application primarily intended to explain the use of Dispatcher.waitFor().",
   "main": "js/app.js",
@@ -10,28 +10,47 @@
   },
   "devDependencies": {
     "browserify": "~4.2.2",
-    "envify": "~2.0.1",
     "jest-cli": "~0.1.17",
+    "react-test-utils": "0.0.1",
+    "react-tools": "*",
     "reactify": "~0.14.0",
-    "statics": "~0.1.0",
     "uglify-js": "~2.4.15",
-    "watchify": "~0.10.2"
+    "watchify": "~0.10.2",
+    "vinyl-source-stream": "~0.1.1",
+    "gulp": "~3.5.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-connect": "~1.0.0",
+    "gulp-connect-multi": "^1.0.8",
+    "gulp-jade": "~0.4.2",
+    "gulp-jshint": "~1.4.0",
+    "gulp-load-plugins": "~0.3.0",
+    "gulp-react": "~0.2.0",
+    "gulp-rename": "~1.1.0",
+    "gulp-sass": "~0.7.1",
+    "gulp-shell": "^0.2.7",
+    "gulp-size": "~0.1.3",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "~2.2.9"
   },
   "scripts": {
-    "start": "STATIC_ROOT=./static watchify -o js/bundle.js -v -d .",
-    "build": "STATIC_ROOT=./static NODE_ENV=production browserify . | uglifyjs -cm > js/bundle.min.js",
-    "collect-static": "collect-static . ./static",
     "test": "jest"
   },
-  "author": "Bill Fisher",
+  "author": "",
   "browserify": {
     "transform": [
-      "reactify",
-      "envify",
-      "uglify-js"
+      "reactify"
     ]
   },
   "jest": {
-    "rootDir": "./js"
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "rootDir": "js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/node_modules/"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
   }
 }
