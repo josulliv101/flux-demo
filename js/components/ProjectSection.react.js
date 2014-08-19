@@ -62,18 +62,14 @@ var ProjectSection = React.createClass({
     total = this.state.projects.length;
 
     return (
-      <div
+      <ul 
+        id="tasks"
         className={cx({
-          'section': true,
-          'project-section': true,
+          'item-list': true,
           'is-loading': this.state.isLoading
       })}>
-          <div className="spinner"></div>
-          <h4>Projects ({total})</h4>
-          <ul className="list">
-            {projectListItems}
-          </ul>
-      </div>
+        {projectListItems}
+      </ul>
     );
   },
 

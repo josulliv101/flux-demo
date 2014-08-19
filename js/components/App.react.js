@@ -21,10 +21,7 @@ App = React.createClass({
   render: function() {
     return (
       <div className="app">
-      	<button onClick={this._onClickAdd}>Add</button>
-      	<button onClick={this._onClickRemove}>Remove</button>
         <ProjectSection />
-        <UserSection />
       </div>
     );
   },

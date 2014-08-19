@@ -6,15 +6,15 @@ module.exports = {
   
   getAllProjects: function(count) {
 
-      var params = {};
-      params.dataType = 'json';
-      params.contentType = 'application/json';
-      params.type = 'POST';
-      params.data = "";
-      params.url = '/site/query?action=getProjectSummaries';
-      params.headers = {'Authorization': 'Bearer ' + 'eyJhbGciOiJIUzI1NiIsImtpZCI6ImtleTIifQ.eyJpc3MiOiJrbm9tZS5jb20iLCJpYXQiOjE0MDgzOTg2NzJ9.VDn_dPJLietQUYT5vr6xOl7qQkldWYciowj-7skuJr0' };
+    return $.getJSON( '/data/json/project-list.json', {
 
-    return $.ajax(params);
+      'rows': count || 1, 
+
+      'name': '{firstName}',
+
+      'delay': 1
+
+    });
   },
 
   fetchAllUsers: function(count) {

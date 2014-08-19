@@ -9,5 +9,5 @@ var App = require('./components/App.react'),
 
 React.renderComponent(
     <App />,
-    document.getElementById('react')
+    document.getElementById('task-tab')
 );

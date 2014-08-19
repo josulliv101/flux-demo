@@ -22,7 +22,7 @@ module.exports = {
 
       type: ActionTypes.RECEIVE_RAW_PROJECTS,
 
-      rawProjects: rawProjects.data
+      rawProjects: rawProjects.data || rawProjects
 
     });
   },

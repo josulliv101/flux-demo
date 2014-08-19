@@ -47,7 +47,7 @@
   },
   "aliasify": {
       "aliases": {
-          "WebAPIUtils": { "relative": "../utils/WebAPIUtils" }
+          "WebAPIUtils": { "relative": "../utils/mockWebAPIUtils" }
       }
   },
   "jest": {
