@@ -5,6 +5,7 @@
 var React               = require('react'),
  	ProjectSection        = require('./ProjectSection.react'),
   UserSection           = require('./UserSection.react'),
+  CheckboxWithLabel     = require('./CheckboxWithLabel.react'),
 	ServerActionCreators  = require('../actions/ServerActionCreators'),
 	App;
 
@@ -22,6 +23,7 @@ App = React.createClass({
     return (
       <div className="app">
         <ProjectSection />
+        <CheckboxWithLabel labelOn="Label On" labelOff="Label Off" />
       </div>
     );
   },

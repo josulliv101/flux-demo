@@ -21,7 +21,7 @@ gulp.task('scripts', function () {
       console.log(log);
     })
     .pipe(source('bundle.js'))
-    .pipe(streamify(uglify()))
+    //.pipe(streamify(uglify()))
     // .pipe($.jshint('.jshintrc'))
     // .pipe($.jshint.reporter('default'))
     .pipe(gulp.dest('js'))
@@ -47,6 +47,7 @@ gulp.task('connect', connect.server({
     root: [__dirname],
     port: 9002,
     livereload: true,
+/*
     middleware: function(connect, o) {
         return [ (function() {
             var url = require('url');
@@ -56,6 +57,7 @@ gulp.task('connect', connect.server({
             return proxy(options);
         })() ];
     },
+    */
     open:{
     browser:  'Google Chrome' //'chrome'
   }

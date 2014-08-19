@@ -1,6 +1,6 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher'),
     Constants     = require('../constants/Constants'),
-    WebAPIUtils   = require('WebAPIUtils'), 
+    WebAPIUtils   = require('../utils/mockWebAPIUtils'), 
     ActionTypes   = Constants.ActionTypes;
 
 module.exports = {
