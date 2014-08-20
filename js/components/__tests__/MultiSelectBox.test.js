@@ -101,7 +101,7 @@ describe('MultiSelectBox', function() {
       <MultiSelectBox />
     );
 
-    expect( $(view.getDOMNode()).find('table tr').length ).toBe(3);
+    expect( $(view.getDOMNode()).find('.tbl-div li').length ).toBe(3);
 
     expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
     
@@ -119,8 +119,8 @@ describe('MultiSelectBox', function() {
     var view = TestUtils.renderIntoDocument(
       <MultiSelectBox />
     );
-
-    var TRs = TestUtils.scryRenderedDOMComponentsWithTag(view, 'tr');
+    var tbl = TestUtils.findRenderedDOMComponentWithClass(view, 'tbl-div');
+    var TRs = TestUtils.scryRenderedDOMComponentsWithTag(tbl, 'li');
 
     expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
 

@@ -68,7 +68,7 @@ module.exports = React.createClass({
 
         var isSelected = this.isItemIdSelected(item.id);
 
-        return ( <tr className={cx({ selected: isSelected })} onClick={this.handleItemClick.bind(this, item.id)} ><td>test {i}</td></tr> );
+        return ( <li className={cx({ selected: isSelected })} onClick={this.handleItemClick.bind(this, item.id)} ><td>test {i}</td></li> );
 
       }, this),
 
@@ -114,17 +114,9 @@ module.exports = React.createClass({
 
         <label className="filter-remove"><span>x</span>Clear Filter</label>
 
-        <div className="tbl-div">
+        <ul className="tbl-div">{items}</ul>
 
-          <table>
-
-            <tbody> {items} </tbody>
-
-          </table>
-
-          <div className="tbl-message">No items are currently checked. <label>View all items</label>.</div>
-
-        </div>
+        <div className="tbl-message">No items are currently checked. <label>View all items</label>.</div>
 
         <ul class="display-options">
 
