@@ -3,15 +3,25 @@ var React = require('react'),
 
     cx = require('react/lib/cx'),
 
-    _ = require('underscore'),
+    _ = require('underscore');
 
-    MultiSelectBox;
+function getStateFromStores() {
 
-MultiSelectBox = React.createClass({
+  return {
+
+    items: [{ id: 1, name: 'Joe', selected: true }, { id: 2, name: 'Magg' }, { id: 3, name: 'Joseph' }]
+
+  };
+
+}
+
+module.exports = React.createClass({
 
   getInitialState: function() {
 
-    return { 
+    var state = getStateFromStores();
+
+    return _.extend({ 
 
       isChecked: false,
 
@@ -23,55 +33,50 @@ MultiSelectBox = React.createClass({
 
       mode: 'read-only',
 
-      selectedTotal: 0
+      selectedIds: _.chain(state.items)
 
-    };
+                    .filter(function(item) { return item.selected === true; })
 
-  },
+                    .map(function(item) { return item.id; })
 
-  getDefaultProps: function() {
+                    .value()
 
-    return {
-
-      items: []
-
-    };
+    }, state );
 
   },
 
-  componentWillMount: function() {
+  isItemIdSelected: function(id) {
 
-    this.setState({ selectedTotal: this.getSelectedTotal() });
-
-  },
-
-  onClick: function(state, event) {
-
-    this.setState(state);
+    return _.contains(this.state.selectedIds, id);
 
   },
 
-  handleItemClick: function(item) {
+  handleItemClick: function(id) {
 
-    item.selected = !item.selected;
+    var fn = !this.isItemIdSelected(id) ? _.union : _.difference,
 
-    //this.setState({ selectedTotal: this.getSelectedTotal() });
+        // Add or remove the item based on its presence in array
+        ids = fn(this.state.selectedIds, [ id ]);
 
-  },
-
-  getSelectedTotal: function() {
-
-    return 33; //_.filter(this.props.items, function(item) { return item.selected === true; }).length
+    this.setState({ selectedIds: ids });
 
   },
 
   render: function() {
 
-    var items = (this.props.items).map(function(item, i) {
+    var items = (this.state.items).map(function(item, i) {
 
-      return ( <tr className={cx({ selected: item.selected })}  ><td>test {i}</td></tr> );
+        var isSelected = this.isItemIdSelected(item.id);
 
-    });
+        return ( <tr className={cx({ selected: isSelected })} onClick={this.handleItemClick.bind(this, item.id)} ><td>test {i}</td></tr> );
+
+      }, this),
+
+      handler = this._onChange, 
+
+      modeEdit = { mode: 'edit' }, 
+
+      modeReadOnly = { mode: 'read-only' };
 
     return (
 
@@ -105,7 +110,7 @@ MultiSelectBox = React.createClass({
 
         <label className="message">Unsaved...</label>
 
-        <label className="selected"><em>{this.state.getSelectedTotal}</em> selected</label>
+        <label className="selected"><em>{this.state.selectedIds.length}</em> selected</label>
 
         <label className="filter-remove"><span>x</span>Clear Filter</label>
 
@@ -113,11 +118,7 @@ MultiSelectBox = React.createClass({
 
           <table>
 
-            <tbody>
-
-              {items}
-
-            </tbody>
+            <tbody> {items} </tbody>
 
           </table>
 
@@ -133,13 +134,13 @@ MultiSelectBox = React.createClass({
 
         <ul className="btn-group">
 
-          <li className="btn btn-add" onClick={this.onClick.bind(this, { mode: 'edit' })}>add</li>
+          <li className="btn btn-add" onClick={ handler.bind(this, modeEdit) }>add</li>
 
-          <li className="btn btn-select" onClick={this.onClick.bind(this, { mode: 'edit' })}>select</li>
+          <li className="btn btn-select" onClick={ handler.bind(this, modeEdit) }>select</li>
 
-          <li className="btn btn-use" onClick={this.onClick.bind(this, { mode: 'read-only' })}>use</li>
+          <li className="btn btn-use" onClick={ handler.bind(this, modeReadOnly) }>use</li>
 
-          <li className="btn btn-back" onClick={this.onClick.bind(this, { mode: 'read-only' })}>back</li>
+          <li className="btn btn-back" onClick={ handler.bind(this, modeReadOnly) }>back</li>
 
         </ul>
 
@@ -147,8 +148,14 @@ MultiSelectBox = React.createClass({
 
     );
 
+  },
+
+  //// 'Private' ////
+
+  _onChange: function(stateAttrs) {
+
+    this.setState( _.extend(getStateFromStores(), stateAttrs) );
+
   }
 
 });
-
-module.exports = MultiSelectBox;

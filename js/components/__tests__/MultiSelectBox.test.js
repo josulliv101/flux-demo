@@ -94,39 +94,63 @@ describe('MultiSelectBox', function() {
     var React = require('react/addons');
     var $ = require('jquery');
     var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils,
-
-        data = [{ name: "Joe", selected: true }, { name: "Maggie" }, { name: "Joseph" }];
+    var TestUtils = React.addons.TestUtils;
 
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox items={data} />
+      <MultiSelectBox />
     );
 
     expect( $(view.getDOMNode()).find('table tr').length ).toBe(3);
 
-    expect( $(view.getDOMNode()).find('table tr.selected').length ).toBe(1);
+    expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
     
 
   });
 
-  it('tallies up selected items and sets state before mounting & updates DOM element', function () {
+  it('handles selection of items via tr clicking', function () {
 
     var React = require('react/addons');
     var $ = require('jquery');
     var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils,
-
-        data = [{ name: "Joe", selected: true }, { name: "Maggie" }, { name: "Joseph" }];
+    var TestUtils = React.addons.TestUtils;
 
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox items={data} />
+      <MultiSelectBox />
     );
+
+    var TRs = TestUtils.scryRenderedDOMComponentsWithTag(view, 'tr');
+
+    expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
+
+    TestUtils.Simulate.click(TRs[0]);
+
+    expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(0);
+
+    TestUtils.Simulate.click(TRs[0]);
+
+    expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
+
+
+    TestUtils.Simulate.click(TRs[1]);
+
+    expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(2);
+
+
+    TestUtils.Simulate.click(TRs[2]);
+
+    expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(3);
+
+
+    TestUtils.Simulate.click(TRs[1]);
+
+    expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(2);
+
+    TestUtils.Simulate.click(TRs[0]);
 
     expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
     
   });
 
 });
-
