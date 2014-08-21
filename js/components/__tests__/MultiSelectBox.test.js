@@ -69,7 +69,7 @@ describe('MultiSelectBox', function() {
 
   });
 
-  it('starts in read-only mode', function () {
+  it('reflects isDirty state', function () {
 
     var React = require('react/addons');
     var $ = require('jquery');
@@ -81,9 +81,23 @@ describe('MultiSelectBox', function() {
       <MultiSelectBox />
     );
 
+    var tbl = TestUtils.findRenderedDOMComponentWithClass(view, 'tbl-div');
+    var TRs = TestUtils.scryRenderedDOMComponentsWithTag(tbl, 'li');
+
     expect( $(view.getDOMNode()).hasClass('dirty') ).not.toBeTruthy();
 
-    view.setState({ isDirty: true });
+    //view.setState({ isDirty: true });
+    TestUtils.Simulate.click(TRs[0]);
+
+    expect( $(view.getDOMNode()).hasClass('dirty') ).toBeTruthy();
+
+    TestUtils.Simulate.click(TRs[0]);
+
+    expect( $(view.getDOMNode()).hasClass('dirty') ).not.toBeTruthy();
+
+    TestUtils.Simulate.click(TRs[0]);
+
+    TestUtils.Simulate.click(TRs[1]);
 
     expect( $(view.getDOMNode()).hasClass('dirty') ).toBeTruthy();
 
@@ -106,6 +120,38 @@ describe('MultiSelectBox', function() {
     expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
     
 
+  });
+
+  it('reflects the \'show checked only\' state in dom as css flag', function () {
+
+    var React = require('react/addons');
+    var $ = require('jquery');
+    var MultiSelectBox = require('../MultiSelectBox.react.js');
+    var TestUtils = React.addons.TestUtils;
+
+    // Render a checkbox with label in the document
+    var view = TestUtils.renderIntoDocument(
+      <MultiSelectBox />
+    );
+
+    var btnShowCheckedOnly = TestUtils.findRenderedDOMComponentWithClass(view, 'btn-show-checked-only');
+
+    expect( $(view.getDOMNode()).hasClass('show-checkbox-only') ).toBeFalsy();
+
+    TestUtils.Simulate.click(btnShowCheckedOnly);
+
+    expect( $(view.getDOMNode()).hasClass('show-checkbox-only') ).toBeTruthy();
+
+    TestUtils.Simulate.click(btnShowCheckedOnly);
+
+    expect( $(view.getDOMNode()).hasClass('show-checkbox-only') ).toBeFalsy();
+
+    TestUtils.Simulate.click(btnShowCheckedOnly);
+
+    TestUtils.Simulate.click(btnShowCheckedOnly);
+
+    expect( $(view.getDOMNode()).hasClass('show-checkbox-only') ).toBeFalsy();
+    
   });
 
   it('handles selection of items via tr clicking', function () {
@@ -150,6 +196,64 @@ describe('MultiSelectBox', function() {
     TestUtils.Simulate.click(TRs[0]);
 
     expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
+    
+  });
+
+  it('reflects the \'filter input query\' state in dom as css flag', function () {
+
+    var React = require('react/addons');
+    var $ = require('jquery');
+    var MultiSelectBox = require('../MultiSelectBox.react.js');
+    var TestUtils = React.addons.TestUtils;
+
+    // Render a checkbox with label in the document
+    var view = TestUtils.renderIntoDocument(
+      <MultiSelectBox />
+    );
+
+    var txtboxFilter = TestUtils.findRenderedDOMComponentWithClass(view, 'txtbox-filter');
+
+    expect( $(view.getDOMNode()).hasClass('filter-active') ).not.toBeTruthy();
+
+    $(txtboxFilter.getDOMNode()).val('test');
+
+    TestUtils.Simulate.change(txtboxFilter);
+
+    expect( $(view.getDOMNode()).hasClass('filter-active') ).toBeTruthy();
+    
+  });
+
+  it('filters items based on filter text', function () {
+
+    var React = require('react/addons');
+    var $ = require('jquery');
+    var MultiSelectBox = require('../MultiSelectBox.react.js');
+    var TestUtils = React.addons.TestUtils;
+
+    // Render a checkbox with label in the document
+    var view = TestUtils.renderIntoDocument(
+      <MultiSelectBox />
+    );
+
+    var txtboxFilter = TestUtils.findRenderedDOMComponentWithClass(view, 'txtbox-filter');
+
+    expect( $(view.getDOMNode()).hasClass('filter-active') ).not.toBeTruthy();
+
+    $(txtboxFilter.getDOMNode()).val('J');
+
+    TestUtils.Simulate.change(txtboxFilter);
+
+    expect( $(view.getDOMNode()).hasClass('filter-active') ).toBeTruthy();
+
+    expect( $(view.getDOMNode()).find('.tbl-div li').length ).toBe(2);
+
+    $(txtboxFilter.getDOMNode()).val('M');
+
+    TestUtils.Simulate.change(txtboxFilter);
+
+    expect( $(view.getDOMNode()).hasClass('filter-active') ).toBeTruthy();
+
+    expect( $(view.getDOMNode()).find('.tbl-div li').length ).toBe(1);
     
   });
 

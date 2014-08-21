@@ -9,13 +9,23 @@ function getStateFromStores() {
 
   return {
 
-    items: [{ id: 1, name: 'Joe', selected: true }, { id: 2, name: 'Magg' }, { id: 3, name: 'Joseph' }]
+    items: [{ id: 1, name: 'Joe', lname: 'Sullivan', selected: true }, { id: 2, name: 'Magg', lname: 'Sullivan' }, { id: 3, name: 'Joseph', lname: 'Sullivan' }]
 
   };
 
 }
 
+function _filterItems(items, q) {
+
+  if (_.isEmpty(q)) return items;
+
+  return _.filter(items, function(item) { return item.name.indexOf(q) === 0; });
+
+}
+
 module.exports = React.createClass({
+
+  mixins: [React.addons.LinkedStateMixin],
 
   getInitialState: function() {
 
@@ -23,13 +33,11 @@ module.exports = React.createClass({
 
     return _.extend({ 
 
-      isChecked: false,
-
       isDirty: false,
 
       showCheckedItemsOnly: false,
 
-      isFilterActive: false,
+      filterText: '',
 
       mode: 'read-only',
 
@@ -62,9 +70,15 @@ module.exports = React.createClass({
 
   },
 
+  _onChange: function(stateAttrs) {
+
+    this.setState( _.extend(getStateFromStores(), stateAttrs) );
+
+  },
+
   render: function() {
 
-    var items = (this.state.items).map(function(item, i) {
+    var items = ( _filterItems(this.state.items, this.state.filterText) ).map(function(item, i) {
 
         var isSelected = this.isItemIdSelected(item.id);
 
@@ -78,6 +92,9 @@ module.exports = React.createClass({
 
       modeReadOnly = { mode: 'read-only' };
 
+      // Save originally selected ids for isDirty comparison
+      if (!this.origSelectedIds) this.origSelectedIds = this.state.selectedIds;
+
     return (
 
       <div className={cx({
@@ -90,9 +107,11 @@ module.exports = React.createClass({
 
           'edit': this.state.mode === 'edit',
 
-          'dirty': this.state.isDirty,
+          'dirty': !_.isEqual(this.origSelectedIds, this.state.selectedIds),//this.state.isDirty,
 
-          'is-filter-active': this.state.isFilterActive
+          'filter-active': !_.isEmpty(this.state.filterText),
+
+          'show-checkbox-only': this.state.showCheckedItemsOnly
 
       })}>
 
@@ -100,7 +119,7 @@ module.exports = React.createClass({
 
           <div className="filter">
 
-            <input type="text" placeholder="filter by name" />
+            <input className="txtbox-filter" type="text" placeholder="filter by name" valueLink={this.linkState('filterText')} />
 
             <label>x</label>
 
@@ -118,13 +137,9 @@ module.exports = React.createClass({
 
         <div className="tbl-message">No items are currently checked. <label>View all items</label>.</div>
 
-        <ul class="display-options">
-
-          <li>Show checked only</li>
-
-        </ul>
-
         <ul className="btn-group">
+
+          <li><button className="btn btn-show-checked-only" onClick={ handler.bind(this, { showCheckedItemsOnly: !this.state.showCheckedItemsOnly }) }>Show checked only</button></li>
 
           <li className="btn btn-add" onClick={ handler.bind(this, modeEdit) }>add</li>
 
@@ -139,14 +154,6 @@ module.exports = React.createClass({
       </div>
 
     );
-
-  },
-
-  //// 'Private' ////
-
-  _onChange: function(stateAttrs) {
-
-    this.setState( _.extend(getStateFromStores(), stateAttrs) );
 
   }
 
