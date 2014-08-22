@@ -7,8 +7,6 @@ var React = require('react'),
 
 var SelectableItemsMixin = {
 
-  intervals: [],
-
   componentWillMount: function() {
 
     // Save originally selected ids for isDirty comparison

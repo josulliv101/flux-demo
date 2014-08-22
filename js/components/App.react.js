@@ -7,6 +7,7 @@ var React               = require('react'),
   UserSection           = require('./UserSection.react'),
   CheckboxWithLabel     = require('./CheckboxWithLabel.react'),
 	ServerActionCreators  = require('../actions/ServerActionCreators'),
+  MultiSelectBox        = require('./MultiSelectBox.react'),
 	App;
 
 App = React.createClass({
@@ -22,8 +23,7 @@ App = React.createClass({
   render: function() {
     return (
       <div className="app">
-        <ProjectSection />
-        <CheckboxWithLabel labelOn="Label On" labelOff="Label Off" />
+        <MultiSelectBox />
       </div>
     );
   },

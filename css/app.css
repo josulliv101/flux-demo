@@ -1,4 +1,41 @@
+.multi-selectbox {
+  position: relative;
+}
+ 
 
+.multi-selectbox .message,
+.multi-selectbox .filter,
+.multi-selectbox .filter-clear,
+.multi-selectbox .tbl-message,
+.multi-selectbox .btn-group button
+{
+  display: none;
+}
+
+.multi-selectbox.dirty .message,
+.multi-selectbox.edit-read-only .btn-group button.btn-select
+{
+  display: inline-block;
+}
+
+.multi-selectbox .message {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.multi-selectbox .selected {
+/*
+  position: absolute;
+  top: 0;
+  right: 0;
+ */ 
+ width: 100%;
+}
+
+/*
 .app {
   font-family: 'Muli', 'Helvetica Neue', helvetica, arial;
   max-width: 760px;
@@ -49,3 +86,4 @@
 .section .list .item.active button, .section .list .item.active button:hover {
   color: #6699cc;
 }
+*/
