@@ -2,6 +2,7 @@
 
 jest
   .dontMock('../MultiSelectBox.react.js')
+  .dontMock('../SelectableItemsMixin.js')
   .dontMock('jquery');
 
 describe('MultiSelectBox', function() {
@@ -254,6 +255,22 @@ describe('MultiSelectBox', function() {
     expect( $(view.getDOMNode()).hasClass('filter-active') ).toBeTruthy();
 
     expect( $(view.getDOMNode()).find('.tbl-div li').length ).toBe(1);
+    
+  });
+
+  it('implements is selectable mixin', function () {
+
+    var React = require('react/addons');
+    var $ = require('jquery');
+    var MultiSelectBox = require('../MultiSelectBox.react.js');
+    var TestUtils = React.addons.TestUtils;
+
+    // Render a checkbox with label in the document
+    var view = TestUtils.renderIntoDocument(
+      <MultiSelectBox />
+    );
+
+    expect( view.intervals.length ).toBe(22);
     
   });
 

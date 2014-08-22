@@ -3,17 +3,9 @@ var React = require('react'),
 
     cx = require('react/lib/cx'),
 
-    _ = require('underscore');
+    _ = require('underscore'),
 
-function getStateFromStores() {
-
-  return {
-
-    items: [{ id: 1, name: 'Joe', lname: 'Sullivan', selected: true }, { id: 2, name: 'Magg', lname: 'Sullivan' }, { id: 3, name: 'Joseph', lname: 'Sullivan' }]
-
-  };
-
-}
+    SelectableItemsMixin = require('../components/SelectableItemsMixin');
 
 function _filterItems(items, q) {
 
@@ -25,13 +17,13 @@ function _filterItems(items, q) {
 
 module.exports = React.createClass({
 
-  mixins: [React.addons.LinkedStateMixin],
+  mixins: [ React.addons.LinkedStateMixin, SelectableItemsMixin ],
 
   getInitialState: function() {
 
-    var state = getStateFromStores();
+    var items = [{ id: 1, name: 'Joe', lname: 'Sullivan', selected: true }, { id: 2, name: 'Magg', lname: 'Sullivan' }, { id: 3, name: 'Joseph', lname: 'Sullivan' }];
 
-    return _.extend({ 
+    return { 
 
       isDirty: false,
 
@@ -41,38 +33,17 @@ module.exports = React.createClass({
 
       mode: 'read-only',
 
-      selectedIds: _.chain(state.items)
+      selectedIds: this.getSelected(items),
 
-                    .filter(function(item) { return item.selected === true; })
+      items: items
 
-                    .map(function(item) { return item.id; })
-
-                    .value()
-
-    }, state );
-
-  },
-
-  isItemIdSelected: function(id) {
-
-    return _.contains(this.state.selectedIds, id);
-
-  },
-
-  handleItemClick: function(id) {
-
-    var fn = !this.isItemIdSelected(id) ? _.union : _.difference,
-
-        // Add or remove the item based on its presence in array
-        ids = fn(this.state.selectedIds, [ id ]);
-
-    this.setState({ selectedIds: ids });
+    };
 
   },
 
   _onChange: function(stateAttrs) {
 
-    this.setState( _.extend(getStateFromStores(), stateAttrs) );
+    this.setState(stateAttrs);
 
   },
 
@@ -80,20 +51,9 @@ module.exports = React.createClass({
 
     var items = ( _filterItems(this.state.items, this.state.filterText) ).map(function(item, i) {
 
-        var isSelected = this.isItemIdSelected(item.id);
+        return ( <li className={cx({ selected: this.isItemIdSelected(item.id) })} onClick={this.toggleItem.bind(this, item.id)} ><td>test {i}</td></li> );
 
-        return ( <li className={cx({ selected: isSelected })} onClick={this.handleItemClick.bind(this, item.id)} ><td>test {i}</td></li> );
-
-      }, this),
-
-      handler = this._onChange, 
-
-      modeEdit = { mode: 'edit' }, 
-
-      modeReadOnly = { mode: 'read-only' };
-
-      // Save originally selected ids for isDirty comparison
-      if (!this.origSelectedIds) this.origSelectedIds = this.state.selectedIds;
+      }, this);
 
     return (
 
@@ -107,7 +67,7 @@ module.exports = React.createClass({
 
           'edit': this.state.mode === 'edit',
 
-          'dirty': !_.isEqual(this.origSelectedIds, this.state.selectedIds),//this.state.isDirty,
+          'dirty': !_.isEqual(this.origSelectedIds, this.state.selectedIds),
 
           'filter-active': !_.isEmpty(this.state.filterText),
 
@@ -115,15 +75,11 @@ module.exports = React.createClass({
 
       })}>
 
-        <div className="header">
+        <div className="filter">
 
-          <div className="filter">
+          <input className="txtbox-filter" type="text" placeholder="filter by name" valueLink={this.linkState('filterText')} />
 
-            <input className="txtbox-filter" type="text" placeholder="filter by name" valueLink={this.linkState('filterText')} />
-
-            <label>x</label>
-
-          </div>
+          <label>x</label>
 
         </div>
 
@@ -139,15 +95,15 @@ module.exports = React.createClass({
 
         <ul className="btn-group">
 
-          <li><button className="btn btn-show-checked-only" onClick={ handler.bind(this, { showCheckedItemsOnly: !this.state.showCheckedItemsOnly }) }>Show checked only</button></li>
+          <li><button className="btn btn-show-checked-only" onClick={ this._onChange.bind(this, { showCheckedItemsOnly: !this.state.showCheckedItemsOnly }) }>Show checked only</button></li>
 
-          <li className="btn btn-add" onClick={ handler.bind(this, modeEdit) }>add</li>
+          <li className="btn btn-add" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>add</li>
 
-          <li className="btn btn-select" onClick={ handler.bind(this, modeEdit) }>select</li>
+          <li className="btn btn-select" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>select</li>
 
-          <li className="btn btn-use" onClick={ handler.bind(this, modeReadOnly) }>use</li>
+          <li className="btn btn-use" onClick={ this._onChange.bind(this, { mode: 'read-only' }) }>use</li>
 
-          <li className="btn btn-back" onClick={ handler.bind(this, modeReadOnly) }>back</li>
+          <li className="btn btn-back" onClick={ this._onChange.bind(this, { mode: 'read-only' }) }>back</li>
 
         </ul>
 
