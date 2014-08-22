@@ -38,7 +38,6 @@ module.exports = React.createClass({
       items: items
 
     };
-
   },
 
   _onChange: function(stateAttrs) {
@@ -110,7 +109,5 @@ module.exports = React.createClass({
       </div>
 
     );
-
   }
-
 });
