@@ -1,5 +1,6 @@
 .multi-selectbox {
   position: relative;
+  margin: 0 0 12px;
   /* Layout */
   /* States */ }
   .multi-selectbox header {
@@ -9,9 +10,27 @@
     display: none; }
   .multi-selectbox .btn {
     margin-left: 6px; }
+  .multi-selectbox .btn-show-checked-only {
+    position: absolute;
+    left: 3px;
+    bottom: 24px;
+    margin: 0;
+    padding: inherit 15px; }
+    .multi-selectbox .btn-show-checked-only:focus {
+      outline: none; }
+    .multi-selectbox .btn-show-checked-only .glyphicon {
+      margin-right: 6px; }
   .multi-selectbox .filter {
+    position: relative;
     visibility: hidden;
     width: 50%; }
+    .multi-selectbox .filter .glyphicon {
+      position: absolute;
+      top: 50%;
+      right: 1em;
+      margin-top: -0.5em; }
+      .multi-selectbox .filter .glyphicon.glyphicon-remove {
+        display: none; }
   .multi-selectbox .filter-clear, .multi-selectbox .selected, .multi-selectbox .message {
     position: absolute;
     bottom: 0;
@@ -21,9 +40,15 @@
     right: auto;
     left: 0; }
   .multi-selectbox .tbl-div {
-    overflow: auto; }
+    overflow: auto;
+    background: #fafafa;
+    border-radius: 3px; }
     .multi-selectbox .tbl-div a .glyphicon {
       display: none; }
+  .multi-selectbox .selected {
+    /* 	 width: 100%; */ }
+    .multi-selectbox .selected em {
+      font-style: normal; }
   .multi-selectbox.edit-read-only button.btn-select {
     display: inline-block; }
   .multi-selectbox.edit-read-only.dirty .message {
@@ -34,13 +59,18 @@
     visibility: visible; }
   .multi-selectbox.edit button.btn-select {
     display: none; }
-  .multi-selectbox.edit button.btn-use, .multi-selectbox.edit button.btn-back {
+  .multi-selectbox.edit button.btn-use, .multi-selectbox.edit button.btn-back, .multi-selectbox.edit button.btn-show-checked-only {
     display: inline-block; }
   .multi-selectbox.edit .tbl-div {
+    height: 240px;
     overflow: auto; }
     .multi-selectbox.edit .tbl-div a .glyphicon {
       display: inline-block; }
-  .multi-selectbox.edit.filter-active .selected {
+  .multi-selectbox.edit.filter-active header .selected {
     display: none; }
-  .multi-selectbox.edit.filter-active .filter-clear {
+  .multi-selectbox.edit.filter-active header .filter-clear {
     display: inline-block; }
+  .multi-selectbox.edit.filter-active header .filter .glyphicon.glyphicon-remove {
+    display: inline-block; }
+  .multi-selectbox.edit.filter-active header .filter .glyphicon.glyphicon-search {
+    display: none; }

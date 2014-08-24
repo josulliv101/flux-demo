@@ -1,5 +1,6 @@
 .multi-selectbox {
   position: relative;
+  margin: 0 0 12px;
 	header {
 		position: relative;
 		margin: 0 0 6px;
@@ -11,9 +12,33 @@
 		margin-left: 6px;
 	}
 
+	.btn-show-checked-only {
+		position: absolute;
+		left: 3px;
+		bottom: 24px;
+		margin: 0;
+		padding: inherit 15px;
+		&:focus {
+			outline:none;
+		}
+		.glyphicon {
+			margin-right: 6px;
+		}
+	}
+
 	.filter {
+		position: relative;
 		visibility: hidden;
 		width: 50%;
+		.glyphicon {
+			position: absolute;
+			top: 50%;
+			right: 1em;
+			margin-top: -.5em;
+			&.glyphicon-remove {
+				display: none;
+			}
+		}
 	}
 
 /* Layout */
@@ -40,9 +65,14 @@
 
 	.tbl-div {
 		overflow: auto;
+		background: #fafafa;
+		border-radius: 3px;
 		a {
 			.glyphicon {
 				display: none;
+			}
+			&:nth-child(odd) {
+				/*background: #f8f8f8;*/
 			}
 		}
 	}
@@ -50,6 +80,9 @@
 
 	.selected {
 /* 	 width: 100%; */
+		em {
+			font-style: normal;
+		}
 	}
 
 /* States */
@@ -82,11 +115,12 @@
 		button.btn-select {
 			display: none;				
 		}
-		button.btn-use, button.btn-back {
+		button.btn-use, button.btn-back, button.btn-show-checked-only {
 			display: inline-block;				
 		}
 
 		.tbl-div {
+			height: 240px;
 			overflow: auto;
 			a {
 				.glyphicon {
@@ -95,11 +129,23 @@
 			}
 		}
 		&.filter-active {
-			.selected {
-				display:none;
-			}
-			.filter-clear {
-				display: inline-block;
+			header {
+				.selected {
+					display:none;
+				}
+				.filter-clear {
+					display: inline-block;
+				}
+				.filter {
+					.glyphicon {
+						&.glyphicon-remove {
+							display: inline-block;
+						}
+						&.glyphicon-search {
+							display: none;
+						}
+					}
+				}		
 			}
 		}
 	}

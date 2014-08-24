@@ -12,73 +12,66 @@ var React               = require('react'),
 
 var data = [
       {
-         "id":"1965-11-15",
          "nameFirst":"Carlos",
-         "nameLast":"Pacheo",
-         "nameMiddle":"",
-         "sexCd":"M",
-         "sexCdText":"Male",
-         "subjectCid":"NEW-36534",
-         "subjectId":200000392
+         "nameLast":"Pacheo"
       },
       {
-         "id":"1975-03-05",
          "nameFirst":"Claudio",
          "nameLast":"Mathews",
-         "nameMiddle":"Olivio",
-         "sexCd":"M",
-         "sexCdText":"Male",
-         "subjectCid":"PT-98979",
-         "subjectId":200000792,
          "selected":true
       },
       {
-         "id":"1945-04-09",
          "nameFirst":"Frank",
-         "nameLast":"Pacheo",
-         "nameMiddle":"",
-         "sexCd":"M",
-         "sexCdText":"Male",
-         "subjectCid":"PT-09834",
-         "subjectId":200000790
+         "nameLast":"Pacheo"
       },
       {
-         "id":"1945-04-09",
          "nameFirst":"Jose",
-         "nameLast":"Mathews",
-         "nameMiddle":"",
-         "sexCd":"M",
-         "sexCdText":"Male",
-         "subjectCid":"NEW-98344",
-         "subjectId":200000390
+         "nameLast":"Mathews"
       },
       {
-         "id":"1948-09-21",
          "nameFirst":"Laura",
          "nameLast":"Pacheo",
-         "nameMiddle":"Madelena",
-         "sexCd":"F",
-         "sexCdText":"Female",
-         "subjectCid":"PT-23422",
-         "subjectId":200000791,
          "selected":true
       },
       {
-         "id":"1948-09-21",
          "nameFirst":"Maria",
-         "nameLast":"Mathews",
-         "nameMiddle":"",
-         "sexCd":"F",
-         "sexCdText":"Female",
-         "subjectCid":"NEW-34534",
-         "subjectId":200000391
+         "nameLast":"Mathews"
+      },
+      {
+         "nameFirst":"Tom",
+         "nameLast":"Patrick"
+      },
+      {
+         "nameFirst":"Mark",
+         "nameLast":"Barter"
+      },
+      {
+         "nameFirst":"Nancy",
+         "nameLast":"Barter"
+      },
+      {
+         "nameFirst":"Jon",
+         "nameLast":"Fish"
+      },
+      {
+         "nameFirst":"Elmer",
+         "nameLast":"Fudd",
+         "selected": true
+      },
+      {
+         "nameFirst":"Andy",
+         "nameLast":"Avett"
+      },
+      {
+         "nameFirst":"Neal",
+         "nameLast":"Peters"
       }
    ];
 
 data.forEach(function(item, i) {
 
     item.id = ++i;
-    
+
 });
 
 App = React.createClass({

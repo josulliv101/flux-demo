@@ -52,8 +52,7 @@ module.exports = React.createClass({
 
   render: function() {
 
-    var list = this.state.mode === 'edit' ? _filterItems( this.state.items, this.state.filterText, this) : this.getSelectedIdsAsObjects(this.state.selectedIds);
-
+    var list = this.state.mode !== 'edit' || this.state.showCheckedItemsOnly === true ? this.getSelectedIdsAsObjects(this.state.selectedIds) : _filterItems( this.state.items, this.state.filterText, this);
 
         var items = list.map(function(item, i) {
 
@@ -73,21 +72,22 @@ module.exports = React.createClass({
           'has-results': items.length > 0
       })}>
         <header>
-          <label className="selected text-right text-muted pull-right"> <small><em>{this.state.selectedIds.length}</em> selected</small></label>
+          <label className="selected text-right text-muted pull-right"> <small>{this.state.selectedIds.length} selected / {this.state.items.length} total</small></label>
           <button className="btn btn-default btn-sm filter-clear pull-right" onClick={ this._onChange.bind(this, { filterText: '' }) }>Clear Filter</button>
           <div className="filter">
-            <input className="form-control txtbox-filter" type="text" placeholder="filter by name" valueLink={this.linkState('filterText')} />
+            <i className="glyphicon glyphicon-search"></i><a onClick={ this._onChange.bind(this, { filterText: '' }) } href="#"><i className="glyphicon glyphicon-remove"></i></a>
+            <input className="form-control txtbox-filter" type="text" placeholder="filter by name" valueLink={this.linkState('filterText')} disabled={ this.state.showCheckedItemsOnly } />
           </div>
           <label className="message text-muted"><small>Unsaved...</small></label>
         </header>
         <ul className="tbl-div list-group">{items}</ul>
         <div className="tbl-message">No items are currently checked. <label>View all items</label>.</div>
-        <button className="btn btn-show-checked-only" onClick={ this._onChange.bind(this, { showCheckedItemsOnly: !this.state.showCheckedItemsOnly }) }>Show checked only</button>
+        <button type="button" className="btn btn-link btn-show-checked-only" onClick={ this._onChange.bind(this, { showCheckedItemsOnly: !this.state.showCheckedItemsOnly }) } disabled={ !_.isEmpty(this.state.filterText) }><i className={"glyphicon glyphicon-" + (this.state.showCheckedItemsOnly ? "check" : "unchecked")}></i>Show checked only</button>
         <div className="pull-right">
-          <button type="button" className="btn btn-primary btn-add" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>add</button>
-          <button type="button" className="btn btn-primary btn-select" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>select</button>
-          <button type="button" className="btn btn-primary btn-use" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '' }, this.updateCachedSelectedIds )}>use</button>
-          <button type="button" className="btn btn-primary btn-back" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '', selectedIds: this.origSelectedIds }) }>back</button>
+          <button type="button" className="btn btn-lg btn-primary btn-add" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>Add</button>
+          <button type="button" className="btn btn-lg btn-primary btn-select" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>Select</button>
+          <button type="button" className="btn btn-lg btn-primary btn-use" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '', showCheckedItemsOnly: false }, this.updateCachedSelectedIds )}>Done</button>
+          <button type="button" className="btn btn-lg btn-default btn-back" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '', showCheckedItemsOnly: false, selectedIds: this.origSelectedIds }) }>Back</button>
         </div>
       </div>
     );
