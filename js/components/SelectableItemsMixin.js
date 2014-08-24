@@ -7,6 +7,20 @@ var React = require('react'),
 
 var SelectableItemsMixin = {
 
+      
+
+  getInitialState: function() {
+
+    return { 
+
+      selectedIds: this.getSelected(this.props.initialItems || []),
+
+      items: this.props.initialItems || []
+
+    };
+    
+  },
+
   updateCachedSelectedIds: function() {
 
     // Save originally selected ids for isDirty comparison

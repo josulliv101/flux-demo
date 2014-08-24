@@ -19,28 +19,9 @@ module.exports = React.createClass({
 
   mixins: [ React.addons.LinkedStateMixin, SelectableItemsMixin ],
 
-  getInitialState: function() {
-
-    return { 
-
-      isDirty: false,
-
-      showCheckedItemsOnly: false,
-
-      filterText: '',
-
-      mode: this.props.initialMode || 'read-only',
-
-      selectedIds: this.getSelected(this.props.initialItems || []),
-
-      items: this.props.initialItems || []
-
-    };
-  },
-
   getDefaultProps: function() {
 
-    return { formatItemLabel: function(item) { return item.name; }}
+    return { formatItemLabel: function(item) { return item.name || item.id; }}
 
   },
 
@@ -56,7 +37,7 @@ module.exports = React.createClass({
 
     var list = this.state.mode !== 'edit' || this.state.showCheckedItemsOnly === true ? this.getSelectedIdsAsObjects(this.state.selectedIds) : _filterItems( this.state.items, this.state.filterText, this);
 
-        var items = list.map(function(item, i) {
+    var items = list.map(function(item, i) {
 
         return ( <a key={item.id} className={cx({ "list-group-item": true, active: this.isItemIdSelected(item.id) })} href="#" onClick={this.state.mode === 'edit' ? this.toggleItem.bind(this, item.id) : ''} >{this.props.formatItemLabel(item)}<span className={"glyphicon glyphicon-" + (this.isItemIdSelected(item.id) ? "check" : "unchecked") + " pull-right"}></span></a> );
 
@@ -65,12 +46,12 @@ module.exports = React.createClass({
     return (
       <div className={cx({
           'multi-selectbox bd item-orange clearfix': true,
-          'read-only': this.state.mode === 'read-only',
+          'read-only': _.isEmpty(this.state.mode) || this.state.mode === 'read-only',
           'edit-read-only': this.state.mode === 'edit-read-only',
           'edit': this.state.mode === 'edit',
           'dirty': !_.isEqual(this.origSelectedIds, this.state.selectedIds),
           'filter-active': !_.isEmpty(this.state.filterText),
-          'show-checkbox-only': this.state.showCheckedItemsOnly,
+          'show-checkbox-only': this.state.showCheckedItemsOnly === true,
           'no-results': items.length === 0
       })}>
         <header>

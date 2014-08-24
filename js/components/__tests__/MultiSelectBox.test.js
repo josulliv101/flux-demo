@@ -71,6 +71,8 @@ describe('MultiSelectBox', function() {
     var view = TestUtils.renderIntoDocument(
       <MultiSelectBox initialMode="edit" initialItems={mockItems} />
     );
+    var btnSelect = TestUtils.findRenderedDOMComponentWithClass(view, 'btn-select');
+    TestUtils.Simulate.click(btnSelect);
 
     var tbl = TestUtils.findRenderedDOMComponentWithClass(view, 'tbl-div');
     var TRs = TestUtils.scryRenderedDOMComponentsWithTag(tbl, 'a');
@@ -99,6 +101,9 @@ describe('MultiSelectBox', function() {
     var view = TestUtils.renderIntoDocument(
       <MultiSelectBox initialMode="edit" initialItems={mockItems} />
     );
+
+    var btnSelect = TestUtils.findRenderedDOMComponentWithClass(view, 'btn-select');
+    TestUtils.Simulate.click(btnSelect);
 
     expect( $(view.getDOMNode()).find('.tbl-div a').length ).toBe(3);
 
@@ -140,6 +145,10 @@ describe('MultiSelectBox', function() {
     var view = TestUtils.renderIntoDocument(
       <MultiSelectBox initialMode="edit" initialItems={mockItems} />
     );
+
+    var btnSelect = TestUtils.findRenderedDOMComponentWithClass(view, 'btn-select');
+    TestUtils.Simulate.click(btnSelect);
+
     var tbl = TestUtils.findRenderedDOMComponentWithClass(view, 'tbl-div');
     var TRs = TestUtils.scryRenderedDOMComponentsWithTag(tbl, 'a');
 
@@ -199,6 +208,9 @@ describe('MultiSelectBox', function() {
     var view = TestUtils.renderIntoDocument(
       <MultiSelectBox initialMode="edit" initialItems={mockItems} />
     );
+
+    var btnSelect = TestUtils.findRenderedDOMComponentWithClass(view, 'btn-select');
+    TestUtils.Simulate.click(btnSelect);
 
     var txtboxFilter = TestUtils.findRenderedDOMComponentWithClass(view, 'txtbox-filter');
 
