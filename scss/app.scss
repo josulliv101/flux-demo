@@ -63,20 +63,35 @@
 	  left: 0;
 	}
 
+	.tbl-message {
+		position: absolute;
+		top: 4em;
+		left: 20px;
+	}
+
 	.tbl-div {
 		overflow: auto;
-		background: #fafafa;
-		border-radius: 3px;
+		max-height: 240px;
+		border: 1px #ddd solid;
+		border-radius: 4px;
 		a {
+			cursor: default;
 			.glyphicon {
 				display: none;
 			}
 			&:nth-child(odd) {
 				/*background: #f8f8f8;*/
 			}
+			border: none !important;
+			border-top: #ddd 1px solid !important;
+			&:first-child {
+				border-top: none !important;
+			}
+			&.active {
+				border-top: #428BC5 !important;
+			}
 		}
 	}
-
 
 	.selected {
 /* 	 width: 100%; */
@@ -88,7 +103,11 @@
 /* States */
 
 	&.read-only {
-		
+		&.no-results {
+			.tbl-div {
+				display: none;
+			}
+		}
 	}
 
 	&.edit-read-only {
@@ -100,6 +119,11 @@
 		&.dirty {
 			.message {
 				display: inline-block;
+			}
+		}
+		&.no-results {
+			.tbl-div {
+				display: none;
 			}
 		}
 	}
@@ -122,7 +146,8 @@
 		.tbl-div {
 			height: 240px;
 			overflow: auto;
-			a {
+			a {	
+				cursor: pointer;
 				.glyphicon {
 					display: inline-block;
 				}
@@ -146,6 +171,11 @@
 						}
 					}
 				}		
+			}
+		}
+		&.no-results {
+			.tbl-message {
+				display: block;
 			}
 		}
 	}

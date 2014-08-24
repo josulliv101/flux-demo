@@ -87,7 +87,7 @@ App = React.createClass({
   render: function() {
     return (
       <div className="app">
-        <MultiSelectBox initialMode="edit-read-only" initialItems={data} formatItemLabel={function(item) { return item.nameFirst + " " + item.nameLast; }} />
+        <MultiSelectBox initialMode="edit-read-only" initialItems={data} filterPlaceholder="Filter by name" formatItemLabel={function(item) { return item.nameFirst + " " + item.nameLast; }} />
       </div>
     );
   },

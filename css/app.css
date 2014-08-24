@@ -39,20 +39,37 @@
   .multi-selectbox .message {
     right: auto;
     left: 0; }
+  .multi-selectbox .tbl-message {
+    position: absolute;
+    top: 4em;
+    left: 20px; }
   .multi-selectbox .tbl-div {
     overflow: auto;
-    background: #fafafa;
-    border-radius: 3px; }
-    .multi-selectbox .tbl-div a .glyphicon {
-      display: none; }
+    max-height: 240px;
+    border: 1px #ddd solid;
+    border-radius: 4px; }
+    .multi-selectbox .tbl-div a {
+      cursor: default;
+      border: none !important;
+      border-top: #ddd 1px solid !important; }
+      .multi-selectbox .tbl-div a .glyphicon {
+        display: none; }
+      .multi-selectbox .tbl-div a:first-child {
+        border-top: none !important; }
+      .multi-selectbox .tbl-div a.active {
+        border-top: #428BC5 !important; }
   .multi-selectbox .selected {
     /* 	 width: 100%; */ }
     .multi-selectbox .selected em {
       font-style: normal; }
+  .multi-selectbox.read-only.no-results .tbl-div {
+    display: none; }
   .multi-selectbox.edit-read-only button.btn-select {
     display: inline-block; }
   .multi-selectbox.edit-read-only.dirty .message {
     display: inline-block; }
+  .multi-selectbox.edit-read-only.no-results .tbl-div {
+    display: none; }
   .multi-selectbox.edit .message {
     display: none; }
   .multi-selectbox.edit .filter {
@@ -64,8 +81,10 @@
   .multi-selectbox.edit .tbl-div {
     height: 240px;
     overflow: auto; }
-    .multi-selectbox.edit .tbl-div a .glyphicon {
-      display: inline-block; }
+    .multi-selectbox.edit .tbl-div a {
+      cursor: pointer; }
+      .multi-selectbox.edit .tbl-div a .glyphicon {
+        display: inline-block; }
   .multi-selectbox.edit.filter-active header .selected {
     display: none; }
   .multi-selectbox.edit.filter-active header .filter-clear {
@@ -74,3 +93,5 @@
     display: inline-block; }
   .multi-selectbox.edit.filter-active header .filter .glyphicon.glyphicon-search {
     display: none; }
+  .multi-selectbox.edit.no-results .tbl-message {
+    display: block; }
