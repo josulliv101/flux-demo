@@ -10,7 +10,7 @@ var SelectableItemsMixin = {
   updateCachedSelectedIds: function() {
 
     // Save originally selected ids for isDirty comparison
-    this.origSelectedIds = this.state.selectedIds;
+    this.cachedSelectedIds = this.state.selectedIds;
 
   },
 
@@ -18,6 +18,9 @@ var SelectableItemsMixin = {
 
     // Save originally selected ids for isDirty comparison
     this.updateCachedSelectedIds();
+
+    // Only want orig set once
+    this.origSelectedIds = this.cachedSelectedIds;
 
   },
 

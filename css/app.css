@@ -57,11 +57,11 @@
       .multi-selectbox .tbl-div a:first-child {
         border-top: none !important; }
       .multi-selectbox .tbl-div a.active {
-        border-top: #428BC5 !important; }
-  .multi-selectbox .selected {
-    /* 	 width: 100%; */ }
-    .multi-selectbox .selected em {
-      font-style: normal; }
+        border-top: 1px #428BC5 solid !important; }
+        .multi-selectbox .tbl-div a.active:first-child {
+          border-top: none !important; }
+  .multi-selectbox .selected em {
+    font-style: normal; }
   .multi-selectbox.read-only.no-results .tbl-div {
     display: none; }
   .multi-selectbox.edit-read-only button.btn-select {
@@ -84,7 +84,8 @@
     .multi-selectbox.edit .tbl-div a {
       cursor: pointer; }
       .multi-selectbox.edit .tbl-div a .glyphicon {
-        display: inline-block; }
+        display: inline-block;
+        margin-right: 4px; }
   .multi-selectbox.edit.filter-active header .selected {
     display: none; }
   .multi-selectbox.edit.filter-active header .filter-clear {

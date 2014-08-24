@@ -7,16 +7,21 @@ jest
   .dontMock('underscore');
 
 describe('MultiSelectBox', function() {
-  it('changes the text after click', function() {
 
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
+  var React, $, MultiSelectBox, TestUtils;
+
+  var React = require('react/addons');
+  var $ = require('jquery');
+  var MultiSelectBox = require('../MultiSelectBox.react.js');
+  var TestUtils = React.addons.TestUtils;
+
+  var mockItems = [{ id: 1, name: 'Joe', lname: 'Sullivan', selected: true }, { id: 2, name: 'Magg', lname: 'Sullivan' }, { id: 3, name: 'Joseph', lname: 'Sullivan' }];
+
+  it('changes the text after click', function() {
 
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox />
+      <MultiSelectBox initialItems={mockItems} />
     );
 
     // Verify that it's Off by default
@@ -49,21 +54,11 @@ describe('MultiSelectBox', function() {
 
   });
 
-});
-
-
-describe('MultiSelectBox', function() {
-
   it('starts in read-only mode', function () {
-
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
 
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox labelOn="On" labelOff="Off" />
+      <MultiSelectBox initialItems={mockItems}/>
     );
 
     expect( $(view.getDOMNode()).hasClass('read-only') ).toBeTruthy();
@@ -72,14 +67,9 @@ describe('MultiSelectBox', function() {
 
   it('reflects isDirty state', function () {
 
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
-
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox />
+      <MultiSelectBox initialMode="edit" initialItems={mockItems} />
     );
 
     var tbl = TestUtils.findRenderedDOMComponentWithClass(view, 'tbl-div');
@@ -87,7 +77,6 @@ describe('MultiSelectBox', function() {
 
     expect( $(view.getDOMNode()).hasClass('dirty') ).not.toBeTruthy();
 
-    //view.setState({ isDirty: true });
     TestUtils.Simulate.click(TRs[0]);
 
     expect( $(view.getDOMNode()).hasClass('dirty') ).toBeTruthy();
@@ -106,14 +95,9 @@ describe('MultiSelectBox', function() {
 
   it('creates a table row for each item & flags any selected with css classname', function () {
 
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
-
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox />
+      <MultiSelectBox initialMode="edit" initialItems={mockItems} />
     );
 
     expect( $(view.getDOMNode()).find('.tbl-div a').length ).toBe(3);
@@ -125,14 +109,9 @@ describe('MultiSelectBox', function() {
 
   it('reflects the \'show checked only\' state in dom as css flag', function () {
 
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
-
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox />
+      <MultiSelectBox initialItems={mockItems} />
     );
 
     var btnShowCheckedOnly = TestUtils.findRenderedDOMComponentWithClass(view, 'btn-show-checked-only');
@@ -157,14 +136,9 @@ describe('MultiSelectBox', function() {
 
   it('handles selection of items via tr clicking', function () {
 
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
-
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox />
+      <MultiSelectBox initialMode="edit" initialItems={mockItems} />
     );
     var tbl = TestUtils.findRenderedDOMComponentWithClass(view, 'tbl-div');
     var TRs = TestUtils.scryRenderedDOMComponentsWithTag(tbl, 'a');
@@ -197,19 +171,14 @@ describe('MultiSelectBox', function() {
     TestUtils.Simulate.click(TRs[0]);
 
     expect( parseInt($(view.getDOMNode()).find('.selected em').html()) ).toBe(1);
-    
+
   });
 
   it('reflects the \'filter input query\' state in dom as css flag', function () {
 
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
-
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox />
+      <MultiSelectBox initialItems={mockItems} />
     );
 
     var txtboxFilter = TestUtils.findRenderedDOMComponentWithClass(view, 'txtbox-filter');
@@ -226,14 +195,9 @@ describe('MultiSelectBox', function() {
 
   it('filters items based on filter text', function () {
 
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
-
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox />
+      <MultiSelectBox initialMode="edit" initialItems={mockItems} />
     );
 
     var txtboxFilter = TestUtils.findRenderedDOMComponentWithClass(view, 'txtbox-filter');
@@ -255,23 +219,7 @@ describe('MultiSelectBox', function() {
     expect( $(view.getDOMNode()).hasClass('filter-active') ).toBeTruthy();
 
     expect( $(view.getDOMNode()).find('.tbl-div a').length ).toBe(1);
-    
-  });
-
-  it('implements is selectable mixin', function () {
-
-    var React = require('react/addons');
-    var $ = require('jquery');
-    var MultiSelectBox = require('../MultiSelectBox.react.js');
-    var TestUtils = React.addons.TestUtils;
-
-    // Render a checkbox with label in the document
-    var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox />
-    );
-
-    //expect( view.intervals.length ).toBe(22);
-    
+ 
   });
 
 });

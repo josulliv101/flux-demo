@@ -5,9 +5,7 @@ var React = require('react/addons'),
 
     _ = require('underscore'),
 
-    SelectableItemsMixin = require('../components/SelectableItemsMixin'),
-
-    FilterItemsMixin = require('../components/FilterItemsMixin');
+    SelectableItemsMixin = require('../components/SelectableItemsMixin');
 
 function _filterItems(items, q, context) {
 
@@ -19,11 +17,9 @@ function _filterItems(items, q, context) {
 
 module.exports = React.createClass({
 
-  mixins: [ React.addons.LinkedStateMixin, SelectableItemsMixin, FilterItemsMixin ],
+  mixins: [ React.addons.LinkedStateMixin, SelectableItemsMixin ],
 
   getInitialState: function() {
-
-    var mockItems = [{ id: 1, name: 'Joe', lname: 'Sullivan', selected: true }, { id: 2, name: 'Magg', lname: 'Sullivan' }, { id: 3, name: 'Joseph', lname: 'Sullivan' }];
 
     return { 
 
@@ -35,11 +31,17 @@ module.exports = React.createClass({
 
       mode: this.props.initialMode || 'read-only',
 
-      selectedIds: this.getSelected(this.props.initialItems || mockItems),
+      selectedIds: this.getSelected(this.props.initialItems || []),
 
-      items: this.props.initialItems || mockItems
+      items: this.props.initialItems || []
 
     };
+  },
+
+  getDefaultProps: function() {
+
+    return { formatItemLabel: function(item) { return item.name; }}
+
   },
 
   _onChange: function(stateAttrs, cb) {
@@ -56,7 +58,7 @@ module.exports = React.createClass({
 
         var items = list.map(function(item, i) {
 
-        return ( <a key={item.id} className={cx({ "list-group-item": true, active: this.isItemIdSelected(item.id) })} href="#" onClick={this.state.mode === 'edit' ? this.toggleItem.bind(this, item.id) : ''} >{this.props.formatItemLabel && this.props.formatItemLabel(item) || item.name}<span className={"glyphicon glyphicon-" + (this.isItemIdSelected(item.id) ? "check" : "unchecked") + " pull-right"}></span></a> );
+        return ( <a key={item.id} className={cx({ "list-group-item": true, active: this.isItemIdSelected(item.id) })} href="#" onClick={this.state.mode === 'edit' ? this.toggleItem.bind(this, item.id) : ''} >{this.props.formatItemLabel(item)}<span className={"glyphicon glyphicon-" + (this.isItemIdSelected(item.id) ? "check" : "unchecked") + " pull-right"}></span></a> );
 
       }, this);
 
@@ -72,7 +74,7 @@ module.exports = React.createClass({
           'no-results': items.length === 0
       })}>
         <header>
-          <label className="selected text-right text-muted pull-right"> <small>{this.state.selectedIds.length} selected / {this.state.items.length} total</small></label>
+          <label className="selected text-muted pull-right"> <small><em>{this.state.selectedIds.length}</em>/{this.state.items.length} selected</small></label>
           <button className="btn btn-default btn-sm filter-clear pull-right" onClick={ this._onChange.bind(this, { filterText: '' }) }>Clear Filter</button>
           <div className="filter">
             <i className="glyphicon glyphicon-search"></i><a onClick={ this._onChange.bind(this, { filterText: '' }) } href="#"><i className="glyphicon glyphicon-remove"></i></a>
@@ -87,7 +89,7 @@ module.exports = React.createClass({
           <button type="button" className="btn btn-lg btn-primary btn-add" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>Add</button>
           <button type="button" className="btn btn-lg btn-primary btn-select" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>Select</button>
           <button type="button" className="btn btn-lg btn-primary btn-use" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '', showCheckedItemsOnly: false }, this.updateCachedSelectedIds )}>Done</button>
-          <button type="button" className="btn btn-lg btn-default btn-back" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '', showCheckedItemsOnly: false, selectedIds: this.origSelectedIds }) }>Back</button>
+          <button type="button" className="btn btn-lg btn-default btn-back" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '', showCheckedItemsOnly: false, selectedIds: this.cachedSelectedIds }) }>Back</button>
         </div>
       </div>
     );

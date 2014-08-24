@@ -12,10 +12,11 @@ describe('MultiSelectBox', function() {
     var $ = require('jquery');
     var MultiSelectBox = require('../MultiSelectBox.react.js');
     var TestUtils = React.addons.TestUtils;
+    var mockItems = [{ id: 1, name: 'Joe', lname: 'Sullivan', selected: true }, { id: 2, name: 'Magg', lname: 'Sullivan' }, { id: 3, name: 'Joseph', lname: 'Sullivan' }];
 
     // Render a checkbox with label in the document
     var view = TestUtils.renderIntoDocument(
-      <MultiSelectBox labelOn="On" labelOff="Off" />
+      <MultiSelectBox initialItems={mockItems} />
     );
 
     expect( view.origSelectedIds.length ).toBeDefined();

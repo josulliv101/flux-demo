@@ -88,7 +88,10 @@
 				border-top: none !important;
 			}
 			&.active {
-				border-top: #428BC5 !important;
+				border-top: 1px #428BC5 solid !important;
+        &:first-child {
+          border-top: none !important;
+        }
 			}
 		}
 	}
@@ -149,6 +152,7 @@
 				cursor: pointer;
 				.glyphicon {
 					display: inline-block;
+          margin-right: 4px;
 				}
 			}
 		}
