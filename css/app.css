@@ -1,89 +1,46 @@
 .multi-selectbox {
   position: relative;
-}
- 
-
-.multi-selectbox .message,
-.multi-selectbox .filter,
-.multi-selectbox .filter-clear,
-.multi-selectbox .tbl-message,
-.multi-selectbox .btn-group button
-{
-  display: none;
-}
-
-.multi-selectbox.dirty .message,
-.multi-selectbox.edit-read-only .btn-group button.btn-select
-{
-  display: inline-block;
-}
-
-.multi-selectbox .message {
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-}
-
-.multi-selectbox .selected {
-/*
-  position: absolute;
-  top: 0;
-  right: 0;
- */ 
- width: 100%;
-}
-
-/*
-.app {
-  font-family: 'Muli', 'Helvetica Neue', helvetica, arial;
-  max-width: 760px;
-  margin: 20px auto;
-  overflow: hidden;
-}
-
-.section {
-  background: #f8f8f8;
-  min-height: 100px;
-  position: relative;
-}
-
-.section .spinner {
-  display: block;
-  background: url(http://backbone-notifier.e-w.co.il/imgs/notifier-loader-clean.gif);
-  position: absolute;
-  top: 3px;
-  left: 180px;
-  display: none;
-  width: 16px;
-  height: 16px;
-}
-
-.section.is-loading .spinner {
-  display: block;
-}
-.section .list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.section .list .item {
-  max-width: 200px;
-}
-
-.section .list .item button {
-  width: 100%;
-  cursor: pointer;
-  text-align: left;
-}
-
-.section .list .item button:hover {
-  color: #555;
-}
-
-.section .list .item.active button, .section .list .item.active button:hover {
-  color: #6699cc;
-}
-*/
+  /* Layout */
+  /* States */ }
+  .multi-selectbox header {
+    position: relative;
+    margin: 0 0 6px; }
+  .multi-selectbox .message, .multi-selectbox .filter-clear, .multi-selectbox .tbl-message, .multi-selectbox .btn {
+    display: none; }
+  .multi-selectbox .btn {
+    margin-left: 6px; }
+  .multi-selectbox .filter {
+    visibility: hidden;
+    width: 50%; }
+  .multi-selectbox .filter-clear, .multi-selectbox .selected, .multi-selectbox .message {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0; }
+  .multi-selectbox .message {
+    right: auto;
+    left: 0; }
+  .multi-selectbox .tbl-div {
+    overflow: auto; }
+    .multi-selectbox .tbl-div a .glyphicon {
+      display: none; }
+  .multi-selectbox.edit-read-only button.btn-select {
+    display: inline-block; }
+  .multi-selectbox.edit-read-only.dirty .message {
+    display: inline-block; }
+  .multi-selectbox.edit .message {
+    display: none; }
+  .multi-selectbox.edit .filter {
+    visibility: visible; }
+  .multi-selectbox.edit button.btn-select {
+    display: none; }
+  .multi-selectbox.edit button.btn-use, .multi-selectbox.edit button.btn-back {
+    display: inline-block; }
+  .multi-selectbox.edit .tbl-div {
+    overflow: auto; }
+    .multi-selectbox.edit .tbl-div a .glyphicon {
+      display: inline-block; }
+  .multi-selectbox.edit.filter-active .selected {
+    display: none; }
+  .multi-selectbox.edit.filter-active .filter-clear {
+    display: inline-block; }

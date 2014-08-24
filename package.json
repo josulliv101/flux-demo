@@ -12,7 +12,7 @@
   "devDependencies": {
     "aliasify": "^1.4.0",
     "browserify": "~4.2.2",
-    "gulp": "~3.5.0",
+    "gulp": "^3.6.2",
     "gulp-concat": "~2.1.7",
     "gulp-connect": "~1.0.0",
     "gulp-connect-multi": "^1.0.8",
@@ -21,7 +21,7 @@
     "gulp-load-plugins": "~0.3.0",
     "gulp-react": "~0.2.0",
     "gulp-rename": "~1.1.0",
-    "gulp-sass": "~0.7.1",
+    "gulp-sass": "^0.7.3",
     "gulp-shell": "^0.2.7",
     "gulp-size": "~0.1.3",
     "gulp-streamify": "0.0.5",
@@ -47,9 +47,7 @@
     ]
   },
   "aliasify": {
-      "aliases": {
-           
-      }
+    "aliases": {}
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/preprocessor.js",

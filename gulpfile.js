@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   streamify = require('gulp-streamify'),
   connect = require('gulp-connect-multi')(),
+  sass = require('gulp-sass'),
 
   $ = require('gulp-load-plugins')();
 
@@ -30,6 +31,14 @@ gulp.task('scripts', function () {
 
     .on('error', $.util.beep);
 });
+
+// Compile Our Sass
+gulp.task('sass', function() {
+    return gulp.src('scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('css'));
+});
+
 //styles
 gulp.task('styles', function() {
   //for now just reload the server
@@ -64,7 +73,8 @@ gulp.task('connect', connect.server({
 }));
 
 gulp.task('watch', ['scripts', 'connect'], function () {
-    gulp.watch(['js/**/*.js','js/**/*.jsx','!js/bundle.js'], ['scripts','test']);
+    gulp.watch(['js/**/*.js','js/**/*.jsx','!js/bundle.js'], ['scripts']);
+    gulp.watch('scss/*.scss', ['sass']);
     gulp.watch(['css/**.css'], ['styles']);
 });
 

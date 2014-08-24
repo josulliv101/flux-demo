@@ -1,0 +1,106 @@
+.multi-selectbox {
+  position: relative;
+	header {
+		position: relative;
+		margin: 0 0 6px;
+	}
+	.message, .filter-clear, .tbl-message, .btn {
+	  display: none;
+	}
+	.btn {
+		margin-left: 6px;
+	}
+
+	.filter {
+		visibility: hidden;
+		width: 50%;
+	}
+
+/* Layout */
+
+	.filter {
+/* 	  position: absolute;
+	  top: 0;
+	  left: 0; */
+	}
+
+
+	
+	.filter-clear, .selected, .message {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin: 0;
+	}
+
+	.message {
+	  right: auto;
+	  left: 0;
+	}
+
+	.tbl-div {
+		overflow: auto;
+		a {
+			.glyphicon {
+				display: none;
+			}
+		}
+	}
+
+
+	.selected {
+/* 	 width: 100%; */
+	}
+
+/* States */
+
+	&.read-only {
+		
+	}
+
+	&.edit-read-only {
+
+		button.btn-select {
+			display: inline-block;				
+		}
+
+		&.dirty {
+			.message {
+				display: inline-block;
+			}
+		}
+	}
+
+	&.edit {
+		.message {
+			display: none;
+		}
+		.filter {
+			visibility: visible;
+		}
+
+		button.btn-select {
+			display: none;				
+		}
+		button.btn-use, button.btn-back {
+			display: inline-block;				
+		}
+
+		.tbl-div {
+			overflow: auto;
+			a {
+				.glyphicon {
+					display: inline-block;
+				}
+			}
+		}
+		&.filter-active {
+			.selected {
+				display:none;
+			}
+			.filter-clear {
+				display: inline-block;
+			}
+		}
+	}
+}

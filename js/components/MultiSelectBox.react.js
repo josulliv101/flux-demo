@@ -9,11 +9,11 @@ var React = require('react/addons'),
 
     FilterItemsMixin = require('../components/FilterItemsMixin');
 
-function _filterItems(items, q) {
+function _filterItems(items, q, context) {
 
   if (_.isEmpty(q)) return items;
 
-  return _.filter(items, function(item) { return item.name.indexOf(q) === 0; });
+  return _.filter(items, function(item) { return (context.props.formatItemLabel(item)).indexOf(q) === 0; }, this);
 
 }
 
@@ -23,7 +23,7 @@ module.exports = React.createClass({
 
   getInitialState: function() {
 
-    var items = [{ id: 1, name: 'Joe', lname: 'Sullivan', selected: true }, { id: 2, name: 'Magg', lname: 'Sullivan' }, { id: 3, name: 'Joseph', lname: 'Sullivan' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }, { id: 99, name: '999', lname: '888' }];
+    var mockItems = [{ id: 1, name: 'Joe', lname: 'Sullivan', selected: true }, { id: 2, name: 'Magg', lname: 'Sullivan' }, { id: 3, name: 'Joseph', lname: 'Sullivan' }];
 
     return { 
 
@@ -33,26 +33,31 @@ module.exports = React.createClass({
 
       filterText: '',
 
-      mode: 'read-only',
+      mode: this.props.initialMode || 'read-only',
 
-      selectedIds: this.getSelected(items),
+      selectedIds: this.getSelected(this.props.initialItems || mockItems),
 
-      items: items
+      items: this.props.initialItems || mockItems
 
     };
   },
 
-  _onChange: function(stateAttrs) {
+  _onChange: function(stateAttrs, cb) {
 
     this.setState(stateAttrs);
+
+    if (_.isFunction(cb)) cb();
 
   },
 
   render: function() {
 
-    var items = ( _filterItems(this.state.items, this.state.filterText) ).map(function(item, i) {
+    var list = this.state.mode === 'edit' ? _filterItems( this.state.items, this.state.filterText, this) : this.getSelectedIdsAsObjects(this.state.selectedIds);
 
-        return ( <a className={cx({ "list-group-item": true, active: this.isItemIdSelected(item.id) })} href="#" onClick={this.toggleItem.bind(this, item.id)} >{item.name} {item.lname}</a> );
+
+        var items = list.map(function(item, i) {
+
+        return ( <a key={item.id} className={cx({ "list-group-item": true, active: this.isItemIdSelected(item.id) })} href="#" onClick={this.state.mode === 'edit' ? this.toggleItem.bind(this, item.id) : ''} >{this.props.formatItemLabel && this.props.formatItemLabel(item) || item.name}<span className={"glyphicon glyphicon-" + (this.isItemIdSelected(item.id) ? "check" : "unchecked") + " pull-right"}></span></a> );
 
       }, this);
 
@@ -67,22 +72,23 @@ module.exports = React.createClass({
           'show-checkbox-only': this.state.showCheckedItemsOnly,
           'has-results': items.length > 0
       })}>
-        <div className="filter">
-          <input className="txtbox-filter" type="text" placeholder="filter by name" valueLink={this.linkState('filterText')} />
-          <label>x</label>
-        </div>
-        <label className="message text-info">Unsaved...</label>
-        <label className="selected text-right text-info"><em>{this.state.selectedIds.length}</em> selected</label>
-        <label className="filter-clear"><span>x</span>Clear Filter</label>
+        <header>
+          <label className="selected text-right text-muted pull-right"> <small><em>{this.state.selectedIds.length}</em> selected</small></label>
+          <button className="btn btn-default btn-sm filter-clear pull-right" onClick={ this._onChange.bind(this, { filterText: '' }) }>Clear Filter</button>
+          <div className="filter">
+            <input className="form-control txtbox-filter" type="text" placeholder="filter by name" valueLink={this.linkState('filterText')} />
+          </div>
+          <label className="message text-muted"><small>Unsaved...</small></label>
+        </header>
         <ul className="tbl-div list-group">{items}</ul>
         <div className="tbl-message">No items are currently checked. <label>View all items</label>.</div>
-        <ul className="btn-group">
-          <li><button className="btn btn-show-checked-only" onClick={ this._onChange.bind(this, { showCheckedItemsOnly: !this.state.showCheckedItemsOnly }) }>Show checked only</button></li>
-          <button type="button" className="btn btn-primary btn-sm btn-add" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>add</button>
-          <button type="button" className="btn btn-primary btn-sm btn-select" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>select</button>
-          <button type="button" className="btn btn-primary btn-sm btn-use" onClick={ this._onChange.bind(this, { mode: 'edit-read-only' }) }>use</button>
-          <button type="button" className="btn btn-primary btn-sm btn-back" onClick={ this._onChange.bind(this, { mode: 'edit-read-only' }) }>back</button>
-        </ul>
+        <button className="btn btn-show-checked-only" onClick={ this._onChange.bind(this, { showCheckedItemsOnly: !this.state.showCheckedItemsOnly }) }>Show checked only</button>
+        <div className="pull-right">
+          <button type="button" className="btn btn-primary btn-add" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>add</button>
+          <button type="button" className="btn btn-primary btn-select" onClick={ this._onChange.bind(this, { mode: 'edit' }) }>select</button>
+          <button type="button" className="btn btn-primary btn-use" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '' }, this.updateCachedSelectedIds )}>use</button>
+          <button type="button" className="btn btn-primary btn-back" onClick={ this._onChange.bind(this, { mode: 'edit-read-only', filterText: '', selectedIds: this.origSelectedIds }) }>back</button>
+        </div>
       </div>
     );
   }

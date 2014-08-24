@@ -7,14 +7,21 @@ var React = require('react'),
 
 var SelectableItemsMixin = {
 
-  componentWillMount: function() {
+  updateCachedSelectedIds: function() {
 
     // Save originally selected ids for isDirty comparison
-    if (!this.origSelectedIds) this.origSelectedIds = this.state.selectedIds;
+    this.origSelectedIds = this.state.selectedIds;
 
   },
 
-  getSelected: function(items) { // Set options.ids = true to get ids back
+  componentWillMount: function() {
+
+    // Save originally selected ids for isDirty comparison
+    this.updateCachedSelectedIds();
+
+  },
+
+  getSelected: function(items, options) { // Set options.ids = true to get ids back
 
     options = (options = {});
 
@@ -23,6 +30,16 @@ var SelectableItemsMixin = {
             .filter(function(item) { return item.selected === true; })
 
             .map(function(item) { return item.id; })
+
+            .value();
+
+  },
+
+  getSelectedIdsAsObjects: function(ids) { // Set options.ids = true to get ids back
+
+    return _.chain(this.state.items)
+
+            .filter(function(item) { return _.contains(ids, item.id); })
 
             .value();
 
