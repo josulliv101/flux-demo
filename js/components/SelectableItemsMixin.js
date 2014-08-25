@@ -1,13 +1,9 @@
 /** @jsx React.DOM */
 var React = require('react'),
 
-    cx = require('react/lib/cx'),
-
     _ = require('underscore');
 
 var SelectableItemsMixin = {
-
-      
 
   getInitialState: function() {
 
@@ -18,7 +14,7 @@ var SelectableItemsMixin = {
       items: this.props.initialItems || []
 
     };
-    
+
   },
 
   updateCachedSelectedIds: function() {

@@ -19,6 +19,16 @@ module.exports = React.createClass({
 
   mixins: [ React.addons.LinkedStateMixin, SelectableItemsMixin ],
 
+  getInitialState: function() {
+
+    return { 
+
+      mode: this.props.initialMode || 'read-only'
+
+    };
+    
+  },
+
   getDefaultProps: function() {
 
     return { formatItemLabel: function(item) { return item.name || item.id; }}
@@ -46,7 +56,7 @@ module.exports = React.createClass({
     return (
       <div className={cx({
           'multi-selectbox bd item-orange clearfix': true,
-          'read-only': _.isEmpty(this.state.mode) || this.state.mode === 'read-only',
+          'read-only': this.state.mode === 'read-only',
           'edit-read-only': this.state.mode === 'edit-read-only',
           'edit': this.state.mode === 'edit',
           'dirty': !_.isEqual(this.origSelectedIds, this.state.selectedIds),
