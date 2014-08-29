@@ -35,6 +35,8 @@ module.exports = {
 
       'isInvestigator': '{bool|true}',
 
+      'role': '["technician", "investigator"]',
+
       'delay': 1
 
     });

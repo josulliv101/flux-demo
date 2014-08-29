@@ -50,6 +50,18 @@ module.exports = {
 
   },
 
+  setActiveUserRole: function(role) {
+
+    AppDispatcher.handleServerAction({
+
+      type: ActionTypes.SET_ACTIVE_USER_ROLE,
+
+      role: role
+
+    });
+
+  },
+
   receiveAllUsers: function(rawUsers) {
 
     AppDispatcher.handleServerAction({

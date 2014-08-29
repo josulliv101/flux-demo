@@ -9,7 +9,8 @@ module.exports = {
     REMOVE_PROJECT: null,
     RECEIVE_RAW_USERS: null,
     FETCH_ALL_USERS: null,
-    SET_ACTIVE_USER: null
+    SET_ACTIVE_USER: null,
+    SET_ACTIVE_USER_ROLE: null
   }),
 
   PayloadSources: keyMirror({

@@ -19,6 +19,7 @@ var UserStore = merge(EventEmitter.prototype, {
 
   init: function(rawUsers) {
     _users = rawUsers;
+
     if (_activeUser === null && _users.length > 0) {
 
       _activeUser = _.first(_users);
@@ -77,6 +78,11 @@ UserStore.dispatchToken = AppDispatcher.register(function(payload) {
 
     case ActionTypes.SET_ACTIVE_USER:
       _activeUser = action.user;
+      UserStore.emitChange(); // For loading attr
+      break;
+
+    case ActionTypes.SET_ACTIVE_USER_ROLE:
+      _activeUser.role = action.role;
       UserStore.emitChange(); // For loading attr
       break;
 

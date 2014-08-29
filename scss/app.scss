@@ -1,3 +1,7 @@
+#banner {
+	background: #333;
+	color: #fff;
+}
 .multi-selectbox {
   position: relative;
   margin: 0 0 12px;
@@ -183,3 +187,69 @@
 		}
 	}
 }
+
+.topnav-menu {
+	&.is-loading {
+		.nav {
+			display: none;
+		}
+	}
+	.nav {
+		li {
+			&.technician, &.investigator {
+				display: none;
+			}
+			.settings, .power-off {
+				font-size: 26px;
+				padding: 12px;
+				white-space: nowrap;
+			}
+		}
+	}
+	&.role-technician {
+		.nav {
+			li {
+				&.technician {
+					display: inline-block;
+				}
+			}
+		}
+	}
+	&.role-investigator {
+		.nav {
+			li {
+				&.investigator {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+
+.nav {
+	li {
+		.fa {
+			margin-right: 6px;
+		}		
+	}
+}
+.navbar .divider-vertical {
+	height: 50px;
+	margin: 0 9px;
+	border-right: 1px solid #ffffff;
+	border-left: 1px solid #f2f2f2;
+}
+
+.navbar-inverse .divider-vertical {
+	border-right-color: #222222;
+	border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+.navbar-collapse .nav > .divider-vertical {
+    display: none;
+  }
+}
+
+
