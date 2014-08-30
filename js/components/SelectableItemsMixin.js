@@ -9,9 +9,7 @@ var SelectableItemsMixin = {
 
     return { 
 
-      selectedIds: this.getSelected(this.props.initialItems || []),
-
-      items: this.props.initialItems || []
+      selectedIds: this.getSelected(this.props.initialItems || [])
 
     };
 

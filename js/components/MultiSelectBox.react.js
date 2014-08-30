@@ -5,6 +5,8 @@ var React = require('react/addons'),
 
     _ = require('underscore'),
 
+    Stores = require('../components/WatchStoresMixin'),
+
     SelectableItemsMixin = require('../components/SelectableItemsMixin');
 
 function _filterItems(items, q, context) {
@@ -17,7 +19,7 @@ function _filterItems(items, q, context) {
 
 module.exports = React.createClass({
 
-  mixins: [ React.addons.LinkedStateMixin, SelectableItemsMixin ],
+  mixins: [ React.addons.LinkedStateMixin, SelectableItemsMixin, Stores ],
 
   getInitialState: function() {
 
@@ -27,6 +29,24 @@ module.exports = React.createClass({
 
     };
     
+  },
+
+  getStateFromStores: function() {
+    
+    var users = Stores.Users.getAll(),
+
+        state = { items: Stores.Users.getAll() || [] };
+
+    if (!this.initialized && users.length > 0) {
+
+      state.selectedIds = this.getSelected(users);
+
+      this.initialized = true;
+
+    }
+
+    return state;
+
   },
 
   getDefaultProps: function() {

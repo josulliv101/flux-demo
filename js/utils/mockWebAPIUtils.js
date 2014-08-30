@@ -37,6 +37,8 @@ module.exports = {
 
       'role': '["technician", "investigator"]',
 
+      'selected': '{bool}',
+
       'delay': 1
 
     });

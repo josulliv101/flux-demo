@@ -33,7 +33,7 @@ module.exports = {
 
       type: ActionTypes.FETCH_ALL_USERS,
 
-      promise: WebAPIUtils.fetchAllUsers(5)
+      promise: WebAPIUtils.fetchAllUsers(10)
 
     });
   },

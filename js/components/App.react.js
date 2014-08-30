@@ -1,124 +1,42 @@
-/**
- * @jsx React.DOM
- */
+/** @jsx React.DOM */
+var App, React = require('react'),
 
-var React               = require('react'),
- 	ProjectSection        = require('./ProjectSection.react'),
-  UserStore             = require('../stores/UserStore'),
-  UserSection           = require('./UserSection.react'),
-  CheckboxWithLabel     = require('./CheckboxWithLabel.react'),
-	ServerActionCreators  = require('../actions/ServerActionCreators'),
-  MultiSelectBox        = require('./MultiSelectBox.react'),
-  TopNavMenu            = require('./TopNavMenu.react'),
-	App;
+    MultiSelectBox = require('./MultiSelectBox.react'),
 
-var data = [
-      {
-         "nameFirst":"Carlos",
-         "nameLast":"Pacheo"
-      },
-      {
-         "nameFirst":"Claudio",
-         "nameLast":"Mathews",
-         "selected":true
-      },
-      {
-         "nameFirst":"Frank",
-         "nameLast":"Pacheo"
-      },
-      {
-         "nameFirst":"Jose",
-         "nameLast":"Mathews"
-      },
-      {
-         "nameFirst":"Laura",
-         "nameLast":"Pacheo"
-      },
-      {
-         "nameFirst":"Maria",
-         "nameLast":"Mathews"
-      },
-      {
-         "nameFirst":"Tom",
-         "nameLast":"Patrick"
-      },
-      {
-         "nameFirst":"Mark",
-         "nameLast":"Barter"
-      },
-      {
-         "nameFirst":"Nancy",
-         "nameLast":"Barter"
-      },
-      {
-         "nameFirst":"Jon",
-         "nameLast":"Fish"
-      },
-      {
-         "nameFirst":"Elmer",
-         "nameLast":"Fudd",
-         "selected": true
-      },
-      {
-         "nameFirst":"Andy",
-         "nameLast":"Avett"
-      },
-      {
-         "nameFirst":"Neal",
-         "nameLast":"Peters"
-      }
-   ];
+    TopNavMenu = require('./TopNavMenu.react'),
 
-data.forEach(function(item, i) {
+    Stores = require('../components/WatchStoresMixin'),
 
-    item.id = ++i;
+    ServerActionCreators  = require('../actions/ServerActionCreators');
 
-});
-
-function getStateFromStores() {
-
-  return {
-
-    users: UserStore.getAll(),
-
-    user: UserStore.getActiveUser() || {},
-
-    isUsersLoading: UserStore.isLoading()
-    
-  };
-}
 
 App = React.createClass({
   
-  componentDidMount: function() {
+  mixins: [ Stores ],
 
-  	ServerActionCreators.createProject();
+  componentDidMount: function() {
 
     ServerActionCreators.fetchAllUsers();
 
-    UserStore.addChangeListener(this._onChange);
-
   },
 
-  getInitialState: function() {
+  getStateFromStores: function() {
 
-    return getStateFromStores();
+    return {
 
-  },
+      user: Stores.Users.getActiveUser() || {},
 
-  componentWillUnmount: function() {
+      users: Stores.Users.getAll() || [],
 
-    UserStore.removeChangeListener(this._onChange);
-
-  },
-
-  _onChange: function() {
-
-    this.setState(getStateFromStores());
+      isUsersLoading: Stores.Users.isLoading()
+      
+    };
 
   },
 
   render: function() {
+
+    var appGetStateFromStores = this.getStateFromStores.bind(this);
 
     return (
       <div className="app container">
@@ -133,31 +51,42 @@ App = React.createClass({
               </button>
               <a className="navbar-brand" href="#">Brand</a>
             </div>
-            <TopNavMenu />
+            <TopNavMenu ref="myNav" customGetStateFromStoresFn={appGetStateFromStores} />
           </div>
         </nav>
-
         <div className="">
           <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-10 text-right"><p className="text-muted">{this.state.user.fname}, you are currently logged in as a <strong>{this.state.user.role}</strong>.</p></div>
+            <div className="col-md-4">There are {this.state.users.length} users fetched.</div>
+            <div className="col-md-8 text-right"><p className="text-muted">{this.state.user.fname}, you are currently logged in as a <strong>{this.state.user.role}</strong>.</p></div>
+          </div>
+        </div>
+        
+        <div className="row">
+          <div className="col-md-8"></div>
+          <div className="col-md-4">
+            <MultiSelectBox ref="myCollaborators" initialMode="edit-read-only" filterPlaceholder="Filter by name" formatItemLabel={function(item) { return item.fname + " " + item.lname; }} />
+          </div>
+        </div>
+        <div className="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 className="modal-title">Modal title</h4>
+              </div>
+              <div className="modal-body">
+                ...
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <MultiSelectBox initialMode="edit-read-only" initialItems={data} filterPlaceholder="Filter by name" formatItemLabel={function(item) { return item.nameFirst + " " + item.nameLast; }} />
       </div>
     );
-  },
-
-  _onClickAdd: function() {
-    
-    ServerActionCreators.createProject();
-
-  },
-
-  _onClickRemove: function() {
-    
-    ServerActionCreators.removeProject();
 
   }
 
