@@ -7,6 +7,7 @@
     "jquery": "^2.1.1",
     "react": "*",
     "react-tools": "*",
+    "react-router": "^0.6.0",
     "select2": "^3.5.1-browserify-fix",
     "underscore": "^1.6.0"
   },
