@@ -37,9 +37,13 @@ module.exports = React.createClass({
 
         state = { items: Stores.Users.getAll() || [] };
 
+    if (this.initialized === true) return;
+
     if (!this.initialized && users.length > 0) {
 
-      state.selectedIds = this.getSelected(users);
+      //state.selectedIds = _.indexBy(this.getSelected(users), function(item, i) { return i; });
+
+      this.setState({ selectedIds: null });
 
       this.initialized = true;
 
@@ -69,12 +73,12 @@ module.exports = React.createClass({
 
     var items = list.map(function(item, i) {
 
-        return ( <a key={item.id} className={cx({ "list-group-item": true, active: this.isItemIdSelected(item.id) })} href="#" onClick={this.state.mode === 'edit' ? this.toggleItem.bind(this, item.id) : ''} >{this.props.formatItemLabel(item)}<span className={"glyphicon glyphicon-" + (this.isItemIdSelected(item.id) ? "check" : "unchecked") + " pull-right"}></span></a> );
+        return ( <a key={item.id} className={cx({ "list-group-item": true, active: this.isItemIdSelected(item.id) })} href="#/workbench" onClick={ this.state.mode === 'edit' ? this.toggleItem.bind(this, item.id) : function() { return false; }} >{this.props.formatItemLabel(item)}<span className={"glyphicon glyphicon-" + (this.isItemIdSelected(item.id) ? "check" : "unchecked") + " pull-right"}></span></a> );
 
       }, this);
 
     return (
-      <div className={cx({
+      <div key={_.uniqueId('ui_')} className={cx({
           'multi-selectbox bd item-orange clearfix': true,
           'read-only': this.state.mode === 'read-only',
           'edit-read-only': this.state.mode === 'edit-read-only',

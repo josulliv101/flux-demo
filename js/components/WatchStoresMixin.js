@@ -1,7 +1,9 @@
 /** @jsx React.DOM */
 var StoresMixin, React = require('react'),
 
-    UserStore  = require('../stores/UserStore');
+    UserStore  = require('../stores/UserStore'),
+
+    ProjectStore  = require('../stores/ProjectStore');
 
 
 StoresMixin = {
@@ -9,6 +11,8 @@ StoresMixin = {
   componentDidMount: function() {
 
     UserStore.addChangeListener(this._onStoreChange);
+
+    ProjectStore.addChangeListener(this._onStoreChange);
 
   },
 
@@ -20,7 +24,7 @@ StoresMixin = {
 
   componentWillUnmount: function() {
 
-    UserStore.removeChangeListener(this._onStoreChange);
+    //UserStore.removeChangeListener(this._onStoreChange);
 
   },
 
@@ -39,5 +43,7 @@ StoresMixin = {
 };
 
 StoresMixin.Users = UserStore;
+
+StoresMixin.Projects = ProjectStore;
 
 module.exports = StoresMixin;

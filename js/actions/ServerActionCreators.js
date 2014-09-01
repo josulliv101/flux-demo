@@ -11,7 +11,7 @@ module.exports = {
 
       type: ActionTypes.GET_ALL_PROJECTS,
 
-      promise: WebAPIUtils.getAllProjects(count)
+      promise: WebAPIUtils.getAllProjects(count || 10)
 
     });
   },

@@ -62,7 +62,9 @@ var SelectableItemsMixin = {
 
   },
 
-  toggleItem: function(id) {
+  toggleItem: function(id, ev) {
+
+    ev.preventDefault();
 
     var fn = !this.isItemIdSelected(id) ? _.union : _.difference,
 
@@ -71,6 +73,8 @@ var SelectableItemsMixin = {
 
     this.setState({ selectedIds: ids });
 
+    return false;
+    
   }
 
 };

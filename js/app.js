@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 var App = require('./components/App2.react'),
-	React = require('react');
+	React = require('react'),
+	Dashboard = require('./components/Dashboard.react');
 
 var Router = require('../node_modules/react-router/index');
 var Route = Router.Route;
@@ -38,7 +39,7 @@ var routes = (
     <DefaultRoute name="dashboard" handler={Home}/>
     <Route name="workbench" path="workbench" handler={Workbench}/>
     <Route name="reports" path="reports" handler={Reports}/>
-    <Route name="settings" path="settings" handler={Settings}/>
+    <Route name="settings" path="settings" handler={Dashboard}/>
   </Route>
 );
 

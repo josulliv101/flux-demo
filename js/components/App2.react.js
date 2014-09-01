@@ -1,32 +1,37 @@
 /** @jsx React.DOM */
-var App, React = require('react');
+var App, React = require('react'),
+    Stores = require('./WatchStoresMixin'),
+    Tab = require('./Tab.react'),
+    ServerActionCreators  = require('../actions/ServerActionCreators');
 
 var Router = require('react-router');
 var Link = Router.Link;
-var ActiveState = Router.ActiveState;
 
-var Tab = React.createClass({
-
-  mixins: [ ActiveState ],
-
-  getInitialState: function () {
-    return { isActive: false };
-  },
-
-  updateActiveState: function () {
-    this.setState({
-      isActive: Tab.isActive(this.props.to, this.props.params, this.props.query)
-    })
-  },
-
-  render: function() {
-    var className = this.state.isActive ? 'active' : '';
-    var link = Link(this.props);
-    return <li className={className}>{link}</li>;
-  }
-
-});
 App = React.createClass({
+
+  mixins: [ Stores ],
+
+  componentDidMount: function() {
+
+    ServerActionCreators.fetchAllUsers();
+    
+    ServerActionCreators.getAllProjects();
+
+  },
+
+  getStateFromStores: function() {
+
+    return {
+
+      user: Stores.Users.getActiveUser() || {},
+
+      users: Stores.Users.getAll() || [],
+
+      isUsersLoading: Stores.Users.isLoading()
+      
+    };
+
+  },
 
   render: function() {
 
@@ -47,7 +52,7 @@ App = React.createClass({
             <h2 className="sub-header">Section title</h2>
             <div>
               <p className="text-info">Hello World : <Link to="workbench">test</Link></p>
-              <div className="main">
+              <div>
                 {this.props.activeRouteHandler()}
               </div>
             </div>

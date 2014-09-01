@@ -12,11 +12,10 @@ ProjectListItem = React.createClass({
   render: function() {
     return (
       <li className={cx({
-          'item-orange': true,
-          'clearfix': true,
+          'btn btn-default': true,
           'active': this.props.isActive
       })} onClick={this._onClick}>
-        <a href="#">{this.props.name}</a>
+        <a href="#">Project {this.props.name} 8000</a>
       </li>
     );
   },

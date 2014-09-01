@@ -45,7 +45,7 @@ var ProjectSection = React.createClass({
 
   componentWillUnmount: function() {
 
-    ProjectStore.removeChangeListener(this._onChange);
+    //ProjectStore.removeChangeListener(this._onChange);
 
   },
 
@@ -65,7 +65,7 @@ var ProjectSection = React.createClass({
       <ul 
         id="tasks"
         className={cx({
-          'item-list': true,
+          'nav nav-pills nav-stacked': true,
           'is-loading': this.state.isLoading
       })}>
         {projectListItems}
