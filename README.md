@@ -5,7 +5,7 @@ app is structured, and how you might use waitFor to make sure the Stores'
 registered callbacks are called in the correct order.
 <table>
     <tr>
-        <td>Foo</td>
+        <td>Foo<input type="text" /></td>
     </tr>
 </table>
 ## Running
