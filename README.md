@@ -3,8 +3,11 @@
 This is an example application we've created to show an example of how a Flux
 app is structured, and how you might use waitFor to make sure the Stores'
 registered callbacks are called in the correct order.
-
-{{=XML(markdown(<div>test</div>))}}
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
 ## Running
 
 You must have [npm](https://www.npmjs.org/) installed on your computer.
