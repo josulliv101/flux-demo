@@ -4,7 +4,12 @@ This is an example application we've created to show an example of how a Flux
 app is structured, and how you might use waitFor to make sure the Stores'
 registered callbacks are called in the correct order.
 
-<input type="text" />
+    <div>
+      <div id="notes-button-bar"></div>
+      <textarea id="notes" name="copy"></textarea>
+      <div id="notes-preview"></div>
+      <input type="text" name="copy_html" value="" id="copy_html"/>
+    </div>
 ## Running
 
 You must have [npm](https://www.npmjs.org/) installed on your computer.
