@@ -3,7 +3,7 @@
 This is an example application we've created to show an example of how a Flux
 app is structured, and how you might use waitFor to make sure the Stores'
 registered callbacks are called in the correct order.
-<table>
+        <table>
     <tr>
         <td>Foo<input type="text" /></td>
     </tr>
